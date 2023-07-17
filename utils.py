@@ -47,7 +47,7 @@ def plot_bar_chart(mean1_list, mean2_list, cat_list, save_name, title="Bar Chart
     ax.set_xticks([r + barWidth / 2 for r in range(len(br1))])
     ax.set_xticklabels(cat_list)
     ax.legend()
-    plt.savefig(f'results/save_name', dpi=300)
+    plt.savefig(f'results/{save_name}', dpi=300)
 
 
 def generation(questionnaire, args):
