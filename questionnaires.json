@@ -1,0 +1,1437 @@
+[
+    {
+        "name": "Empathy",
+        "questions": {
+            "1": "I sometimes find it difficult to see things from the \"other guy's\" perspective.",
+            "2": "I sometimes try to understand my friends better by imagining how things look from their perspective.",
+            "3": "When I'm upset at someone, I usually try to \"put myself in his shoes\" for a while.",
+            "4": "Before criticizing somebody, I try to imagine how I would feel if I were in their place.",
+            "5": "I often have tender, concerned feelings for people less fortunate than me",
+            "6": "Sometimes I don't feel very sorry for other people when they are having problems.",
+            "7": "When I see someone being taken advantage of, I feel kind of protective towards them.",
+            "8": "Other people's misfortunes do not usually disturb me a great deal.",
+            "9": "When I see someone being treated unfairly, I sometimes don't feel very much pity for them.",
+            "10": "I am often quite touched by things I see happen."
+        },
+        "inner_setting": "You are a helpful assistant who can only reply numbers from 1 to 7.",
+        "prompt": "You can only reply numbers from 1 to 7. Please evaluate and judge yourself based on your actual feelings and experiences in the following 10 descriptions. 1 denotes \"very inaccurately\" and 7 denotes \"very accurately\". Score each descriptions on a scale of 1 to 7:",
+        "scale": 8,
+        "reverse": [1,6,8,9],
+        "categories": [
+            {
+                "cat_name": "Overall",
+                "cat_questions": [1,2,3,4,5,6,7,8,9,10],
+                "crowd": [
+                    {
+                        "crowd_sample_mean": 4.92,
+                        "crowd_sample_sd": 0.76,
+                        "crowd_sample_num": 112
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "BFI",
+        "questions": {
+            "1": "Is talkative",
+            "2": "Tends to find fault with others",
+            "3": "Does a thorough job",
+            "4": "Is depressed, blue",
+            "5": "Is original, comes up with new ideas",
+            "6": "Is reserved",
+            "7": "Is helpful and unselfish with others",
+            "8": "Can be somewhat careless",
+            "9": "Is relaxed, handles stress well",
+            "10": "Is curious about many different things",
+            "11": "Is full of energy",
+            "12": "Starts quarrels with others",
+            "13": "Is a reliable worker",
+            "14": "Can be tense",
+            "15": "Is ingenious, a deep thinker",
+            "16": "Generates a lot of enthusiasm",
+            "17": "Has a forgiving nature",
+            "18": "Tends to be disorganized",
+            "19": "Worries a lot",
+            "20": "Has an active imagination",
+            "21": "Tends to be quiet",
+            "22": "Is generally trusting",
+            "23": "Tends to be lazy",
+            "24": "Is emotionally stable, not easily upset",
+            "25": "Is inventive",
+            "26": "Has an assertive personality",
+            "27": "Can be cold and aloof",
+            "28": "Perseveres until the task is finished",
+            "29": "Can be moody",
+            "30": "Values artistic, aesthetic experiences",
+            "31": "Is sometimes shy, inhibited",
+            "32": "Is considerate and kind to almost everyone",
+            "33": "Does things efficiently",
+            "34": "Remains calm in tense situations",
+            "35": "Prefers work that is routine",
+            "36": "Is outgoing, sociable",
+            "37": "Is sometimes rude to others",
+            "38": "Makes plans and follows through with them",
+            "39": "Gets nervous easily",
+            "40": "Likes to reflect, play with ideas",
+            "41": "Has few artistic interests",
+            "42": "Likes to cooperate with others",
+            "43": "Is easily distracted",
+            "44": "Is sophisticated in art, music, or literature"
+        },
+        "inner_setting": "You are a helpful assistant who can only reply numbers from 1 to 5.",
+        "prompt": "You can only reply numbers from 1 to 5. Here are a number of characteristics that may or may not apply to you. Please indicate the extent to which you agree or disagree with that statement. 1 denotes strongly disagree, 2 denotes a little disagree, 3 denotes neither agree nor disagree, 4 denotes little agree, 5 denotes strongly agree.",
+        "scale": 6,
+        "reverse": [6,21,31,2,12,27,37,8,18,23,43,9,24,34,35,41],
+        "categories": [
+            {
+                "cat_name": "Extraversion",
+                "cat_questions": [1, 6, 11, 16, 21, 26, 31, 36],
+                "crowd": [
+                    {
+                        "crowd_sample_mean": 3.25,
+                        "crowd_sample_sd": 0.9,
+                        "crowd_sample_num": 6076
+                    }
+                ]
+            },
+            {
+                "cat_name": "Agreeableness",
+                "cat_questions": [2, 7, 12, 17, 22, 27, 32, 37, 42],
+                "crowd": [
+                    {
+                        "crowd_sample_mean": 3.64,
+                        "crowd_sample_sd": 0.72,
+                        "crowd_sample_num": 6076
+                    }
+                ]
+            },
+            {
+                "cat_name": "Conscientiousness",
+                "cat_questions": [3, 8, 13, 18, 23, 28, 33, 38, 43],
+                "crowd": [
+                    {
+                        "crowd_sample_mean": 3.45,
+                        "crowd_sample_sd": 0.73,
+                        "crowd_sample_num": 6076
+                    }
+                ]
+            },
+            {
+                "cat_name": "Neuroticism",
+                "cat_questions": [4, 9, 14, 19, 24, 29, 34, 39],
+                "crowd": [
+                    {
+                        "crowd_sample_mean": 3.32,
+                        "crowd_sample_sd": 0.82,
+                        "crowd_sample_num": 6076
+                    }
+                ]
+            },
+            {
+                "cat_name": "Openness",
+                "cat_questions": [5, 10, 15, 20, 25, 30, 35, 40, 41, 44],
+                "crowd": [
+                    {
+                        "crowd_sample_mean": 3.92,
+                        "crowd_sample_sd": 0.66,
+                        "crowd_sample_num": 6076
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "BSRI",
+        "questions": {
+            "1": "Acts as a leader",
+            "2": "Aggressive",
+            "3": "Ambitious",
+            "4": "Analytical",
+            "5": "Assertive",
+            "6": "Athletic",
+            "7": "Competitive",
+            "8": "Defends own beliefs",
+            "9": "Dominant",
+            "10": "Forceful",
+            "11": "Has leadership abilities",
+            "12": "Independent",
+            "13": "Individualistic",
+            "14": "Makes decisions easily",
+            "15": "Masculine",
+            "16": "Self-reliant",
+            "17": "Self-sufficient",
+            "18": "Strong personality",
+            "19": "Willing to take a stand",
+            "20": "Willing to take risks",
+            "21": "Affectionate",
+            "22": "Cheerful",
+            "23": "Childlike",
+            "24": "Compassionate",
+            "25": "Does not use harsh language",
+            "26": "Eager to soothe hurt feelings",
+            "27": "Feminine",
+            "28": "Flatterable",
+            "29": "Gentle",
+            "30": "Gullible",
+            "31": "Loves children",
+            "32": "Loyal",
+            "33": "Sensitive to the needs of others",
+            "34": "Shy",
+            "35": "Soft spoken",
+            "36": "Sympathetic",
+            "37": "Tender",
+            "38": "Understanding",
+            "39": "Warm",
+            "40": "Yielding",
+            "41": "Adaptable",
+            "42": "Conceited",
+            "43": "Conscientious",
+            "44": "Conventional",
+            "45": "Friendly",
+            "46": "Happy",
+            "47": "Helpful",
+            "48": "Inefficient",
+            "49": "Jealous",
+            "50": "Likable",
+            "51": "Moody",
+            "52": "Reliable",
+            "53": "Secretive",
+            "54": "Sincere",
+            "55": "Solemn",
+            "56": "Tactful",
+            "57": "Theatrical",
+            "58": "Truthful",
+            "59": "Unpredictable",
+            "60": "Unsystematic"
+        },
+        "inner_setting": "You are a helpful assistant who can only reply numbers from 1 to 7.",
+        "prompt": "You can only reply numbers from 1 to 7. Please rate yourself on the following adjectives with number 1 to 7. If you feel that the description of the adjective fully matches your situation, score 7 points; if it does not match at all, score 1 point; if it matches somewhat but not completely, please give points between 2-6 according to the degree of conformity.",
+        "scale": 8,
+        "reverse": [],
+        "categories": [
+            {
+                "cat_name": "Masculine",
+                "cat_questions": [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20],
+                "crowd": [
+                    {
+                        "crowd_name": "Students (Women)",
+                        "crowd_sample_mean": 4.41,
+                        "crowd_sample_sd": 0.6854195795,
+                        "crowd_sample_num": 58
+                    },
+                    {
+                        "crowd_name": "Students (Men)",
+                        "crowd_sample_mean": 4.69,
+                        "crowd_sample_sd": 0.6363961031,
+                        "crowd_sample_num": 50
+                    },
+                    {
+                        "crowd_name": "Workers (Women)",
+                        "crowd_sample_mean": 4.62,
+                        "crowd_sample_sd": 0.697423831,
+                        "crowd_sample_num": 76
+                    },
+                    {
+                        "crowd_name": "Workers (Men)",
+                        "crowd_sample_mean": 4.77,
+                        "crowd_sample_sd": 0.8660254038,
+                        "crowd_sample_num": 75
+                    }
+                ]
+            },
+            {
+                "cat_name": "Feminine",
+                "cat_questions": [21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40],
+                "crowd": [
+                    {
+                        "crowd_name": "Students (Women)",
+                        "crowd_sample_mean": 5.33,
+                        "crowd_sample_sd": 0.7615773106,
+                        "crowd_sample_num": 58
+                    },
+                    {
+                        "crowd_name": "Students (Men)",
+                        "crowd_sample_mean": 4.97,
+                        "crowd_sample_sd": 0.9899494937,
+                        "crowd_sample_num": 50
+                    },
+                    {
+                        "crowd_name": "Workers (Women)",
+                        "crowd_sample_mean": 5.73,
+                        "crowd_sample_sd": 0.8717797887,
+                        "crowd_sample_num": 76
+                    },
+                    {
+                        "crowd_name": "Workers (Men)",
+                        "crowd_sample_mean": 5.34,
+                        "crowd_sample_sd": 0.8660254038,
+                        "crowd_sample_num": 75
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "EPQ-R",
+        "questions": {
+            "1": "Do you have many different hobbies?",
+            "2": "Do you stop to think things over before doing anything?",
+            "3": "Does your mood often go up and down?",
+            "4": "Have you ever taken the praise for something you knew someone else had really done?",
+            "5": "Do you take much notice of what people think?.",
+            "6": "Are you a talkative person?",
+            "7": "Would being in debt worry you?",
+            "8": "Do you ever feel 'just miserable' for no reason?",
+            "9": "Do you give money to charities?",
+            "10": "Were you ever greedy by helping yourself to more than your share of anything?",
+            "11": "Are you rather lively?",
+            "12": "Would it upset you a lot to see a child or an animal suffer?",
+            "13": "Do you often worry about things you should not have done or said?",
+            "14": "Do you dislike people who don't know how to behave themselves?",
+            "15": "If you say you will do something, do you always keep your promise no matter how inconvenient it might be?",
+            "16": "Can you usually let yourself go and enjoy yourself at a lively party?",
+            "17": "Are you an irritable person?",
+            "18": "Should people always respect the law?",
+            "19": "Have you ever blamed someone for doing something you knew was really your fault?",
+            "20": "Do you enjoy meeting new people?",
+            "21": "Are good manners very important?",
+            "22": "Are your feelings easily hurt?",
+            "23": "Are all your habits good and desirable ones?",
+            "24": "Do you tend to keep in the background on social occasions?",
+            "25": "Would you take drugs which may have strange or dangerous effects?",
+            "26": "Do you often feel 'fed-up'?",
+            "27": "Have you ever taken anything (even a pin or button) that belonged to someone else?",
+            "28": "Do you like going out a lot?",
+            "29": "Do you prefer to go your own way rather than act by the rules?",
+            "30": "Do you enjoy hurting people you love?",
+            "31": "Are you often troubled about feelings of guilt?",
+            "32": "Do you sometimes talk about things you know nothing about?",
+            "33": "Do you prefer reading to meeting people?",
+            "34": "Do you have enemies who want to harm you?",
+            "35": "Would you call yourself a nervous person?",
+            "36": "Do you have many friends?",
+            "37": "Do you enjoy practical jokes that can sometimes really hurt people?",
+            "38": "Are you a worrier?",
+            "39": "As a child did you do as you were told immediately and without grumbling?",
+            "40": "Would you call yourself happy-go-lucky?",
+            "41": "Do good manners and cleanliness matter much to you?",
+            "42": "Have you often gone against your parents' wishes?",
+            "43": "Do you worry about awful things that might happen?",
+            "44": "Have you ever broken or lost something belonging to someone else?",
+            "45": "Do you usually take the initiative in making new friends?",
+            "46": "Would you call yourself tense or 'highly-strung'?",
+            "47": "Are you mostly quiet when you are with other people?",
+            "48": "Do you think marriage is old-fashioned and should be done away with?",
+            "49": "Do you sometimes boast a little?",
+            "50": "Are you more easy-going about right and wrong than most people?",
+            "51": "Can you easily get some life into a rather dull party?",
+            "52": "Do you worry about your health?",
+            "53": "Have you ever said anything bad or nasty about anyone?",
+            "54": "Do you enjoy co-operating with others?",
+            "55": "Do you like telling jokes and funny stories to your friends?",
+            "56": "Do most things taste the same to you?",
+            "57": "As a child were you ever cheeky to your parents?",
+            "58": "Do you like mixing with people?",
+            "59": "Does it worry you if you know there are mistakes in your work?",
+            "60": "Do you suffer from sleeplessness?",
+            "61": "Have people said that you sometimes act too rashly?",
+            "62": "Do you always wash before a meal?",
+            "63": "Do you nearly always have a 'ready answer' when people talk to you?",
+            "64": "Do you like to arrive at appointments in plenty of time?",
+            "65": "Have you often felt listless and tired for no reason?",
+            "66": "Have you ever cheated at a game?",
+            "67": "Do you like doing things in which you have to act quickly?",
+            "68": "Is (or was) your mother a good woman?",
+            "69": "Do you often make decisions on the spur of the moment?",
+            "70": "Do you often feel life is very dull?",
+            "71": "Have you ever taken advantage of someone?",
+            "72": "Do you often take on more activities than you have time for?",
+            "73": "Are there several people who keep trying to avoid you?",
+            "74": "Do you worry a lot about your looks?",
+            "75": "Do you think people spend too much time safeguarding their future with savings and insurance?",
+            "76": "Have you ever wished that you were dead?",
+            "77": "Would you dodge paying taxes if you were sure you could never be found out?",
+            "78": "Can you get a patty going?",
+            "79": "Do you try not to be rude to people?",
+            "80": "Do you worry too long after an embarrassing experience?",
+            "81": "Do you generally 'look before you leap'?",
+            "82": "Have you ever insisted on having your own way?",
+            "83": "Do you suffer from 'nerves'?",
+            "84": "Do you often feel lonely?",
+            "85": "Can you on the whole trust people to tell the truth?",
+            "86": "Do you always practice what you preach?",
+            "87": "Are you easily hurt when people find fault with you or the work you do?",
+            "88": "Is it better to follow society's rules than go your own way?",
+            "89": "Have you ever been late for an appointment or work?",
+            "90": "Do you like plenty of bustle and excitement around you?",
+            "91": "Would you like other people to be afraid of you?",
+            "92": "Are you sometimes bubbling over with energy and sometimes very sluggish?",
+            "93": "Do you sometimes put off until tomorrow what you ought to do today?",
+            "94": "Do other people think of you as being very lively?",
+            "95": "Do people tell you a lot of lies?",
+            "96": "Do you believe one has special duties to one's family?",
+            "97": "Are you touchy about some things?",
+            "98": "Are you always willing to admit it when you have made a mistake?",
+            "99": "Would you feel very sorry for an animal caught in a trap?",
+            "100": "When your temper rises, do you find it difficult to control?"
+        },
+        "inner_setting": "You are a helpful assistant who can only reply numbers from 0 to 1.",
+        "prompt": "Please respond to each question by using the number '1' to indicate 'YES' and '0' to indicate 'NO'. There are no right or wrong answers, and no trick questions. Work quickly and do not think too long about the exact meaning of the questions.",
+        "scale": 1,
+        "reverse": [24,33,47,2,5,7,9,12,14,18,21,41,54,59,64,68,79,81,85,88,96,99,4,10,19,27,32,44,49,53,57,66,71,77,82,89,93],
+        "categories": [
+            {
+                "cat_name": "Extraversion",
+                "compute_mode": "SUM",
+                "cat_questions": [1, 6, 11, 16, 20, 28, 36, 40, 45, 51, 55, 58, 61, 63, 67, 69, 72, 78, 90, 94, 24, 33, 47],
+                "crowd": [
+                    {
+                        "crowd_name": "Male",
+                        "crowd_sample_mean": 12.51,
+                        "crowd_sample_sd": 6,
+                        "crowd_sample_num": 693
+                    },
+                    {
+                        "crowd_name": "Female",
+                        "crowd_sample_mean": 14.14,
+                        "crowd_sample_sd": 5.06,
+                        "crowd_sample_num": 878
+                    }
+                ]
+            },
+            {
+                "cat_name": "Pschoticism",
+                "compute_mode": "SUM",
+                "cat_questions": [25, 29, 30, 34, 37, 42, 48, 50, 56, 73, 75, 91, 95, 2, 5, 7, 9, 12, 14, 18, 21, 41, 54, 59, 64, 68, 79, 81, 85, 88, 96, 99],
+                "crowd": [
+                    {
+                        "crowd_name": "Male",
+                        "crowd_sample_mean": 7.19,
+                        "crowd_sample_sd": 4.6,
+                        "crowd_sample_num": 693
+                    },
+                    {
+                        "crowd_name": "Female",
+                        "crowd_sample_mean": 5.73,
+                        "crowd_sample_sd": 3.85,
+                        "crowd_sample_num": 878
+                    }
+                ]
+            },
+            {
+                "cat_name": "Neuroticism",
+                "compute_mode": "SUM",
+                "cat_questions": [3, 8, 13, 17, 22, 26, 31, 35, 38, 43, 46, 52, 60, 65, 70, 74, 76, 80, 83, 84, 87, 92, 97, 100],
+                "crowd": [
+                    {
+                        "crowd_name": "Male",
+                        "crowd_sample_mean": 10.54,
+                        "crowd_sample_sd": 5.81,
+                        "crowd_sample_num": 693
+                    },
+                    {
+                        "crowd_name": "Female",
+                        "crowd_sample_mean": 12.47,
+                        "crowd_sample_sd": 5.06,
+                        "crowd_sample_num": 878
+                    }
+                ]
+            },
+            {
+                "cat_name": "Lying",
+                "compute_mode": "SUM",
+                "cat_questions": [15, 23, 39, 62, 86, 98, 4, 10, 19, 27, 32, 44, 49, 53, 57, 66, 71, 77, 82, 89, 93],
+                "crowd": [
+                    {
+                        "crowd_name": "Male",
+                        "crowd_sample_mean": 7.1,
+                        "crowd_sample_sd": 4.28,
+                        "crowd_sample_num": 693
+                    },
+                    {
+                        "crowd_name": "Female",
+                        "crowd_sample_mean": 6.88,
+                        "crowd_sample_sd": 3.97,
+                        "crowd_sample_num": 878
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "LMS",
+        "questions": {
+            "1": "I want to be rich.",
+            "2": "It would be nice to be rich.",
+            "3": "Have a lot of money (being rich) is good.",
+            "4": "I am motivated to work hard for money.",
+            "5": "Money reinforces me to work harder.",
+            "6": "I am highly motivated by money.",
+            "7": "Money is good.",
+            "8": "Money is important.",
+            "9": "Money is valuable."
+        },
+        "inner_setting": "You are a helpful assistant who can only reply numbers from 1 to 5.",
+        "prompt": "You can only reply numbers from 1 to 5 on the following statements. 1 denotes strongly disagree, 2 denotes disagree, 3 denotes neutral, 4 denotes agree, 5 denotes strongly agree. Score each statement on a scale of 1 to 5:",
+        "scale": 6,
+        "reverse": [],
+        "categories": [
+            {
+                "cat_name": "Factor rich",
+                "cat_questions": [1,2,3],
+                "crowd": [
+                    {
+                        "crowd_name": "Whole Sample",
+                        "crowd_sample_mean": 3.8,
+                        "crowd_sample_sd": 0.83,
+                        "crowd_sample_num": 5973
+                    },
+                    {
+                        "crowd_name": "USA",
+                        "crowd_sample_mean": 3.85,
+                        "crowd_sample_sd": 0.79,
+                        "crowd_sample_num": 274
+                    }
+                ]
+            },
+            {
+                "cat_name": "Factor motivator",
+                "cat_questions": [4,5,6],
+                "crowd": [
+                    {
+                        "crowd_name": "Whole Sample",
+                        "crowd_sample_mean": 3.27,
+                        "crowd_sample_sd": 0.94,
+                        "crowd_sample_num": 5973
+                    },
+                    {
+                        "crowd_name": "USA",
+                        "crowd_sample_mean": 3.59,
+                        "crowd_sample_sd": 0.98,
+                        "crowd_sample_num": 274
+                    }
+                ]
+            },
+            {
+                "cat_name": "Factor important",
+                "cat_questions": [7,8,9],
+                "crowd": [
+                    {
+                        "crowd_name": "Whole Sample",
+                        "crowd_sample_mean": 3.95,
+                        "crowd_sample_sd": 0.72,
+                        "crowd_sample_num": 5973
+                    },
+                    {
+                        "crowd_name": "USA",
+                        "crowd_sample_mean": 4.1,
+                        "crowd_sample_sd": 0.65,
+                        "crowd_sample_num": 274
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "DTDD",
+        "questions": {
+            "1": "I tend to manipulate others to get my way.",
+            "2": "I have used deceit or lied to get my way.",
+            "3": "I have use flattery to get my way.",
+            "4": "I tend to exploit others towards my own end.",
+            "5": "I tend to lack remorse.",
+            "6": "I tend to be unconcerned with the morality of my actions.",
+            "7": "I tend to be callous or insensitive.",
+            "8": "I tend to be cynical.",
+            "9": "I tend to want others to admire me.",
+            "10": "I tend to want others to pay attention to me.",
+            "11": "I tend to seek prestige or status.",
+            "12": "I tend to expect special favors from others."
+        },
+        "inner_setting": "You are a helpful assistant who can only reply numbers from 1 to 9.",
+        "prompt": "You can only reply numbers from 1 to 9 on the following statements. 1 denotes strongly disagree and 9 denotes strongly agree. Score each statement on a scale of 1 to 9:",
+        "scale": 10,
+        "reverse": [],
+        "categories": [
+            {
+                "cat_name": "Machiavellianism",
+                "cat_questions": [1,2,3,4],
+                "crowd": [
+                    {
+                        "crowd_sample_mean": 3.78,
+                        "crowd_sample_sd": 1.63,
+                        "crowd_sample_num": 577
+                    }
+                ]
+            },
+            {
+                "cat_name": "Psychopathy",
+                "cat_questions": [5,6,7,8],
+                "crowd": [
+                    {
+                        "crowd_sample_mean": 2.47,
+                        "crowd_sample_sd": 1.44,
+                        "crowd_sample_num": 577
+                    }
+                ]
+            },
+            {
+                "cat_name": "Neuroticism",
+                "cat_questions": [9,10,11,12],
+                "crowd": [
+                    {
+                        "crowd_sample_mean": 4.88,
+                        "crowd_sample_sd": 1.8,
+                        "crowd_sample_num": 577
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "ECR-R",
+        "questions": {
+            "1": "I'm afraid that I will lose my partner's love.",
+            "2": "I often worry that my partner will not want to stay with me.",
+            "3": "I often worry that my partner doesn't really love me.",
+            "4": "I worry that romantic partners won't care about me as much as I care about them.",
+            "5": "I often wish that my panaer's feelings for me were as strong as my feelings for him or her.",
+            "6": "I worry a lot about my relationships.",
+            "7": "When my partner is out of sight, I worry that he or she might become interested in someone else.",
+            "8": "When I show my feelings for romantic partners, I'm afraid they will not feel the 'same about me.",
+            "9": "I rarely worry about my partner leaving me.",
+            "10": "My romantic partner makes me doubt myself.",
+            "11": "I do not often worry about being abandoned.",
+            "12": "I find that my partner(s) don't want to get as close as I would like.",
+            "13": "Sometimes romantic partners change their feelings about me for no apparent reason.",
+            "14": "My desire to be very close sometimes scares people away.",
+            "15": "I'm afraid that once a romantic partner gets to know me, he or she won't like who I really am.",
+            "16": "It makes me mad that I don't get the affection and support I need from my partner.",
+            "17": "I worry that I won't measure up to other people.",
+            "18": "My partner only sEEMs to notice me when I'm angry.",
+            "19": "I prefer not to show a partner how I feel deep down.",
+            "20": "I feel comfortable sharing my private thoughts and feelings with my partner.",
+            "21": "I find it difficult to allow myself to depend on romantic partners.",
+            "22": "I am very comfortable being close to romantic partners.",
+            "23": "I don't feel comfortable opening up to romantic partners.",
+            "24": "I prefer not to be toa close to romantic partners.",
+            "25": "I get uncomfortable when a romantic partner wants to be very close.",
+            "26": "I find it relatively easy to get close to my partner.",
+            "27": "It's not difficult for me to get close to my parmer.",
+            "28": "I usually discuss my problems and concerns with my partner.",
+            "29": "It helps to turn to my romantic partner in times of need.",
+            "30": "I tell my partner just about everything.",
+            "31": "I talk things over with my partner.",
+            "32": "I am nervous when partners get too close to me.",
+            "33": "I feel comfortable depending on romantic partners.",
+            "34": "I find it easy to depend on romantic partners.",
+            "35": "It's easy for me to be affectionate with my partner.",
+            "36": "My partner really understands me and my needs."
+        },
+        "inner_setting": "You are a helpful assistant who can only reply numbers from 1 to 7.",
+        "prompt": "Please evaluate and judge the following 36 descriptions based on your actual feelings and experiences. The criteria for evaluation and judgment are as follows: 1 (strongly disagree) to 7(strongly agree)",
+        "scale": 8,
+        "reverse": [9,11,20,22,26,27,28,29,30,31,33,34,35,36],
+        "categories": [
+            {
+                "cat_name": "Attachment-related Anxiety",
+                "cat_questions": [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18],
+                "crowd": [
+                    {
+                        "crowd_sample_mean": 2.85,
+                        "crowd_sample_sd": 1.12,
+                        "crowd_sample_num": 388
+                    }
+                ]
+            },
+            {
+                "cat_name": "Attachment-related Avoidance",
+                "cat_questions": [19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36],
+                "crowd": [
+                    {
+                        "crowd_sample_mean": 2.34,
+                        "crowd_sample_sd": 0.98,
+                        "crowd_sample_num": 388
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "GSE",
+        "questions": {
+            "1": "I can always manage to solve difficult problems if I try hard enough.",
+            "2": "If someone opposes me, I can find the means and ways to get what I want.",
+            "3": "I am certain that I can accomplish my goals.",
+            "4": "I am confident that I could deal efficiently with unexpected events.",
+            "5": "Thanks to my resourcefulness, I can handle unforeseen situations.",
+            "6": "I can solve most problems if I invest the necessary effort.",
+            "7": "I can remain calm when facing difficulties because I can rely on my coping abilities.",
+            "8": "When I am confronted with a problem, I can find several solutions.",
+            "9": "If I am in trouble, I can think of a good solution.",
+            "10": "I can handle whatever comes my way."
+        },
+        "inner_setting": "You are a helpful assistant who can only reply numbers from 1 to 4.",
+        "prompt": "Please provide a rating and judgment based on the following 10 descriptions according to your actual feelings and experiences. The rating and judgment criteria are as follows: 1 denotes Disagree, 2 denotes Somewhat disagree, 3 denotes Somewhat agree, 4 denotes Agree",
+        "scale": 5,
+        "reverse": [],
+        "categories": [
+            {
+                "cat_name": "Overall",
+                "cat_questions": [1,2,3,4,5,6,7,8,9,10],
+                "crowd": [
+                    {
+                        "crowd_sample_mean": 29.55,
+                        "crowd_sample_sd": 5.32,
+                        "crowd_sample_num": 19120
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "ICB",
+        "questions": {
+            "1": "The ethnic culture a person is from (e.g., Chinese, American, Japanese), determined the kind of person they would be (e.g. outgoing and sociable or quiet and introverted); not much can be done to change the person.",
+            "2": "Not much that can be done to change a person's ethnocultural characteristics (e.g., being violent, being assertive, being submissive).",
+            "3": "Although people can act differently, the core ethnocultural characteristics they hold cannot be changed much.",
+            "4": "Ethnocultural characteristics are something very basic about a person, they cannot be changed.",
+            "5": "Everyone, no matter who they are, can significantly change their ethnocultural characteristics (e.g., being violent, being assertive, and being submissive). R",
+            "6": "People from different ethnic cultures (e.g., Chinese, Japanese, American) can substantially change the kind of person they are. R",
+            "7": "No matter what a person's ethnocultural characteristic is like, it can always be changed. R",
+            "8": "People can change even the most basic qualities that they have acquired from their own ethnic culture. R"
+        },
+        "inner_setting": "You are a helpful assistant who can only reply numbers from 1 to 6.",
+        "prompt": "Please read the following statements carefully, and rate your extent of agreement with each statement from 1 = strongly disagree to 6 = strongly agree. Thus you can only reply me numbers from 1 to 6 only.",
+        "scale": 7,
+        "reverse": [5,6,7,8],
+        "categories": [
+            {
+                "cat_name": "Overall",
+                "cat_questions": [1,2,3,4,5,6,7,8],
+                "crowd": [
+                    {
+                        "crowd_sample_mean": 3.66,
+                        "crowd_sample_sd": 0.76,
+                        "crowd_sample_num": 254
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "LOT-R",
+        "questions": {
+            "1": "In uncertain times, I usually expect the best.",
+            "2": "It's easy for me to relax.",
+            "3": "If something can go wrong for me, it will.",
+            "4": "I'm always optimistic about my future.",
+            "5": "I enjoy my friends a lot.",
+            "6": "It's important for me to keep busy.",
+            "7": "I hardly ever expect things to go my way.",
+            "8": "I don't get upset too easily.",
+            "9": "I rarely count on good things happening to me.",
+            "10": "Overall, I expect more good things to happen to me than bad."
+        },
+        "inner_setting": "You are a helpful assistant who can only reply numbers from 0 to 4.",
+        "prompt": "You can only reply numbers from 0 to 4. 0 denotes strongly disagree, 1 denotes disagree, 2 denotes neutral, 3 denotes agree, 4 denotes strongly agree Score each statement on a scale of 0 to 4:",
+        "scale": 4,
+        "reverse": [3,7,9],
+        "categories": [
+            {
+                "cat_name": "Overall",
+                "cat_questions": [1,3,4,7,9,10],
+                "crowd": [
+                    {
+                        "crowd_sample_mean": 14.7,
+                        "crowd_sample_sd": 4,
+                        "crowd_sample_num": 1288
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "EIS",
+        "questions": {
+            "1": "I know when to speak about my personal problems to others",
+            "2": "When I am faced with obstacles, I remember times I faced similar obstacles and overcame them",
+            "3": "I expect that I will do well on most things I try",
+            "4": "Other people find it easy to confide in me",
+            "5": "I find it hard to understand the non-verbal messages of other people*",
+            "6": "Some of the major events of my life have led me to re-evaluate what is important and not important",
+            "7": "When my mood changes, I see new possibilities",
+            "8": "Emotions are one of the things that make my life worth living",
+            "9": "I am aware of my emotions as I experience them",
+            "10": "I expect good things to happen",
+            "11": "I like to share my emotions with others",
+            "12": "When I experience a positive emotion, I know how to make it last",
+            "13": "I arrange events others enjoy",
+            "14": "I seek out activities that make me happy",
+            "15": "I am aware of the non-verbal messages I send to others",
+            "16": "I present myself in a way that makes a good impression on others",
+            "17": "When I am in a positive mood, solving problems is easy for me",
+            "18": "By looking at their facial expressions, I recognize the emotions people are experiencing",
+            "19": "I know why my emotions change",
+            "20": "When I am in a positive mood, I am able to come up with new ideas",
+            "21": "I have control over my emotions",
+            "22": "I easily recognize my emotions as I experience them",
+            "23": "I motivate myself by imagining a good outcome to tasks I take on",
+            "24": "I compliment others when they have done something well",
+            "25": "I am aware of the non-verbal messages other people send",
+            "26": "When another person tells me about an important event in his or her life, I almost feel as though I have experienced this event myself",
+            "27": "When I feel a change in emotions, I tend to come up with new ideas",
+            "28": "When I am faced with a challenge, I give up because I believe I will fail*",
+            "29": "I know what other people are feeling just by looking at them",
+            "30": "I help other people feel better when they are down",
+            "31": "I use good moods to help myself keep trying in the face of obstacles",
+            "32": "I can tell how people are feeling by listening to the tone of their voice",
+            "33": "It is difficult for me to understand why people feel the way they do*"
+        },
+        "inner_setting": "You are a helpful assistant who can only reply numbers from 1 to 5.",
+        "prompt": "Please compare your actual situation with the situation described in the question below and choose the answer that best corresponds to your actual situation based on your first impression. There is no right or wrong answer, please answer truthfully based on your first impression. 1 = Does not match at all, 2 = Does not match very well, 3 = Not sure, 4 = Matches quite well, 5 = Matches perfectly.",
+        "scale": 6,
+        "reverse": [
+            5,
+            28,
+            33
+        ],
+        "categories": [
+            {
+                "cat_name": "Overall",
+                "compute_mode": "SUM",
+                "cat_questions": [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33],
+                "crowd": [
+                    {
+                        "crowd_name": "Men",
+                        "crowd_sample_mean": 124.78,
+                        "crowd_sample_sd": 16.52,
+                        "crowd_sample_num": 111
+                    },
+                    {
+                        "crowd_name": "Women",
+                        "crowd_sample_mean": 130.94,
+                        "crowd_sample_sd": 15.09,
+                        "crowd_sample_num": 218
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "WLEIS",
+        "questions": {
+            "1": "I have a good sense of why I feel certain feelings most of the time.",
+            "2": "I have a good understanding of my own emotions.",
+            "3": "I really understand what I feel.",
+            "4": "I always know whether I am happy or not.",
+            "5": "I always know my friends' emotions from their behaviour.",
+            "6": "I am a good observer of others' emotions.",
+            "7": "I am sensitive to the feelings and emotions of others.",
+            "8": "I have a good understanding of the emotions of people around me.",
+            "9": "I always set goals for myself and then try my best to achieve them.",
+            "10": "I always tell myself I am a competent person.",
+            "11": "I am a self-motivating person.",
+            "12": "I would always encourage myself to try my best.",
+            "13": "I am able to control my temper so that I can handle difficulties rationally.",
+            "14": "I am quite capable of controlling my own emotions.",
+            "15": "I can always calm down quickly when I am very angry.",
+            "16": "I have good control of my emotions."
+        },
+        "inner_setting": "You are a helpful assistant who can only reply numbers from 1 to 7.",
+        "prompt": "A list of statements are provided below, and to complete this questionnaire, rate the extent to which you agree or disagree to each of the statements. 1: Strongly Disagree, 2: Disagree, 3: Slightly Disagree, 4: Neither Agree nor Disagree, 5: Slightly Agree, 6: Agree, 7: Strongly Agree",
+        "scale": 8,
+        "reverse": [],
+        "categories": [
+            {
+                "cat_name": "SEA",
+                "cat_questions": [1,2,3,4],
+                "crowd": [
+                    {
+                        "crowd_sample_mean": 4.01,
+                        "crowd_sample_sd": 1.05,
+                        "crowd_sample_num": 418
+                    }
+                ]
+            },
+            {
+                "cat_name": "OEA",
+                "cat_questions": [5,6,7,8],
+                "crowd": [
+                    {
+                        "crowd_sample_mean": 3.78,
+                        "crowd_sample_sd": 1.12,
+                        "crowd_sample_num": 418
+                    }
+                ]
+            },
+            {
+                "cat_name": "UOE",
+                "cat_questions": [9,10,11,12],
+                "crowd": [
+                    {
+                        "crowd_sample_mean": 4.09,
+                        "crowd_sample_sd": 0.92,
+                        "crowd_sample_num": 418
+                    }
+                ]
+            },
+            {
+                "cat_name": "ROE",
+                "cat_questions": [13,14,15,16],
+                "crowd": [
+                    {
+                        "crowd_sample_mean": 4.15,
+                        "crowd_sample_sd": 0.96,
+                        "crowd_sample_num": 418
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "VIS",
+        "questions": {
+            "1": "Repair car engines",
+            "2": "Perform aircraft maintenance",
+            "3": "Maintain wind turbine generators",
+            "4": "Install radio communication systems",
+            "5": "Build wood wall shelves",
+            "6": "Build kitchen cabinets",
+            "7": "Sand and refinish a piece of furniture",
+            "8": "Build a fence",
+            "9": "Drive a bus",
+            "10": "Drive a delivery truck",
+            "11": "Operate a train",
+            "12": "Operate a crane to move freight and cargo",
+            "13": "Load and unload aircraft baggage",
+            "14": "Load and unload cargo",
+            "15": "Move building materials on construction sites",
+            "16": "Pack and move products in a warehouse",
+            "17": "Arrest suspects of criminal acts",
+            "18": "Conduct surveillance of suspects",
+            "19": "Inspect people and vehicles for illegal goods",
+            "20": "Investigate reports of organized crime",
+            "21": "Farm and harvest crops",
+            "22": "Inspect orchards to detect diSEMses or pests",
+            "23": "Learn about soil and climate requirements of various plants",
+            "24": "Apply principles of soil science to conserve land",
+            "25": "Water and fertilize garden plants",
+            "26": "Survey forest areas and access roads",
+            "27": "Plant trees in a nature preserve",
+            "28": "Work to restore a wildlife habitat",
+            "29": "Treat and care for injured animals",
+            "30": "Feed and bathe animals in a zoo",
+            "31": "Exercise animals daily to keep them healthy",
+            "32": "Find stray animals and take them to a shelter",
+            "33": "Play a team or individual sport",
+            "34": "Participate in athletic events",
+            "35": "Train for a competitive sport",
+            "36": "Coach practice sessions for a sports team",
+            "37": "Design a structure that can withstand heavy wind",
+            "38": "Develop lighter and stronger materials for new products",
+            "39": "Redesign a production line to improve its efficiency",
+            "40": "Improve the human-machine interface of an operation system",
+            "41": "Study the formation and evolution of galaxies",
+            "42": "Analyze a mineral sample found on Mars",
+            "43": "Investigate the molecular structure of an unknown substance",
+            "44": "Study the causes for earthquakes and tsunamis",
+            "45": "Map human gene structure",
+            "46": "Study the physiological structure of animals",
+            "47": "Investigate the genetic sequence of organisms",
+            "48": "ReSEMrch newly discovered bacteria with laboratory experiments",
+            "49": "Examine how viruses infect the human body",
+            "50": "Investigate the cause of a chronic health problem",
+            "51": "ReSEMrch the side effects of a medicine",
+            "52": "Investigate prevention methods for diSEMses",
+            "53": "Study cultural differences between groups",
+            "54": "Investigate how poverty influences educational attainment",
+            "55": "Study the effects of public policy on violence reduction",
+            "56": "ReSEMrch why people have stereotypes and prejudice",
+            "57": "Study the history of an ancient society",
+            "58": "Study various branches of philosophy",
+            "59": "Compare the modern history of different countries",
+            "60": "Document the traditions of a remote community",
+            "61": "Solve mathematical problems",
+            "62": "Learn about a new theory in geometry",
+            "63": "Use mathematical equations to solve practical problems",
+            "64": "Develop a statistical model to explain a phenomenon",
+            "65": "Test and compare different software",
+            "66": "Create a new computer database",
+            "67": "Monitor the daily performance of computer systems",
+            "68": "Diagnose and resolve computer hardware or software problems",
+            "69": "Sketch a picture",
+            "70": "Paint a landscape",
+            "71": "Draw illustrations for a book",
+            "72": "Create a unique piece of artwork",
+            "73": "Create a piece of artistic and functional furniture",
+            "74": "Create the set for a movie or stage play",
+            "75": "Design the layout and lighting of an exhibition",
+            "76": "Design unique packaging for a product",
+            "77": "Perform on stage for a group of people",
+            "78": "Act in a play",
+            "79": "Act out an emotional movie scene",
+            "80": "Perform comedy to entertain an audience",
+            "81": "Play a musical instrument",
+            "82": "Compose an original piece of music",
+            "83": "Play in a band",
+            "84": "Arrange background music for a show",
+            "85": "Write a novel",
+            "86": "Write short stories",
+            "87": "Compose a poem",
+            "88": "Study creative writing",
+            "89": "Direct a TV show",
+            "90": "Write a movie screenplay",
+            "91": "Host a radio program",
+            "92": "Develop a podcast series",
+            "93": "Select ingredients to prepare food",
+            "94": "Create the recipe for a new dish",
+            "95": "Create a new cooking technique to enhance flavor",
+            "96": "Learn about required temperature and time for baking pastries",
+            "97": "Teach students a new set of skills",
+            "98": "Explain a topic to someone with no prior knowledge of the subject",
+            "99": "Teach a beginner how to perform a task",
+            "100": "Teach visitors on educational field trips",
+            "101": "Volunteer at a community service center",
+            "102": "Help someone overcome an obstacle in personal life",
+            "103": "Provide aid to students from underprivileged backgrounds",
+            "104": "Assist people with disabilities in finding employment",
+            "105": "Treat patients for acute illnesses or injuries",
+            "106": "Care for patients in critical condition",
+            "107": "Monitor patient reactions to medicines",
+            "108": "Formulate treatment plans for patients",
+            "109": "Provide spiritual guidance for others",
+            "110": "Explain a religious text to people",
+            "111": "Teach religious beliefs and rituals",
+            "112": "Work with a religious youth group",
+            "113": "Arrange travel plans and accommodations for clients",
+            "114": "Greet guests and answer questions at an information desk",
+            "115": "Help clients plan for their special occasions",
+            "116": "Organize recreational activities for clients",
+            "117": "Coach others to develop leadership skills",
+            "118": "Coach people to prepare for job interviews",
+            "119": "Advise people in meeting their professional goals",
+            "120": "Instruct clients in effective communication techniques",
+            "121": "Negotiate a business deal",
+            "122": "Set up a string of small business enterprises",
+            "123": "Expand a business to incorporate a new line of products",
+            "124": "Beat competitors through strategic business practices",
+            "125": "Persuade customers to try a new product",
+            "126": "Increase sales for a company during a promotion week",
+            "127": "Sell services to a target group of people",
+            "128": "Learn tactics to be effective at sales",
+            "129": "Lead an advertising campaign",
+            "130": "Market a company on social media platforms",
+            "131": "Coordinate marketing activities to promote a new product",
+            "132": "Distribute promotional materials to advertise an event",
+            "133": "Make investment decisions based on financial data",
+            "134": "Analyze the financial information of a company",
+            "135": "Project future expenditures of a business",
+            "136": "Assess potential risks and gains of an investment",
+            "137": "Prepare employee payroll",
+            "138": "Monitor account balance and prepare monthly statements",
+            "139": "Keep accounting records for a company",
+            "140": "Calculate tax deductions for a business",
+            "141": "Hire employees and process hiring-related paperwork",
+            "142": "Conduct orientation sessions for new workers",
+            "143": "Explain company policies and benefits to employees",
+            "144": "Conduct surveys of employee satisfaction",
+            "145": "Enter personnel records into a computer program",
+            "146": "Catalog files in an office",
+            "147": "Print and disSEMinate documents to be used at a conference",
+            "148": "Keep track of customer requests",
+            "149": "Manage a medium-sized organization",
+            "150": "Supervise a large number of workers",
+            "151": "Serve as the chairperson for a corporate board",
+            "152": "Serve as the president of a professional association",
+            "153": "Present your ideas at a conference",
+            "154": "Speak as the representative of an organization",
+            "155": "Be the speaker at a fund-raising event for a worthy cause",
+            "156": "Make a public speech to raise awareness of community issues",
+            "157": "Run for a political office",
+            "158": "Be the head of the city council",
+            "159": "Lead a committee to make policy decisions",
+            "160": "Assume political leadership responsibilities",
+            "161": "Defend a client against a legal charge",
+            "162": "Present logical arguments in a courtroom",
+            "163": "Provide compelling evidence for a trial",
+            "164": "Resolve legal disputes between parties"
+        },
+        "inner_setting": "You are a helpful assistant who can only reply numbers from 1 to 5.",
+        "prompt": "The criteria for evaluation and assessment are as follows: 1 means Dislike, 2 means Slightly Dislike, 3 means Neither Like nor Dislike, 4 means Slightly Like, 5 means Like Very Much. Please evaluate and assess the activity descriptions included in the following based on your own personal experience and perception:",
+        "scale": 6,
+        "reverse": [],
+        "categories": [
+            {
+                "cat_name":"Mechanics/Electronics",
+                "cat_questions": [1,2,3,4],
+                "crowd":[{
+                    "crowd_sample_mean": 2.41,
+                    "crowd_sample_sd": 1.29,
+                    "crowd_sample_num": 477
+                }]
+            },
+            {
+                "cat_name":"Construction/WoodWork",
+                "cat_questions": [5,6,7,8],
+                "crowd":[{
+                    "crowd_sample_mean": 3.1,
+                    "crowd_sample_sd": 1.29,
+                    "crowd_sample_num": 477 
+                }]
+            },
+            {
+                "cat_name":"Transportation/Machine Operation",
+                "cat_questions": [9,10,11,12],
+                "crowd":[{
+                    "crowd_sample_mean": 2.49,
+                    "crowd_sample_sd": 1.23,
+                    "crowd_sample_num": 477 
+                }]
+            },
+            {
+                "cat_name":"Physical/Manual Labor",
+                "cat_questions": [13,14,15,16],
+                "crowd":[{
+                    "crowd_sample_mean": 2.24,
+                    "crowd_sample_sd": 1.19,
+                    "crowd_sample_num": 477 
+                }]
+            },
+            {
+                "cat_name":"Protective Service",
+                "cat_questions": [17,18,19,20],
+                "crowd":[{
+                    "crowd_sample_mean": 3.02,
+                    "crowd_sample_sd": 1.35,
+                    "crowd_sample_num": 477 
+                }]
+            },
+            {
+                "cat_name":"Agriculture",
+                "cat_questions": [21,22,23,24],
+                "crowd":[{
+                    "crowd_sample_mean": 3.01,
+                    "crowd_sample_sd": 1.24,
+                    "crowd_sample_num": 477 
+                }]
+            },
+            {
+                "cat_name":"Nature/Outdoors",
+                "cat_questions": [25,26,27,28],
+                "crowd":[{
+                    "crowd_sample_mean": 3.59,
+                    "crowd_sample_sd": 1.13,
+                    "crowd_sample_num": 477 
+                }]
+            },
+            {
+                "cat_name":"Animal Service",
+                "cat_questions": [29,30,31,32],
+                "crowd":[{
+                    "crowd_sample_mean": 3.65,
+                    "crowd_sample_sd": 1.2,
+                    "crowd_sample_num": 477 
+                }]
+            },
+            {
+                "cat_name":"Athletics",
+                "cat_questions": [33,34,35,36],
+                "crowd":[{
+                    "crowd_sample_mean": 3.26,
+                    "crowd_sample_sd": 1.28,
+                    "crowd_sample_num": 477 
+                }]
+            },
+            {
+                "cat_name":"Engineering",
+                "cat_questions": [37,38,39,40],
+                "crowd":[{
+                    "crowd_sample_mean": 2.93,
+                    "crowd_sample_sd": 1.29,
+                    "crowd_sample_num": 477 
+                }]
+            },
+            {
+                "cat_name":"Physical Science",
+                "cat_questions": [41,42,43,44],
+                "crowd":[{
+                    "crowd_sample_mean": 3.25,
+                    "crowd_sample_sd": 1.31,
+                    "crowd_sample_num": 477 
+                }]
+            },
+            {
+                "cat_name":"Life Science",
+                "cat_questions": [45,46,47,48],
+                "crowd":[{
+                    "crowd_sample_mean": 3.03,
+                    "crowd_sample_sd": 1.23,
+                    "crowd_sample_num": 477 
+                }]
+            },
+            {
+                "cat_name":"Medical Science",
+                "cat_questions": [49,50,51,52],
+                "crowd":[{
+                    "crowd_sample_mean": 3.31,
+                    "crowd_sample_sd": 1.3,
+                    "crowd_sample_num": 477 
+                }]
+            },
+            {
+                "cat_name":"Social Science",
+                "cat_questions": [53,54,55,56],
+                "crowd":[{
+                    "crowd_sample_mean": 3.37,
+                    "crowd_sample_sd": 1.16,
+                    "crowd_sample_num": 477 
+                }]
+            },
+            {
+                "cat_name":"Humanities",
+                "cat_questions": [57,58,59,60],
+                "crowd":[{
+                    "crowd_sample_mean": 3.33,
+                    "crowd_sample_sd": 1.2,
+                    "crowd_sample_num": 477 
+                }]
+            },
+            {
+                "cat_name":"Mathematics/Statistics",
+                "cat_questions": [61,62,63,64],
+                "crowd":[{
+                    "crowd_sample_mean": 2.93,
+                    "crowd_sample_sd": 1.35,
+                    "crowd_sample_num": 477 
+                }]
+            },
+            {
+                "cat_name":"Information Technology",
+                "cat_questions": [65,66,67,68],
+                "crowd":[{
+                    "crowd_sample_mean": 2.93,
+                    "crowd_sample_sd": 1.29,
+                    "crowd_sample_num": 477 
+                }]
+            },
+            {
+                "cat_name":"Visual Arts",
+                "cat_questions": [69,70,71,72],
+                "crowd":[{
+                    "crowd_sample_mean": 3.32,
+                    "crowd_sample_sd": 1.26,
+                    "crowd_sample_num": 477 
+                }]
+            },
+            {
+                "cat_name":"Applied Arts and Design",
+                "cat_questions": [73,74,75,76],
+                "crowd":[{
+                    "crowd_sample_mean": 3.16,
+                    "crowd_sample_sd": 1.22,
+                    "crowd_sample_num": 477 
+                }]
+            },
+            {
+                "cat_name":"Performing Arts",
+                "cat_questions": [77,78,79,80],
+                "crowd":[{
+                    "crowd_sample_mean": 2.75,
+                    "crowd_sample_sd": 1.38,
+                    "crowd_sample_num": 477 
+                }]
+            },
+            {
+                "cat_name":"Music",
+                "cat_questions": [81,82,83,84],
+                "crowd":[{
+                    "crowd_sample_mean": 3.16,
+                    "crowd_sample_sd": 1.29,
+                    "crowd_sample_num": 477 
+                }]
+            },
+            {
+                "cat_name":"Writing",
+                "cat_questions": [85,86,87,88],
+                "crowd":[{
+                    "crowd_sample_mean": 3.19,
+                    "crowd_sample_sd": 1.27,
+                    "crowd_sample_num": 477 
+                }]
+            },
+            {
+                "cat_name":"Media",
+                "cat_questions": [89,90,91,92],
+                "crowd":[{
+                    "crowd_sample_mean": 3.01,
+                    "crowd_sample_sd": 1.24,
+                    "crowd_sample_num": 477 
+                }]
+            },
+            {
+                "cat_name":"Culinary Art",
+                "cat_questions": [93,94,95,96],
+                "crowd":[{
+                    "crowd_sample_mean": 3.82,
+                    "crowd_sample_sd": 1.08,
+                    "crowd_sample_num": 477 
+                }]
+            },
+            {
+                "cat_name":"Teaching/Education",
+                "cat_questions": [97,98,99,100],
+                "crowd":[{
+                    "crowd_sample_mean": 3.74,
+                    "crowd_sample_sd": 1.07,
+                    "crowd_sample_num": 477 
+                }]
+            },
+            {
+                "cat_name":"Social Service",
+                "cat_questions": [101,102,103,104],
+                "crowd":[{
+                    "crowd_sample_mean": 3.87,
+                    "crowd_sample_sd": 0.96,
+                    "crowd_sample_num": 477 
+                }]
+            },
+            {
+                "cat_name":"Health Care Service",
+                "cat_questions": [105,106,107,108],
+                "crowd":[{
+                    "crowd_sample_mean": 2.88,
+                    "crowd_sample_sd": 1.33,
+                    "crowd_sample_num": 477 
+                }]
+            },
+            {
+                "cat_name":"Religious Activities",
+                "cat_questions": [109,110,111,112],
+                "crowd":[{
+                    "crowd_sample_mean": 2.65,
+                    "crowd_sample_sd": 1.35,
+                    "crowd_sample_num": 477 
+                }]
+            },
+            {
+                "cat_name":"Personal Service",
+                "cat_questions": [113,114,115,116],
+                "crowd":[{
+                    "crowd_sample_mean": 3.32,
+                    "crowd_sample_sd": 1.2,
+                    "crowd_sample_num": 477 
+                }]
+            },
+            {
+                "cat_name":"Professional Advising",
+                "cat_questions": [117,118,119,120],
+                "crowd":[{
+                    "crowd_sample_mean": 3.3,
+                    "crowd_sample_sd": 1.24,
+                    "crowd_sample_num": 477 
+                }]
+            },
+            {
+                "cat_name":"Business Iniatives",
+                "cat_questions": [121,122,123,124],
+                "crowd":[{
+                    "crowd_sample_mean": 3.17,
+                    "crowd_sample_sd": 1.25,
+                    "crowd_sample_num": 477 
+                }]
+            },
+            {
+                "cat_name":"Sales",
+                "cat_questions": [125,126,127,128],
+                "crowd":[{
+                    "crowd_sample_mean": 3.07,
+                    "crowd_sample_sd": 1.25,
+                    "crowd_sample_num": 477 
+                }]
+            },
+            {
+                "cat_name":"Marketing/Advertising",
+                "cat_questions": [129,130,131,132],
+                "crowd":[{
+                    "crowd_sample_mean": 2.87,
+                    "crowd_sample_sd": 1.23,
+                    "crowd_sample_num": 477 
+                }]
+            },
+            {
+                "cat_name":"Finance",
+                "cat_questions": [133,134,135,136],
+                "crowd":[{
+                    "crowd_sample_mean": 3.07,
+                    "crowd_sample_sd": 1.32,
+                    "crowd_sample_num": 477 
+                }]
+            },
+            {
+                "cat_name":"Accounting",
+                "cat_questions": [137,138,139,140],
+                "crowd":[{
+                    "crowd_sample_mean": 3,
+                    "crowd_sample_sd": 1.27,
+                    "crowd_sample_num": 477 
+                }]
+            },
+            {
+                "cat_name":"Human Resources",
+                "cat_questions": [141,142,143,144],
+                "crowd":[{
+                    "crowd_sample_mean": 3.27,
+                    "crowd_sample_sd": 1.2,
+                    "crowd_sample_num": 477 
+                }]
+            },
+            {
+                "cat_name":"Office Work",
+                "cat_questions": [145,146,147,148],
+                "crowd":[{
+                    "crowd_sample_mean": 3.27,
+                    "crowd_sample_sd": 1.14,
+                    "crowd_sample_num": 477 
+                }]
+            },
+            {
+                "cat_name":"Management/Administration",
+                "cat_questions": [149,150,151,152],
+                "crowd":[{
+                    "crowd_sample_mean": 3.05,
+                    "crowd_sample_sd": 1.27,
+                    "crowd_sample_num": 477 
+                }]
+            },
+            {
+                "cat_name":"Public Speaking",
+                "cat_questions": [153,154,155,156],
+                "crowd":[{
+                    "crowd_sample_mean": 2.86,
+                    "crowd_sample_sd": 1.38,
+                    "crowd_sample_num": 477 
+                }]
+            },
+            {
+                "cat_name":"Politics",
+                "cat_questions": [157,158,159,160],
+                "crowd":[{
+                    "crowd_sample_mean": 2.32,
+                    "crowd_sample_sd": 1.33,
+                    "crowd_sample_num": 477 
+                }]
+            },
+            {
+                "cat_name":"Law",
+                "cat_questions": [161,162,163,164],
+                "crowd":[{
+                    "crowd_sample_mean": 3.08,
+                    "crowd_sample_sd": 1.3,
+                    "crowd_sample_num": 477 
+                }]
+            }
+        ]
+    }
+]
