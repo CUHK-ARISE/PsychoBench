@@ -46,6 +46,7 @@ It is easy! Just replace the function `example_generator` fed into the function 
 Your customized function `your_generator()` does the following things:
 
 1. Read questions from the file `--testing-file`. The file has the following format:
+
 | Prompt: ... | order-1 | shuffle0-test0 | shuffle0-test1 | Prompt: ... | order-2 | shuffle0-test0 | shuffle0-test1 |
 | --- | --- | --- | --- | --- | --- | --- | --- |
 | Q1 | 1 | | | Q3 | 3 | | |
