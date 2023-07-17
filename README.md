@@ -45,7 +45,7 @@ It is easy! Just replace the function `example_generator` fed into the function 
 
 Your customized function `your_generator()` does the following things:
 
-1. Read questions from the file `--testing-file`. The file has the following format:
+1. Read questions from the file `args.testing_file`. The file locates under `results/` (check `run_psychobench()` in `utils.py`) and has the following format:
 
 | Prompt: ... | order-1 | shuffle0-test0 | shuffle0-test1 | Prompt: ... | order-2 | shuffle0-test0 | shuffle0-test1 |
 | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -58,7 +58,7 @@ You can read the columns before each column starting with `order-`, which contai
 
 2. Call your own LLM and get the results.
 
-3. Fill in the blank in the file `--testing-file`. **Remember**: No need to map the response to its original order. Our code will take care of it.
+3. Fill in the blank in the file `args.testing_file`. **Remember**: No need to map the response to its original order. Our code will take care of it.
 
 Please check `example_generator.py` for datailed information.
 
