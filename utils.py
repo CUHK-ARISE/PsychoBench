@@ -253,6 +253,8 @@ def run_psychobench(args, generator):
     args.testing_file = f'results/{args.name_exp}.csv' if args.name_exp is not None else f'results/{args.model}-{questionnaire["name"]}.csv'
     args.results_file = f'results/{args.name_exp}.txt' if args.name_exp is not None else f'results/{args.model}-{questionnaire["name"]}.md'
     args.figures_file = f'{args.name_exp}.png' if args.name_exp is not None else f'{args.model}-{questionnaire["name"]}.png'
+
+    os.makedirs("results", exist_ok=True)
     
     # Generation
     if args.mode in ['generation', 'auto']:
