@@ -26,25 +26,25 @@ def get_questionnaire(questionnaire_name):
     return questionnaire
 
 
-def plot_bar_chart(mean1_list, mean2_list, cat_list, save_name, title="Bar Chart", model="LLM"):
-    # Plotting bar chart
-    barWidth = 0.35
-    br1 = np.arange(len(mean1_list))
-    br2 = [x + barWidth for x in br1]
-    figure_width = max(6, len(mean1_list) * 1.8)
-    
+def plot_bar_chart(value_list, cat_list, crowd_list, save_name, title="Bar Chart"):
+    bar_width = 0.35 / len(cat_list)
+    num_bars = len(value_list)
+    figure_width = max(6, len(cat_list) * 1.8)
+
     # Create a figure and axis object
     fig, ax = plt.subplots(figsize=(figure_width, 6))
 
     # Plotting the bars
-    ax.bar(br1, mean1_list, color='b', width=barWidth, alpha=0.5, label=model)
-    ax.bar(br2, mean2_list, color='r', width=barWidth, alpha=0.5, label='Crowd')
-    
+    colors = ['b', 'r', 'g', 'y', 'c', 'm', 'k', 'w']
+    br = [np.arange(len(cat_list)) + x * bar_width for x in range(num_bars)]
+    for i, values in enumerate(value_list):
+        ax.bar(br[i], values, color=colors[i % len(colors)], width=bar_width, alpha=0.5, label=crowd_list[i])
+
     # Figure settings
     ax.set_title(title)
     ax.set_xlabel('Categories', fontsize=12)
     ax.set_ylabel('Score', fontsize=12)
-    ax.set_xticks([r + barWidth / 2 for r in range(len(br1))])
+    ax.set_xticks([r + bar_width * (num_bars - 1) / 2 for r in range(len(cat_list))])
     ax.set_xticklabels(cat_list)
     ax.legend()
     plt.savefig(f'results/{save_name}', dpi=300)
@@ -137,12 +137,15 @@ def analysis_results(questionnaire, args):
     mean1_list = []
     mean2_list = []
     cat_list = []
+    crowd_list = []
     
-    output_text = ''
+    output_text = f'# Questionnaire: {questionnaire["name"]}\n\n'
     # Analysis by each category
     for cat in questionnaire['categories']:
         cat_list.append(cat['cat_name'])
         result_list = []
+        crowd_mean2_list = []
+        output_list = ''
         
         for test in test_data:
             results = []
@@ -160,32 +163,36 @@ def analysis_results(questionnaire, args):
         if len(result_list) < 2:
             raise ValueError("result_list should have at least 2 elements.")
             
-            
+        
         # Collecting LLM's data
         epsilon = 1e-8  # Setting epsilon to avoid zero standard deviation
         mean1, std1, n1 = mean(result_list), stdev(result_list) + epsilon, len(result_list)
         mean1_4sf = float(f'{mean1:.4g}')
         std1_4sf = float(f'{std1:.4g}')
-        output_text += f'# Questionnaire: {questionnaire["name"]}\n\n'
         output_text += f'## Category: {cat["cat_name"]}\n\n'
-        output_text += f'| | Mean | STD | N |\n'
+        output_text += f'| Group | Mean | STD | N |\n'
         output_text += f'| --- | --- | --- | --- |\n'
-        output_text += f'| LLM | $µ_1$ = {mean1_4sf} | $s_1$ = {std1_4sf} | $n_1$ = {n1} |\n'
+        output_text += f'| LLM | $µ_1$ = {mean1_4sf} | $s_1$ = {std1_4sf} | $n_1$ = {n1} |\nOUTPUT_LIST'
         mean1_list.append(mean1)
         
-        # Performing F-test and T-test for each category
+        # Performing F-test and T-test for each group of crowd in every categories
         for index, crowd in enumerate(cat["crowd"]):
+            crowd_name = "Crowd"
+            
+            # Getting the crowd name, if there is more than one group of corwd
             if "crowd_name" in crowd and crowd["crowd_name"] is not None:
-                output_text += f'-------------\n{crowd["crowd_name"]}\n'
+                output_text += f'### Compare with {crowd["crowd_name"]}\n'
+                crowd_name = crowd["crowd_name"]
+
+            crowd_list.append(crowd_name)
             
             # Collecting Crowd data
             mean2, std2, n2 = crowd["crowd_sample_mean"], crowd["crowd_sample_sd"], crowd["crowd_sample_num"]
-            output_text += f'| Crowd | $µ_2$ = {mean2} | $s_2$ = {std2} | $n_2$ = {n2} |\n'
-            mean2_list.append(mean2)
-
+            output_list += f'| {crowd_name} | $µ_2$ = {mean2} | $s_2$ = {std2} | $n_2$ = {n2} |\n'
+            crowd_mean2_list.append(mean2)
 
             # Performing F-test
-            output_text += '\n### F-Test:\n\n'
+            output_text += '\n#### F-Test:\n\n'
             
             if std1 > std2:
                 f_value = std1 ** 2 / std2 ** 2
@@ -195,24 +202,24 @@ def analysis_results(questionnaire, args):
                 df1, df2 = n2 - 1, n1 - 1
 
             p_value = (1 - stats.f.cdf(f_value, df1, df2)) * 2
-            equal_var = True if p_value > significance_level / 2 else False
+            equal_var = True if p_value > significance_level else False
             
             f_value = float(f'{f_value:.4g}')
             p_value = float(f'{p_value:.4g}')
-            output_text += f'\tf-value = {f_value} ($df_1$ = {df1}, $df_2$ = {df2})\n\n'
-            output_text += f'\tp-value = {p_value} (two-tailed test)\n\n'
-            output_text += '\tNull hypothesis $H_0$ ($s_1^2$ = $s_2^2$): '
+            output_text += f'f-value = {f_value} ($df_1$ = {df1}, $df_2$ = {df2})\n\n'
+            output_text += f'p-value = {p_value} (two-tailed test)\n\n'
+            output_text += '**Null hypothesis $H_0$ ($s_1^2$ = $s_2^2$):** '
 
             if p_value > significance_level:
                 output_text += f'Since p-value ({p_value}) > α ({significance_level}), $H_0$ cannot be rejected.\n\n'
-                output_text += f'\tConclusion: ($s_1^2$ = $s_2^2$) The variance of LLM\'s average responses is statistically equal to the variance of crowd average.\n\n'
+                output_text += f'**Conclusion ($s_1^2$ = $s_2^2$):** The variance of LLM\'s average responses is statistically equal to the variance of crowd average.\n\n'
             else:
                 output_text += f'Since p-value ({p_value}) < α ({significance_level}), $H_0$ is rejected.\n\n'
-                output_text += f'\tConclusion: ($s_1^2$ ≠ $s_2^2$) The variance of LLM\'s average responses is statistically unequal to the variance of crowd average.\n\n'
+                output_text += f'**Conclusion ($s_1^2$ ≠ $s_2^2$):** The variance of LLM\'s average responses is statistically unequal to the variance of crowd average.\n\n'
 
 
             # Performing T-test
-            output_text += '### Two Sample T-Test (Equal Variance):\n\n' if equal_var else '### Two Sample T-test (Welch\'s T-Test):\n\n'
+            output_text += '#### Two Sample T-Test (Equal Variance):\n\n' if equal_var else '### Two Sample T-test (Welch\'s T-Test):\n\n'
             
             df = n1 + n2 - 2 if equal_var else ((std1**2 / n1 + std2**2 / n2)**2) / ((std1**2 / n1)**2 / (n1 - 1) + (std2**2 / n2)**2 / (n2 - 1))
             t_value, p_value = stats.ttest_ind_from_stats(mean1, std1, n1, mean2, std2, n2, equal_var=equal_var)
@@ -220,31 +227,35 @@ def analysis_results(questionnaire, args):
 
             t_value = float(f'{t_value:.4g}')
             p_value = float(f'{p_value:.4g}')
-            output_text += f'\tt-value = {t_value} (d.f. = {df})\n\n'
-            output_text += f'\tp-value = {p_value} (two-tailed test)\n\n'
+            output_text += f't-value = {t_value} ($df$ = {df})\n\n'
+            output_text += f'p-value = {p_value} (two-tailed test)\n\n'
             
-            output_text += '\tNull hypothesis $H_0$ ($µ_1$ = $µ_2$): '
+            output_text += '**Null hypothesis $H_0$ ($µ_1$ = $µ_2$):** '
             if p_value > significance_level:
                 output_text += f'Since p-value ({p_value}) > α ({significance_level}), $H_0$ cannot be rejected.\n\n'
-                output_text += f'\tConclusion: ($µ_1$ = $µ_2$) The average of LLM\'s responses is assumed to be equal to the average of crowd data.\n\n'
+                output_text += f'**Conclusion ($µ_1$ = $µ_2$):** The average of LLM\'s responses is assumed to be equal to the average of crowd data.\n\n'
             else:
                 output_text += f'Since p-value ({p_value}) < α ({significance_level}), $H_0$ is rejected.\n\n'
                 if t_value > 0:
-                    output_text += '\tAlternative hypothesis $H_1$ ($µ_1$ > $µ_2$): '
+                    output_text += '**Alternative hypothesis $H_1$ ($µ_1$ > $µ_2$):** '
                     output_text += f'Since p-value ({1-p_value/2}) > α ({significance_level}), $H_1$ cannot be rejected.\n\n'
-                    output_text += f'\tConclusion: ($µ_1$ > $µ_2$) The average of LLM\'s responses is assumed to be larger than the average of crowd data.\n\n'
+                    output_text += f'**Conclusion ($µ_1$ > $µ_2$):** The average of LLM\'s responses is assumed to be larger than the average of crowd data.\n\n'
                 else:
-                    output_text += '\tAlternative hypothesis $H_1$ ($µ_1$ < $µ_2$): '
+                    output_text += '**Alternative hypothesis $H_1$ ($µ_1$ < $µ_2$):** '
                     output_text += f'Since p-value ({1-p_value/2}) > α ({significance_level}), $H_1$ cannot be rejected.\n\n'
-                    output_text += f'\tConclusion: ($µ_1$ < $µ_2$) The average of LLM\'s responses is assumed to be smaller than the average of crowd data.\n\n'
+                    output_text += f'**Conclusion ($µ_1$ < $µ_2$):** The average of LLM\'s responses is assumed to be smaller than the average of crowd data.\n\n'
         
-        output_text += f'![Bar Chart]({args.figures_file} "Bar Chart of {args.model} on {questionnaire["name"]}")\n'
+        output_text = output_text.replace("OUTPUT_LIST", output_list)
+            
+        mean2_list.append(crowd_mean2_list)
+            
+    output_text += f'## Final Overview\n![Bar Chart]({args.figures_file} "Bar Chart of {args.model} on {questionnaire["name"]}")\n'
     
     # Writing the results into a text file
     with open(result_file, "w") as f:
         f.write(output_text)
     
-    plot_bar_chart(mean1_list, mean2_list, cat_list, save_name=args.figures_file, title=questionnaire["name"], model=model)
+    plot_bar_chart([mean1_list] + list(zip(*mean2_list)), cat_list, [model] + crowd_list, save_name=args.figures_file, title=questionnaire["name"])
 
 
 def run_psychobench(args, generator):
