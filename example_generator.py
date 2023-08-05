@@ -86,67 +86,71 @@ def example_generator(questionnaire, args):
     order_columns = [col for col in df.columns if col.startswith("order")]
     shuffle_count = 0
     insert_count = 0
+    total_iterations = len(order_columns) * args.test_count
 
-    for i, header in enumerate(df.columns):
-        if header in order_columns:
-            # Find the index of the previous column
-            questions_column_index = i - 1
-            shuffle_count += 1
-            
-            # Retrieve the column data as a string
-            questions_list = df.iloc[:, questions_column_index].astype(str)
-            separated_questions = [questions_list[i:i+40] for i in range(0, len(questions_list), 40)]            
-            questions_list = ['\n'.join(questions) for questions in separated_questions]
+    with tqdm(total=total_iterations) as pbar:
+        for i, header in enumerate(df.columns):
+            if header in order_columns:
+                # Find the index of the previous column
+                questions_column_index = i - 1
+                shuffle_count += 1
+                
+                # Retrieve the column data as a string
+                questions_list = df.iloc[:, questions_column_index].astype(str)
+                separated_questions = [questions_list[i:i+40] for i in range(0, len(questions_list), 40)]            
+                questions_list = ['\n'.join(questions) for questions in separated_questions]
 
 
-            for k in tqdm(range(args.test_count)):
-                
-                df = pd.read_csv(testing_file)
-                
-                # Insert the updated column into the DataFrame with a unique identifier in the header
-                column_header = f'shuffle{shuffle_count - 1}-test{k}'
-                
-                result_string_list = []
-                
-                for questions_string in questions_list:
-                    result = ''
-                    if model == 'text-davinci-003':
-                        inputs = questionnaire["prompt"] + '\n' + questions_string
-                        result = completion(model, inputs)
-                    elif model in ['gpt-3.5-turbo', 'gpt-4']:
-                        inputs = [
-                            {"role": "system", "content": questionnaire["inner_setting"]},
-                            {"role": "user", "content": questionnaire["prompt"] + '\n' + questions_string}
-                        ]
-                        result = chat(model, inputs)
-                    else:
-                        raise ValueError("The model is not supported or does not exist.")
-                
-                    result_string_list.append(result.strip())
-                
-                    # Write the prompts and results to the file
-                    os.makedirs("prompts", exist_ok=True)
-                    os.makedirs("responses", exist_ok=True)
-
-                    with open(f'prompts/{model}-{questionnaire["name"]}-shuffle{shuffle_count - 1}.txt', "a") as file:
-                        file.write(f'{inputs}\n====\n')
-                    with open(f'responses/{model}-{questionnaire["name"]}-shuffle{shuffle_count - 1}.txt', "a") as file:
-                        file.write(f'{result}\n====\n')
+                for k in range(args.test_count):
                     
+                    df = pd.read_csv(testing_file)
                     
-                result_string = '\n'.join(result_string_list)
-                
-                result_list = convert_results(result_string, column_header)
-                
-                try:
-                    if column_header in df.columns:
-                        df[column_header] = result_list
-                    else:
-                        df.insert(i + insert_count + 1, column_header, result_list)
-                        insert_count += 1
-                except:
-                    print(f"Unable to capture the responses on {column_header}.")
+                    # Insert the updated column into the DataFrame with a unique identifier in the header
+                    column_header = f'shuffle{shuffle_count - 1}-test{k}'
+                    
+                    result_string_list = []
+                    
+                    for questions_string in questions_list:
+                        result = ''
+                        if model == 'text-davinci-003':
+                            inputs = questionnaire["prompt"] + '\n' + questions_string
+                            result = completion(model, inputs)
+                        elif model in ['gpt-3.5-turbo', 'gpt-4']:
+                            inputs = [
+                                {"role": "system", "content": questionnaire["inner_setting"]},
+                                {"role": "user", "content": questionnaire["prompt"] + '\n' + questions_string}
+                            ]
+                            result = chat(model, inputs)
+                        else:
+                            raise ValueError("The model is not supported or does not exist.")
+                    
+                        result_string_list.append(result.strip())
+                    
+                        # Write the prompts and results to the file
+                        os.makedirs("prompts", exist_ok=True)
+                        os.makedirs("responses", exist_ok=True)
+
+                        with open(f'prompts/{model}-{questionnaire["name"]}-shuffle{shuffle_count - 1}.txt', "a") as file:
+                            file.write(f'{inputs}\n====\n')
+                        with open(f'responses/{model}-{questionnaire["name"]}-shuffle{shuffle_count - 1}.txt', "a") as file:
+                            file.write(f'{result}\n====\n')
+                        
+                        
+                    result_string = '\n'.join(result_string_list)
+                    
+                    result_list = convert_results(result_string, column_header)
+                    
+                    try:
+                        if column_header in df.columns:
+                            df[column_header] = result_list
+                        else:
+                            df.insert(i + insert_count + 1, column_header, result_list)
+                            insert_count += 1
+                    except:
+                        print(f"Unable to capture the responses on {column_header}.")
 
 
-                # Write the updated DataFrame back to the CSV file
-                df.to_csv(testing_file, index=False)
+                    # Write the updated DataFrame back to the CSV file
+                    df.to_csv(testing_file, index=False)
+                    
+                    pbar.update(1)
