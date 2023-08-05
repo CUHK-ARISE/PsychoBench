@@ -259,23 +259,31 @@ def analysis_results(questionnaire, args):
 
 
 def run_psychobench(args, generator):
-    # Get questionnaire
-    questionnaire = get_questionnaire(args.questionnaire)
-    args.testing_file = f'results/{args.name_exp}.csv' if args.name_exp is not None else f'results/{args.model}-{questionnaire["name"]}.csv'
-    args.results_file = f'results/{args.name_exp}.txt' if args.name_exp is not None else f'results/{args.model}-{questionnaire["name"]}.md'
-    args.figures_file = f'{args.name_exp}.png' if args.name_exp is not None else f'{args.model}-{questionnaire["name"]}.png'
+    
+    # Extract the targeted questionnaires
+    questionnaire_list = ['BFI', 'DTDD', 'EPQ-R', 'ECR-R', 'VIS', 'GSE', 'LMS', 'BSRI', 'ICB', 'LOT-R', 'Empathy', 'EIS', 'WLEIS'] if args.questionnaire == 'ALL' else args.questionnaire.replace(' ', '').split(',')
+    
+    for questionnaire_name in questionnaire_list:
+        # Get questionnaire
+        questionnaire = get_questionnaire(questionnaire_name)
+        args.testing_file = f'results/{args.name_exp}.csv' if args.name_exp is not None else f'results/{args.model}-{questionnaire["name"]}.csv'
+        args.results_file = f'results/{args.name_exp}.txt' if args.name_exp is not None else f'results/{args.model}-{questionnaire["name"]}.md'
+        args.figures_file = f'{args.name_exp}.png' if args.name_exp is not None else f'{args.model}-{questionnaire["name"]}.png'
 
-    os.makedirs("results", exist_ok=True)
-    
-    # Generation
-    if args.mode in ['generation', 'auto']:
-        generation(questionnaire, args)
-    
-    # Testing
-    if args.mode in ['testing', 'auto']:
-        generator(questionnaire, args)
+        os.makedirs("results", exist_ok=True)
         
-    # Analysis
-    if args.mode in ['analysis', 'auto']:
-        analysis_results(questionnaire, args)
+        # Generation
+        if args.mode in ['generation', 'auto']:
+            generation(questionnaire, args)
+        
+        # Testing
+        if args.mode in ['testing', 'auto']:
+            generator(questionnaire, args)
+            
+        # Analysis
+        if args.mode in ['analysis', 'auto']:
+            try:
+                analysis_results(questionnaire, args)
+            except:
+                print(f'Unable to analysis {args.testing_file}')
 

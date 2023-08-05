@@ -7,8 +7,10 @@ if __name__ == '__main__':
     parser = argparse.ArgumentParser()
     parser.add_argument('--model', required=True, type=str, default='text-davinci-003',
                         help='The name of the model to test')
+    # parser.add_argument('--questionnaire', required=True, type=str,
+    #                     choices=['BFI', 'DTDD', 'EPQ-R', 'ECR-R', 'VIS', 'GSE', 'LMS', 'BSRI', 'ICB', 'LOT-R', 'Empathy', 'EIS', 'WLEIS'])
     parser.add_argument('--questionnaire', required=True, type=str,
-                        choices=['BFI', 'DTDD', 'EPQ-R', 'ECR-R', 'VIS', 'GSE', 'LMS', 'BSRI', 'ICB', 'LOT-R', 'Empathy', 'EIS', 'WLEIS'])
+                        help='Comma-separated list of questionnaires')
     parser.add_argument('--shuffle-count', required=True, type=int, default=0,
                         help='Numbers of different orders. If set zero, run only the original order. If set n > 0, run the original order along with its n permutations. Defaults to zero.')
     parser.add_argument('--test-count', required=True, type=int, default=1,
