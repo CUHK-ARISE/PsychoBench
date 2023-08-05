@@ -134,4 +134,4 @@ dmypy.json
 prompts/
 responses/
 results/
-batch_run.sh
+*.sh
