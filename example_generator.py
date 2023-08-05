@@ -101,6 +101,8 @@ def example_generator(questionnaire, args):
 
             for k in tqdm(range(args.test_count)):
                 
+                df = pd.read_csv(testing_file)
+                
                 # Insert the updated column into the DataFrame with a unique identifier in the header
                 column_header = f'shuffle{shuffle_count - 1}-test{k}'
                 
@@ -109,12 +111,12 @@ def example_generator(questionnaire, args):
                 for questions_string in questions_list:
                     result = ''
                     if model == 'text-davinci-003':
-                        inputs = questionnaire["prompt"] + ' Here are the statements:\n' + questions_string
+                        inputs = questionnaire["prompt"] + '\n' + questions_string
                         result = completion(model, inputs)
                     elif model in ['gpt-3.5-turbo', 'gpt-4']:
                         inputs = [
                             {"role": "system", "content": questionnaire["inner_setting"]},
-                            {"role": "user", "content": questionnaire["prompt"] + questions_string}
+                            {"role": "user", "content": questionnaire["prompt"] + '\n' + questions_string}
                         ]
                         result = chat(model, inputs)
                     else:
@@ -126,9 +128,9 @@ def example_generator(questionnaire, args):
                     os.makedirs("prompts", exist_ok=True)
                     os.makedirs("responses", exist_ok=True)
 
-                    with open(f'prompts/{model}-{questionnaire["name"]}-shuffle{shuffle_count - 1}-test{k}.txt', "a") as file:
+                    with open(f'prompts/{model}-{questionnaire["name"]}-shuffle{shuffle_count - 1}.txt', "a") as file:
                         file.write(f'{inputs}\n====\n')
-                    with open(f'responses/{model}-{questionnaire["name"]}-shuffle{shuffle_count - 1}-test{k}.txt', "a") as file:
+                    with open(f'responses/{model}-{questionnaire["name"]}-shuffle{shuffle_count - 1}.txt', "a") as file:
                         file.write(f'{result}\n====\n')
                     
                     
@@ -146,6 +148,5 @@ def example_generator(questionnaire, args):
                     print(f"Unable to capture the responses on {column_header}.")
 
 
-    # Write the updated DataFrame back to the CSV file
-    df.to_csv(testing_file, index=False)
-
+                # Write the updated DataFrame back to the CSV file
+                df.to_csv(testing_file, index=False)
