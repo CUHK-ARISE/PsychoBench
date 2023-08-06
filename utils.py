@@ -68,7 +68,7 @@ def generation(questionnaire, args):
         questions = [f'{index}. {questions_list[question]}' for index, question in enumerate(question_indices, 1)]
         
         csv_output.append([f'Prompt: {questionnaire["prompt"]}'] + questions)
-        csv_output.append([f'order-{shuffle_count+1}'] + question_indices)
+        csv_output.append([f'order-{shuffle_count}'] + question_indices)
         for count in range(test_count):
             csv_output.append([f'shuffle{shuffle_count}-test{count}'] + [''] * len(question_indices))
 
