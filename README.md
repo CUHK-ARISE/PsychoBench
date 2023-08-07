@@ -20,7 +20,7 @@ An example result:
 | Crowd | $µ_2$ = 4.92 | $s_2$ = 0.76 | $n_2$ = 112 |
 
 ## Argument Specification
-1. `--questionnaire`: (Required) Select the questionnaire to run. For choises please see the list bellow.
+1. `--questionnaire`: (Required) Select the questionnaire(s) to run. For choises please see the list bellow.
 
 2. `--model`: (Required) The name of the model to test.
 
@@ -63,6 +63,10 @@ You can read the columns before each column starting with `order-`, which contai
 Please check `example_generator.py` for datailed information.
 
 ## Questionnaire List (Choices for Argument: --questionnaire)
+To include **multiple** questionnaires, use a comma to separate them. For example: `--questionnaire BFI,DTDD,EPQ-R`.
+
+To include **ALL** questionnaires, just use `--questionnaire ALL`.
+
 1. Big Five Inventory: `--questionnaire BFI`
 
 2. Dark Triad Dirty Dozen: `--questionnaire DTDD`
