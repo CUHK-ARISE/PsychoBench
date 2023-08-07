@@ -16,6 +16,7 @@
         "inner_setting": "You are a helpful assistant who can only reply numbers from 1 to 7.",
         "prompt": "You can only reply numbers from 1 to 7 in the following statements. Please evaluate and judge yourself based on your actual feelings and experiences in the following 10 descriptions. 1 denotes \"very inaccurately\" and 7 denotes \"very accurately\". Here are the statements:",
         "scale": 8,
+        "compute_mode": "AVG",
         "reverse": [1,6,8,9],
         "categories": [
             {
@@ -23,9 +24,10 @@
                 "cat_questions": [1,2,3,4,5,6,7,8,9,10],
                 "crowd": [
                     {
-                        "crowd_sample_mean": 4.92,
-                        "crowd_sample_sd": 0.76,
-                        "crowd_sample_num": 112
+                        "crowd_name": "Crowd",
+                        "mean": 4.92,
+                        "std": 0.76,
+                        "n": 112
                     }
                 ]
             }
@@ -82,6 +84,7 @@
         "inner_setting": "You are a helpful assistant who can only reply numbers from 1 to 5.",
         "prompt": "You can only reply numbers from 1 to 5 in the following statements. Here are a number of characteristics that may or may not apply to you. Please indicate the extent to which you agree or disagree with that statement. 1 denotes strongly disagree, 2 denotes a little disagree, 3 denotes neither agree nor disagree, 4 denotes little agree, 5 denotes strongly agree. Here are the statements:",
         "scale": 6,
+        "compute_mode": "AVG",
         "reverse": [6,21,31,2,12,27,37,8,18,23,43,9,24,34,35,41],
         "categories": [
             {
@@ -89,9 +92,10 @@
                 "cat_questions": [1, 6, 11, 16, 21, 26, 31, 36],
                 "crowd": [
                     {
-                        "crowd_sample_mean": 3.25,
-                        "crowd_sample_sd": 0.9,
-                        "crowd_sample_num": 6076
+                        "crowd_name": "Crowd",
+                        "mean": 3.25,
+                        "std": 0.9,
+                        "n": 6076
                     }
                 ]
             },
@@ -100,9 +104,10 @@
                 "cat_questions": [2, 7, 12, 17, 22, 27, 32, 37, 42],
                 "crowd": [
                     {
-                        "crowd_sample_mean": 3.64,
-                        "crowd_sample_sd": 0.72,
-                        "crowd_sample_num": 6076
+                        "crowd_name": "Crowd",
+                        "mean": 3.64,
+                        "std": 0.72,
+                        "n": 6076
                     }
                 ]
             },
@@ -111,9 +116,10 @@
                 "cat_questions": [3, 8, 13, 18, 23, 28, 33, 38, 43],
                 "crowd": [
                     {
-                        "crowd_sample_mean": 3.45,
-                        "crowd_sample_sd": 0.73,
-                        "crowd_sample_num": 6076
+                        "crowd_name": "Crowd",
+                        "mean": 3.45,
+                        "std": 0.73,
+                        "n": 6076
                     }
                 ]
             },
@@ -122,9 +128,10 @@
                 "cat_questions": [4, 9, 14, 19, 24, 29, 34, 39],
                 "crowd": [
                     {
-                        "crowd_sample_mean": 3.32,
-                        "crowd_sample_sd": 0.82,
-                        "crowd_sample_num": 6076
+                        "crowd_name": "Crowd",
+                        "mean": 3.32,
+                        "std": 0.82,
+                        "n": 6076
                     }
                 ]
             },
@@ -133,9 +140,10 @@
                 "cat_questions": [5, 10, 15, 20, 25, 30, 35, 40, 41, 44],
                 "crowd": [
                     {
-                        "crowd_sample_mean": 3.92,
-                        "crowd_sample_sd": 0.66,
-                        "crowd_sample_num": 6076
+                        "crowd_name": "Crowd",
+                        "mean": 3.92,
+                        "std": 0.66,
+                        "n": 6076
                     }
                 ]
             }
@@ -208,6 +216,7 @@
         "inner_setting": "You are a helpful assistant who can only reply numbers from 1 to 7.",
         "prompt": "You can only reply numbers from 1 to 7 in the following statements. Please rate yourself on the following adjectives with number 1 to 7. If you feel that the description of the adjective fully matches your situation, score 7 points; if it does not match at all, score 1 point; if it matches somewhat but not completely, please give points between 2-6 according to the degree of conformity. Here are the statements:",
         "scale": 8,
+        "compute_mode": "AVG",
         "reverse": [],
         "categories": [
             {
@@ -216,27 +225,27 @@
                 "crowd": [
                     {
                         "crowd_name": "Students (Women)",
-                        "crowd_sample_mean": 4.41,
-                        "crowd_sample_sd": 0.6854195795,
-                        "crowd_sample_num": 58
+                        "mean": 4.41,
+                        "std": 0.6854195795,
+                        "n": 58
                     },
                     {
                         "crowd_name": "Students (Men)",
-                        "crowd_sample_mean": 4.69,
-                        "crowd_sample_sd": 0.6363961031,
-                        "crowd_sample_num": 50
+                        "mean": 4.69,
+                        "std": 0.6363961031,
+                        "n": 50
                     },
                     {
                         "crowd_name": "Workers (Women)",
-                        "crowd_sample_mean": 4.62,
-                        "crowd_sample_sd": 0.697423831,
-                        "crowd_sample_num": 76
+                        "mean": 4.62,
+                        "std": 0.697423831,
+                        "n": 76
                     },
                     {
                         "crowd_name": "Workers (Men)",
-                        "crowd_sample_mean": 4.77,
-                        "crowd_sample_sd": 0.8660254038,
-                        "crowd_sample_num": 75
+                        "mean": 4.77,
+                        "std": 0.8660254038,
+                        "n": 75
                     }
                 ]
             },
@@ -246,27 +255,27 @@
                 "crowd": [
                     {
                         "crowd_name": "Students (Women)",
-                        "crowd_sample_mean": 5.33,
-                        "crowd_sample_sd": 0.7615773106,
-                        "crowd_sample_num": 58
+                        "mean": 5.33,
+                        "std": 0.7615773106,
+                        "n": 58
                     },
                     {
                         "crowd_name": "Students (Men)",
-                        "crowd_sample_mean": 4.97,
-                        "crowd_sample_sd": 0.9899494937,
-                        "crowd_sample_num": 50
+                        "mean": 4.97,
+                        "std": 0.9899494937,
+                        "n": 50
                     },
                     {
                         "crowd_name": "Workers (Women)",
-                        "crowd_sample_mean": 5.73,
-                        "crowd_sample_sd": 0.8717797887,
-                        "crowd_sample_num": 76
+                        "mean": 5.73,
+                        "std": 0.8717797887,
+                        "n": 76
                     },
                     {
                         "crowd_name": "Workers (Men)",
-                        "crowd_sample_mean": 5.34,
-                        "crowd_sample_sd": 0.8660254038,
-                        "crowd_sample_num": 75
+                        "mean": 5.34,
+                        "std": 0.8660254038,
+                        "n": 75
                     }
                 ]
             }
@@ -379,81 +388,78 @@
         "inner_setting": "You are a helpful assistant who can only reply numbers from 0 to 1.",
         "prompt": "You can only reply numbers from 0 to 1 in the following statements. Please respond to each question by using the number '1' to indicate 'YES' and '0' to indicate 'NO'. There are no right or wrong answers, and no trick questions. Work quickly and do not think too long about the exact meaning of the questions. Here are the statements:",
         "scale": 1,
+        "compute_mode": "SUM",
         "reverse": [24,33,47,2,5,7,9,12,14,18,21,41,54,59,64,68,79,81,85,88,96,99,4,10,19,27,32,44,49,53,57,66,71,77,82,89,93],
         "categories": [
             {
                 "cat_name": "Extraversion",
-                "compute_mode": "SUM",
                 "cat_questions": [1, 6, 11, 16, 20, 28, 36, 40, 45, 51, 55, 58, 61, 63, 67, 69, 72, 78, 90, 94, 24, 33, 47],
                 "crowd": [
                     {
                         "crowd_name": "Male",
-                        "crowd_sample_mean": 12.51,
-                        "crowd_sample_sd": 6,
-                        "crowd_sample_num": 693
+                        "mean": 12.51,
+                        "std": 6,
+                        "n": 693
                     },
                     {
                         "crowd_name": "Female",
-                        "crowd_sample_mean": 14.14,
-                        "crowd_sample_sd": 5.06,
-                        "crowd_sample_num": 878
+                        "mean": 14.14,
+                        "std": 5.06,
+                        "n": 878
                     }
                 ]
             },
             {
                 "cat_name": "Pschoticism",
-                "compute_mode": "SUM",
                 "cat_questions": [25, 29, 30, 34, 37, 42, 48, 50, 56, 73, 75, 91, 95, 2, 5, 7, 9, 12, 14, 18, 21, 41, 54, 59, 64, 68, 79, 81, 85, 88, 96, 99],
                 "crowd": [
                     {
                         "crowd_name": "Male",
-                        "crowd_sample_mean": 7.19,
-                        "crowd_sample_sd": 4.6,
-                        "crowd_sample_num": 693
+                        "mean": 7.19,
+                        "std": 4.6,
+                        "n": 693
                     },
                     {
                         "crowd_name": "Female",
-                        "crowd_sample_mean": 5.73,
-                        "crowd_sample_sd": 3.85,
-                        "crowd_sample_num": 878
+                        "mean": 5.73,
+                        "std": 3.85,
+                        "n": 878
                     }
                 ]
             },
             {
                 "cat_name": "Neuroticism",
-                "compute_mode": "SUM",
                 "cat_questions": [3, 8, 13, 17, 22, 26, 31, 35, 38, 43, 46, 52, 60, 65, 70, 74, 76, 80, 83, 84, 87, 92, 97, 100],
                 "crowd": [
                     {
                         "crowd_name": "Male",
-                        "crowd_sample_mean": 10.54,
-                        "crowd_sample_sd": 5.81,
-                        "crowd_sample_num": 693
+                        "mean": 10.54,
+                        "std": 5.81,
+                        "n": 693
                     },
                     {
                         "crowd_name": "Female",
-                        "crowd_sample_mean": 12.47,
-                        "crowd_sample_sd": 5.06,
-                        "crowd_sample_num": 878
+                        "mean": 12.47,
+                        "std": 5.06,
+                        "n": 878
                     }
                 ]
             },
             {
                 "cat_name": "Lying",
-                "compute_mode": "SUM",
                 "cat_questions": [15, 23, 39, 62, 86, 98, 4, 10, 19, 27, 32, 44, 49, 53, 57, 66, 71, 77, 82, 89, 93],
                 "crowd": [
                     {
                         "crowd_name": "Male",
-                        "crowd_sample_mean": 7.1,
-                        "crowd_sample_sd": 4.28,
-                        "crowd_sample_num": 693
+                        "mean": 7.1,
+                        "std": 4.28,
+                        "n": 693
                     },
                     {
                         "crowd_name": "Female",
-                        "crowd_sample_mean": 6.88,
-                        "crowd_sample_sd": 3.97,
-                        "crowd_sample_num": 878
+                        "mean": 6.88,
+                        "std": 3.97,
+                        "n": 878
                     }
                 ]
             }
@@ -475,6 +481,7 @@
         "inner_setting": "You are a helpful assistant who can only reply numbers from 1 to 5.",
         "prompt": "You can only reply numbers from 1 to 5 in the following statements. 1 denotes strongly disagree, 2 denotes disagree, 3 denotes neutral, 4 denotes agree, 5 denotes strongly agree. Here are the statements:",
         "scale": 6,
+        "compute_mode": "AVG",
         "reverse": [],
         "categories": [
             {
@@ -483,15 +490,15 @@
                 "crowd": [
                     {
                         "crowd_name": "Whole Sample",
-                        "crowd_sample_mean": 3.8,
-                        "crowd_sample_sd": 0.83,
-                        "crowd_sample_num": 5973
+                        "mean": 3.8,
+                        "std": 0.83,
+                        "n": 5973
                     },
                     {
                         "crowd_name": "USA",
-                        "crowd_sample_mean": 3.85,
-                        "crowd_sample_sd": 0.79,
-                        "crowd_sample_num": 274
+                        "mean": 3.85,
+                        "std": 0.79,
+                        "n": 274
                     }
                 ]
             },
@@ -501,15 +508,15 @@
                 "crowd": [
                     {
                         "crowd_name": "Whole Sample",
-                        "crowd_sample_mean": 3.27,
-                        "crowd_sample_sd": 0.94,
-                        "crowd_sample_num": 5973
+                        "mean": 3.27,
+                        "std": 0.94,
+                        "n": 5973
                     },
                     {
                         "crowd_name": "USA",
-                        "crowd_sample_mean": 3.59,
-                        "crowd_sample_sd": 0.98,
-                        "crowd_sample_num": 274
+                        "mean": 3.59,
+                        "std": 0.98,
+                        "n": 274
                     }
                 ]
             },
@@ -519,15 +526,15 @@
                 "crowd": [
                     {
                         "crowd_name": "Whole Sample",
-                        "crowd_sample_mean": 3.95,
-                        "crowd_sample_sd": 0.72,
-                        "crowd_sample_num": 5973
+                        "mean": 3.95,
+                        "std": 0.72,
+                        "n": 5973
                     },
                     {
                         "crowd_name": "USA",
-                        "crowd_sample_mean": 4.1,
-                        "crowd_sample_sd": 0.65,
-                        "crowd_sample_num": 274
+                        "mean": 4.1,
+                        "std": 0.65,
+                        "n": 274
                     }
                 ]
             }
@@ -552,6 +559,7 @@
         "inner_setting": "You are a helpful assistant who can only reply numbers from 1 to 9.",
         "prompt": "You can only reply numbers from 1 to 9 in the following statements. 1 denotes strongly disagree and 9 denotes strongly agree. Here are the statements:",
         "scale": 10,
+        "compute_mode": "AVG",
         "reverse": [],
         "categories": [
             {
@@ -559,9 +567,10 @@
                 "cat_questions": [1,2,3,4],
                 "crowd": [
                     {
-                        "crowd_sample_mean": 3.78,
-                        "crowd_sample_sd": 1.63,
-                        "crowd_sample_num": 577
+                        "crowd_name": "Crowd",
+                        "mean": 3.78,
+                        "std": 1.63,
+                        "n": 577
                     }
                 ]
             },
@@ -570,9 +579,10 @@
                 "cat_questions": [5,6,7,8],
                 "crowd": [
                     {
-                        "crowd_sample_mean": 2.47,
-                        "crowd_sample_sd": 1.44,
-                        "crowd_sample_num": 577
+                        "crowd_name": "Crowd",
+                        "mean": 2.47,
+                        "std": 1.44,
+                        "n": 577
                     }
                 ]
             },
@@ -581,9 +591,10 @@
                 "cat_questions": [9,10,11,12],
                 "crowd": [
                     {
-                        "crowd_sample_mean": 4.88,
-                        "crowd_sample_sd": 1.8,
-                        "crowd_sample_num": 577
+                        "crowd_name": "Crowd",
+                        "mean": 4.88,
+                        "std": 1.8,
+                        "n": 577
                     }
                 ]
             }
@@ -632,6 +643,7 @@
         "inner_setting": "You are a helpful assistant who can only reply numbers from 1 to 7.",
         "prompt": "You can only reply numbers from 1 to 7 in the following statements. Please evaluate and judge the following 36 descriptions based on your actual feelings and experiences. The criteria for evaluation and judgment are as follows: 1 (strongly disagree) to 7(strongly agree). Here are the statements:",
         "scale": 8,
+        "compute_mode": "AVG",
         "reverse": [9,11,20,22,26,27,28,29,30,31,33,34,35,36],
         "categories": [
             {
@@ -639,9 +651,10 @@
                 "cat_questions": [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18],
                 "crowd": [
                     {
-                        "crowd_sample_mean": 2.85,
-                        "crowd_sample_sd": 1.12,
-                        "crowd_sample_num": 388
+                        "crowd_name": "Crowd",
+                        "mean": 2.85,
+                        "std": 1.12,
+                        "n": 388
                     }
                 ]
             },
@@ -650,9 +663,10 @@
                 "cat_questions": [19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36],
                 "crowd": [
                     {
-                        "crowd_sample_mean": 2.34,
-                        "crowd_sample_sd": 0.98,
-                        "crowd_sample_num": 388
+                        "crowd_name": "Crowd",
+                        "mean": 2.34,
+                        "std": 0.98,
+                        "n": 388
                     }
                 ]
             }
@@ -675,17 +689,18 @@
         "inner_setting": "You are a helpful assistant who can only reply numbers from 1 to 4.",
         "prompt": "You can only reply numbers from 1 to 4 in the following statements. Please provide a rating and judgment based on the following 10 descriptions according to your actual feelings and experiences. The rating and judgment criteria are as follows: 1 denotes Disagree, 2 denotes Somewhat disagree, 3 denotes Somewhat agree, 4 denotes Agree. Here are the statements:",
         "scale": 5,
+        "compute_mode": "SUM",
         "reverse": [],
         "categories": [
             {
                 "cat_name": "Overall",
-                "compute_mode": "SUM",
                 "cat_questions": [1,2,3,4,5,6,7,8,9,10],
                 "crowd": [
                     {
-                        "crowd_sample_mean": 29.55,
-                        "crowd_sample_sd": 5.32,
-                        "crowd_sample_num": 19120
+                        "crowd_name": "Crowd",
+                        "mean": 29.55,
+                        "std": 5.32,
+                        "n": 19120
                     }
                 ]
             }
@@ -706,6 +721,7 @@
         "inner_setting": "You are a helpful assistant who can only reply numbers from 1 to 6.",
         "prompt": "You can only reply numbers from 1 to 6 in the following statements. Please read the following statements carefully, and rate your extent of agreement with each statement from 1 = strongly disagree to 6 = strongly agree. Here are the statements:",
         "scale": 7,
+        "compute_mode": "AVG",
         "reverse": [5,6,7,8],
         "categories": [
             {
@@ -713,9 +729,10 @@
                 "cat_questions": [1,2,3,4,5,6,7,8],
                 "crowd": [
                     {
-                        "crowd_sample_mean": 3.66,
-                        "crowd_sample_sd": 0.76,
-                        "crowd_sample_num": 254
+                        "crowd_name": "Crowd",
+                        "mean": 3.66,
+                        "std": 0.76,
+                        "n": 254
                     }
                 ]
             }
@@ -738,17 +755,18 @@
         "inner_setting": "You are a helpful assistant who can only reply numbers from 0 to 4.",
         "prompt": "You can only reply numbers from 0 to 4 in the following statements. 0 denotes strongly disagree, 1 denotes disagree, 2 denotes neutral, 3 denotes agree, 4 denotes strongly agree. Here are the statements:",
         "scale": 4,
+        "compute_mode": "SUM",
         "reverse": [3,7,9],
         "categories": [
             {
                 "cat_name": "Overall",
-                "compute_mode": "SUM",
                 "cat_questions": [1,3,4,7,9,10],
                 "crowd": [
                     {
-                        "crowd_sample_mean": 14.7,
-                        "crowd_sample_sd": 4,
-                        "crowd_sample_num": 1288
+                        "crowd_name": "Crowd",
+                        "mean": 14.7,
+                        "std": 4,
+                        "n": 1288
                     }
                 ]
             }
@@ -794,28 +812,24 @@
         "inner_setting": "You are a helpful assistant who can only reply numbers from 1 to 5.",
         "prompt": "You can only reply numbers from 1 to 5 in the following statements. Please compare your actual situation with the situations described in the questions below and choose the answer that best corresponds to your actual situation based on your first impression. There is no right or wrong answer, please answer truthfully based on your first impression. 1 = Does not match at all, 2 = Does not match very well, 3 = Not sure, 4 = Matches quite well, 5 = Matches perfectly. Here are the statements:",
         "scale": 6,
-        "reverse": [
-            5,
-            28,
-            33
-        ],
+        "compute_mode": "SUM",
+        "reverse": [5, 28, 33],
         "categories": [
             {
                 "cat_name": "Overall",
-                "compute_mode": "SUM",
                 "cat_questions": [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33],
                 "crowd": [
                     {
                         "crowd_name": "Men",
-                        "crowd_sample_mean": 124.78,
-                        "crowd_sample_sd": 16.52,
-                        "crowd_sample_num": 111
+                        "mean": 124.78,
+                        "std": 16.52,
+                        "n": 111
                     },
                     {
                         "crowd_name": "Women",
-                        "crowd_sample_mean": 130.94,
-                        "crowd_sample_sd": 15.09,
-                        "crowd_sample_num": 218
+                        "mean": 130.94,
+                        "std": 15.09,
+                        "n": 218
                     }
                 ]
             }
@@ -844,6 +858,7 @@
         "inner_setting": "You are a helpful assistant who can only reply numbers from 1 to 7.",
         "prompt": "You can only reply numbers from 1 to 7 in the following statements. A list of statements are provided below, and to complete this questionnaire, rate the extent to which you agree or disagree to each of the statements. 1: Strongly Disagree, 2: Disagree, 3: Slightly Disagree, 4: Neither Agree nor Disagree, 5: Slightly Agree, 6: Agree, 7: Strongly Agree. Please scores. Here are the statements:",
         "scale": 8,
+        "compute_mode": "AVG",
         "reverse": [],
         "categories": [
             {
@@ -851,9 +866,10 @@
                 "cat_questions": [1,2,3,4],
                 "crowd": [
                     {
-                        "crowd_sample_mean": 4.01,
-                        "crowd_sample_sd": 1.05,
-                        "crowd_sample_num": 418
+                        "crowd_name": "Crowd",
+                        "mean": 4.01,
+                        "std": 1.05,
+                        "n": 418
                     }
                 ]
             },
@@ -862,9 +878,10 @@
                 "cat_questions": [5,6,7,8],
                 "crowd": [
                     {
-                        "crowd_sample_mean": 3.78,
-                        "crowd_sample_sd": 1.12,
-                        "crowd_sample_num": 418
+                        "crowd_name": "Crowd",
+                        "mean": 3.78,
+                        "std": 1.12,
+                        "n": 418
                     }
                 ]
             },
@@ -873,9 +890,10 @@
                 "cat_questions": [9,10,11,12],
                 "crowd": [
                     {
-                        "crowd_sample_mean": 4.09,
-                        "crowd_sample_sd": 0.92,
-                        "crowd_sample_num": 418
+                        "crowd_name": "Crowd",
+                        "mean": 4.09,
+                        "std": 0.92,
+                        "n": 418
                     }
                 ]
             },
@@ -884,9 +902,10 @@
                 "cat_questions": [13,14,15,16],
                 "crowd": [
                     {
-                        "crowd_sample_mean": 4.15,
-                        "crowd_sample_sd": 0.96,
-                        "crowd_sample_num": 418
+                        "crowd_name": "Crowd",
+                        "mean": 4.15,
+                        "std": 0.96,
+                        "n": 418
                     }
                 ]
             }
@@ -1063,375 +1082,417 @@
         "inner_setting": "You are a helpful assistant who can only reply numbers from 1 to 5.",
         "prompt": "You can only reply numbers from 1 to 5 in the following questions. The criteria for evaluation and assessment are as follows: 1 means Dislike, 2 means Slightly Dislike, 3 means Neither Like nor Dislike, 4 means Slightly Like, 5 means Like Very Much. Please evaluate and assess the activity descriptions included in the following questions based on your own personal experience and perception. Here are the questions:",
         "scale": 6,
+        "compute_mode": "AVG",
         "reverse": [],
         "categories": [
             {
                 "cat_name":"Mechanics/Electronics",
                 "cat_questions": [1,2,3,4],
                 "crowd":[{
-                    "crowd_sample_mean": 2.41,
-                    "crowd_sample_sd": 1.29,
-                    "crowd_sample_num": 477
+                    "crowd_name": "Crowd",
+                    "mean": 2.41,
+                    "std": 1.29,
+                    "n": 477
                 }]
             },
             {
                 "cat_name":"Construction/WoodWork",
                 "cat_questions": [5,6,7,8],
                 "crowd":[{
-                    "crowd_sample_mean": 3.1,
-                    "crowd_sample_sd": 1.29,
-                    "crowd_sample_num": 477 
+                    "crowd_name": "Crowd",
+                    "mean": 3.1,
+                    "std": 1.29,
+                    "n": 477 
                 }]
             },
             {
                 "cat_name":"Transportation/Machine Operation",
                 "cat_questions": [9,10,11,12],
                 "crowd":[{
-                    "crowd_sample_mean": 2.49,
-                    "crowd_sample_sd": 1.23,
-                    "crowd_sample_num": 477 
+                    "crowd_name": "Crowd",
+                    "mean": 2.49,
+                    "std": 1.23,
+                    "n": 477 
                 }]
             },
             {
                 "cat_name":"Physical/Manual Labor",
                 "cat_questions": [13,14,15,16],
                 "crowd":[{
-                    "crowd_sample_mean": 2.24,
-                    "crowd_sample_sd": 1.19,
-                    "crowd_sample_num": 477 
+                    "crowd_name": "Crowd",
+                    "mean": 2.24,
+                    "std": 1.19,
+                    "n": 477 
                 }]
             },
             {
                 "cat_name":"Protective Service",
                 "cat_questions": [17,18,19,20],
                 "crowd":[{
-                    "crowd_sample_mean": 3.02,
-                    "crowd_sample_sd": 1.35,
-                    "crowd_sample_num": 477 
+                    "crowd_name": "Crowd",
+                    "mean": 3.02,
+                    "std": 1.35,
+                    "n": 477 
                 }]
             },
             {
                 "cat_name":"Agriculture",
                 "cat_questions": [21,22,23,24],
                 "crowd":[{
-                    "crowd_sample_mean": 3.01,
-                    "crowd_sample_sd": 1.24,
-                    "crowd_sample_num": 477 
+                    "crowd_name": "Crowd",
+                    "mean": 3.01,
+                    "std": 1.24,
+                    "n": 477 
                 }]
             },
             {
                 "cat_name":"Nature/Outdoors",
                 "cat_questions": [25,26,27,28],
                 "crowd":[{
-                    "crowd_sample_mean": 3.59,
-                    "crowd_sample_sd": 1.13,
-                    "crowd_sample_num": 477 
+                    "crowd_name": "Crowd",
+                    "mean": 3.59,
+                    "std": 1.13,
+                    "n": 477 
                 }]
             },
             {
                 "cat_name":"Animal Service",
                 "cat_questions": [29,30,31,32],
                 "crowd":[{
-                    "crowd_sample_mean": 3.65,
-                    "crowd_sample_sd": 1.2,
-                    "crowd_sample_num": 477 
+                    "crowd_name": "Crowd",
+                    "mean": 3.65,
+                    "std": 1.2,
+                    "n": 477 
                 }]
             },
             {
                 "cat_name":"Athletics",
                 "cat_questions": [33,34,35,36],
                 "crowd":[{
-                    "crowd_sample_mean": 3.26,
-                    "crowd_sample_sd": 1.28,
-                    "crowd_sample_num": 477 
+                    "crowd_name": "Crowd",
+                    "mean": 3.26,
+                    "std": 1.28,
+                    "n": 477 
                 }]
             },
             {
                 "cat_name":"Engineering",
                 "cat_questions": [37,38,39,40],
                 "crowd":[{
-                    "crowd_sample_mean": 2.93,
-                    "crowd_sample_sd": 1.29,
-                    "crowd_sample_num": 477 
+                    "crowd_name": "Crowd",
+                    "mean": 2.93,
+                    "std": 1.29,
+                    "n": 477 
                 }]
             },
             {
                 "cat_name":"Physical Science",
                 "cat_questions": [41,42,43,44],
                 "crowd":[{
-                    "crowd_sample_mean": 3.25,
-                    "crowd_sample_sd": 1.31,
-                    "crowd_sample_num": 477 
+                    "crowd_name": "Crowd",
+                    "mean": 3.25,
+                    "std": 1.31,
+                    "n": 477 
                 }]
             },
             {
                 "cat_name":"Life Science",
                 "cat_questions": [45,46,47,48],
                 "crowd":[{
-                    "crowd_sample_mean": 3.03,
-                    "crowd_sample_sd": 1.23,
-                    "crowd_sample_num": 477 
+                    "crowd_name": "Crowd",
+                    "mean": 3.03,
+                    "std": 1.23,
+                    "n": 477 
                 }]
             },
             {
                 "cat_name":"Medical Science",
                 "cat_questions": [49,50,51,52],
                 "crowd":[{
-                    "crowd_sample_mean": 3.31,
-                    "crowd_sample_sd": 1.3,
-                    "crowd_sample_num": 477 
+                    "crowd_name": "Crowd",
+                    "mean": 3.31,
+                    "std": 1.3,
+                    "n": 477 
                 }]
             },
             {
                 "cat_name":"Social Science",
                 "cat_questions": [53,54,55,56],
                 "crowd":[{
-                    "crowd_sample_mean": 3.37,
-                    "crowd_sample_sd": 1.16,
-                    "crowd_sample_num": 477 
+                    "crowd_name": "Crowd",
+                    "mean": 3.37,
+                    "std": 1.16,
+                    "n": 477 
                 }]
             },
             {
                 "cat_name":"Humanities",
                 "cat_questions": [57,58,59,60],
                 "crowd":[{
-                    "crowd_sample_mean": 3.33,
-                    "crowd_sample_sd": 1.2,
-                    "crowd_sample_num": 477 
+                    "crowd_name": "Crowd",
+                    "mean": 3.33,
+                    "std": 1.2,
+                    "n": 477 
                 }]
             },
             {
                 "cat_name":"Mathematics/Statistics",
                 "cat_questions": [61,62,63,64],
                 "crowd":[{
-                    "crowd_sample_mean": 2.93,
-                    "crowd_sample_sd": 1.35,
-                    "crowd_sample_num": 477 
+                    "crowd_name": "Crowd",
+                    "mean": 2.93,
+                    "std": 1.35,
+                    "n": 477 
                 }]
             },
             {
                 "cat_name":"Information Technology",
                 "cat_questions": [65,66,67,68],
                 "crowd":[{
-                    "crowd_sample_mean": 2.93,
-                    "crowd_sample_sd": 1.29,
-                    "crowd_sample_num": 477 
+                    "crowd_name": "Crowd",
+                    "mean": 2.93,
+                    "std": 1.29,
+                    "n": 477 
                 }]
             },
             {
                 "cat_name":"Visual Arts",
                 "cat_questions": [69,70,71,72],
                 "crowd":[{
-                    "crowd_sample_mean": 3.32,
-                    "crowd_sample_sd": 1.26,
-                    "crowd_sample_num": 477 
+                    "crowd_name": "Crowd",
+                    "mean": 3.32,
+                    "std": 1.26,
+                    "n": 477 
                 }]
             },
             {
                 "cat_name":"Applied Arts and Design",
                 "cat_questions": [73,74,75,76],
                 "crowd":[{
-                    "crowd_sample_mean": 3.16,
-                    "crowd_sample_sd": 1.22,
-                    "crowd_sample_num": 477 
+                    "crowd_name": "Crowd",
+                    "mean": 3.16,
+                    "std": 1.22,
+                    "n": 477 
                 }]
             },
             {
                 "cat_name":"Performing Arts",
                 "cat_questions": [77,78,79,80],
                 "crowd":[{
-                    "crowd_sample_mean": 2.75,
-                    "crowd_sample_sd": 1.38,
-                    "crowd_sample_num": 477 
+                    "crowd_name": "Crowd",
+                    "mean": 2.75,
+                    "std": 1.38,
+                    "n": 477 
                 }]
             },
             {
                 "cat_name":"Music",
                 "cat_questions": [81,82,83,84],
                 "crowd":[{
-                    "crowd_sample_mean": 3.16,
-                    "crowd_sample_sd": 1.29,
-                    "crowd_sample_num": 477 
+                    "crowd_name": "Crowd",
+                    "mean": 3.16,
+                    "std": 1.29,
+                    "n": 477 
                 }]
             },
             {
                 "cat_name":"Writing",
                 "cat_questions": [85,86,87,88],
                 "crowd":[{
-                    "crowd_sample_mean": 3.19,
-                    "crowd_sample_sd": 1.27,
-                    "crowd_sample_num": 477 
+                    "crowd_name": "Crowd",
+                    "mean": 3.19,
+                    "std": 1.27,
+                    "n": 477 
                 }]
             },
             {
                 "cat_name":"Media",
                 "cat_questions": [89,90,91,92],
                 "crowd":[{
-                    "crowd_sample_mean": 3.01,
-                    "crowd_sample_sd": 1.24,
-                    "crowd_sample_num": 477 
+                    "crowd_name": "Crowd",
+                    "mean": 3.01,
+                    "std": 1.24,
+                    "n": 477 
                 }]
             },
             {
                 "cat_name":"Culinary Art",
                 "cat_questions": [93,94,95,96],
                 "crowd":[{
-                    "crowd_sample_mean": 3.82,
-                    "crowd_sample_sd": 1.08,
-                    "crowd_sample_num": 477 
+                    "crowd_name": "Crowd",
+                    "mean": 3.82,
+                    "std": 1.08,
+                    "n": 477 
                 }]
             },
             {
                 "cat_name":"Teaching/Education",
                 "cat_questions": [97,98,99,100],
                 "crowd":[{
-                    "crowd_sample_mean": 3.74,
-                    "crowd_sample_sd": 1.07,
-                    "crowd_sample_num": 477 
+                    "crowd_name": "Crowd",
+                    "mean": 3.74,
+                    "std": 1.07,
+                    "n": 477 
                 }]
             },
             {
                 "cat_name":"Social Service",
                 "cat_questions": [101,102,103,104],
                 "crowd":[{
-                    "crowd_sample_mean": 3.87,
-                    "crowd_sample_sd": 0.96,
-                    "crowd_sample_num": 477 
+                    "crowd_name": "Crowd",
+                    "mean": 3.87,
+                    "std": 0.96,
+                    "n": 477 
                 }]
             },
             {
                 "cat_name":"Health Care Service",
                 "cat_questions": [105,106,107,108],
                 "crowd":[{
-                    "crowd_sample_mean": 2.88,
-                    "crowd_sample_sd": 1.33,
-                    "crowd_sample_num": 477 
+                    "crowd_name": "Crowd",
+                    "mean": 2.88,
+                    "std": 1.33,
+                    "n": 477 
                 }]
             },
             {
                 "cat_name":"Religious Activities",
                 "cat_questions": [109,110,111,112],
                 "crowd":[{
-                    "crowd_sample_mean": 2.65,
-                    "crowd_sample_sd": 1.35,
-                    "crowd_sample_num": 477 
+                    "crowd_name": "Crowd",
+                    "mean": 2.65,
+                    "std": 1.35,
+                    "n": 477 
                 }]
             },
             {
                 "cat_name":"Personal Service",
                 "cat_questions": [113,114,115,116],
                 "crowd":[{
-                    "crowd_sample_mean": 3.32,
-                    "crowd_sample_sd": 1.2,
-                    "crowd_sample_num": 477 
+                    "crowd_name": "Crowd",
+                    "mean": 3.32,
+                    "std": 1.2,
+                    "n": 477 
                 }]
             },
             {
                 "cat_name":"Professional Advising",
                 "cat_questions": [117,118,119,120],
                 "crowd":[{
-                    "crowd_sample_mean": 3.3,
-                    "crowd_sample_sd": 1.24,
-                    "crowd_sample_num": 477 
+                    "crowd_name": "Crowd",
+                    "mean": 3.3,
+                    "std": 1.24,
+                    "n": 477 
                 }]
             },
             {
                 "cat_name":"Business Iniatives",
                 "cat_questions": [121,122,123,124],
                 "crowd":[{
-                    "crowd_sample_mean": 3.17,
-                    "crowd_sample_sd": 1.25,
-                    "crowd_sample_num": 477 
+                    "crowd_name": "Crowd",
+                    "mean": 3.17,
+                    "std": 1.25,
+                    "n": 477 
                 }]
             },
             {
                 "cat_name":"Sales",
                 "cat_questions": [125,126,127,128],
                 "crowd":[{
-                    "crowd_sample_mean": 3.07,
-                    "crowd_sample_sd": 1.25,
-                    "crowd_sample_num": 477 
+                    "crowd_name": "Crowd",
+                    "mean": 3.07,
+                    "std": 1.25,
+                    "n": 477 
                 }]
             },
             {
                 "cat_name":"Marketing/Advertising",
                 "cat_questions": [129,130,131,132],
                 "crowd":[{
-                    "crowd_sample_mean": 2.87,
-                    "crowd_sample_sd": 1.23,
-                    "crowd_sample_num": 477 
+                    "crowd_name": "Crowd",
+                    "mean": 2.87,
+                    "std": 1.23,
+                    "n": 477 
                 }]
             },
             {
                 "cat_name":"Finance",
                 "cat_questions": [133,134,135,136],
                 "crowd":[{
-                    "crowd_sample_mean": 3.07,
-                    "crowd_sample_sd": 1.32,
-                    "crowd_sample_num": 477 
+                    "crowd_name": "Crowd",
+                    "mean": 3.07,
+                    "std": 1.32,
+                    "n": 477 
                 }]
             },
             {
                 "cat_name":"Accounting",
                 "cat_questions": [137,138,139,140],
                 "crowd":[{
-                    "crowd_sample_mean": 3,
-                    "crowd_sample_sd": 1.27,
-                    "crowd_sample_num": 477 
+                    "crowd_name": "Crowd",
+                    "mean": 3,
+                    "std": 1.27,
+                    "n": 477 
                 }]
             },
             {
                 "cat_name":"Human Resources",
                 "cat_questions": [141,142,143,144],
                 "crowd":[{
-                    "crowd_sample_mean": 3.27,
-                    "crowd_sample_sd": 1.2,
-                    "crowd_sample_num": 477 
+                    "crowd_name": "Crowd",
+                    "mean": 3.27,
+                    "std": 1.2,
+                    "n": 477 
                 }]
             },
             {
                 "cat_name":"Office Work",
                 "cat_questions": [145,146,147,148],
                 "crowd":[{
-                    "crowd_sample_mean": 3.27,
-                    "crowd_sample_sd": 1.14,
-                    "crowd_sample_num": 477 
+                    "crowd_name": "Crowd",
+                    "mean": 3.27,
+                    "std": 1.14,
+                    "n": 477 
                 }]
             },
             {
                 "cat_name":"Management/Administration",
                 "cat_questions": [149,150,151,152],
                 "crowd":[{
-                    "crowd_sample_mean": 3.05,
-                    "crowd_sample_sd": 1.27,
-                    "crowd_sample_num": 477 
+                    "crowd_name": "Crowd",
+                    "mean": 3.05,
+                    "std": 1.27,
+                    "n": 477 
                 }]
             },
             {
                 "cat_name":"Public Speaking",
                 "cat_questions": [153,154,155,156],
                 "crowd":[{
-                    "crowd_sample_mean": 2.86,
-                    "crowd_sample_sd": 1.38,
-                    "crowd_sample_num": 477 
+                    "crowd_name": "Crowd",
+                    "mean": 2.86,
+                    "std": 1.38,
+                    "n": 477 
                 }]
             },
             {
                 "cat_name":"Politics",
                 "cat_questions": [157,158,159,160],
                 "crowd":[{
-                    "crowd_sample_mean": 2.32,
-                    "crowd_sample_sd": 1.33,
-                    "crowd_sample_num": 477 
+                    "crowd_name": "Crowd",
+                    "mean": 2.32,
+                    "std": 1.33,
+                    "n": 477 
                 }]
             },
             {
                 "cat_name":"Law",
                 "cat_questions": [161,162,163,164],
                 "crowd":[{
-                    "crowd_sample_mean": 3.08,
-                    "crowd_sample_sd": 1.3,
-                    "crowd_sample_num": 477 
+                    "crowd_name": "Crowd",
+                    "mean": 3.08,
+                    "std": 1.3,
+                    "n": 477 
                 }]
             }
         ]
