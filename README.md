@@ -8,16 +8,18 @@ An example run:
 ```
 python run_psychobench.py \
   --model gpt-3.5-turbo \
-  --questionnaire Empathy \
+  --questionnaire EPQ-R \
   --shuffle-count 1 \
   --test-count 2
 ```
 
 An example result:
-| | Mean | STD | N |
-| --- | --- | --- | --- |
-| LLM | $µ_1$ = 6.05 | $s_1$ = 0.1732 | $n_1$ = 4 |
-| Crowd | $µ_2$ = 4.92 | $s_2$ = 0.76 | $n_2$ = 112 |
+| Category | gpt-4 (n = 10) | Male (n = 693) | Female (n = 878) |
+| :---: | :---: | :---: | :---: |
+| Extraversion | 13.9 $\pm$ 4.3 | 12.5 $\pm$ 6.0 | 14.1 $\pm$ 5.1 | 
+| Pschoticism | 17.8 $\pm$ 2.1 | 7.2 $\pm$ 4.6 | 5.7 $\pm$ 3.9 | 
+| Neuroticism | 3.9 $\pm$ 6.0 | 10.5 $\pm$ 5.8 | 12.5 $\pm$ 5.1 | 
+| Lying | 7.0 $\pm$ 2.1 | 7.1 $\pm$ 4.3 | 6.9 $\pm$ 4.0 | 
 
 ## Argument Specification
 1. `--questionnaire`: (Required) Select the questionnaire(s) to run. For choises please see the list bellow.

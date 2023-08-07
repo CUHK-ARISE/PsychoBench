@@ -235,7 +235,7 @@ def hypothesis_testing(result1, result2, significance_level, model, crowd_name):
             output_text += f'\t**Conclusion ($µ_1$ < $µ_2$):** The average scores of {model} is assumed to be smaller than the average scores of {crowd_name} in this category.\n\n'
             # output_list += f' ( $\\downarrow$ )'
 
-    output_list += f' |'
+    output_list += f' | '
     return (output_text, output_list)
 
 
@@ -253,7 +253,7 @@ def analysis_results(questionnaire, args):
     mean_list = [[] for i in range(len(crowd_list) + 1)]
     
     output_list = f'# {questionnaire["name"]} Results\n\n'
-    output_list += f'| Categories | {model} (n = {len(test_data)}) | ' + ' | '.join([f'{c[0]} (n = {c[1]})' for c in crowd_list]) + ' |\n'
+    output_list += f'| Category | {model} (n = {len(test_data)}) | ' + ' | '.join([f'{c[0]} (n = {c[1]})' for c in crowd_list]) + ' |\n'
     output_list += '| :---: | ' + ' | '.join([":---:" for i in range(len(crowd_list) + 1)]) + ' |\n'
     output_text = ''
 
