@@ -307,5 +307,8 @@ def run_psychobench(args, generator):
             
         # Analysis
         if args.mode in ['analysis', 'auto']:
-            analysis_results(questionnaire, args)
+            try:
+                analysis_results(questionnaire, args)
+            except:
+                print(f'Unable to analysis {args.testing_file}.')
 
