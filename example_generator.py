@@ -76,6 +76,8 @@ def convert_results(result, column_header):
 def example_generator(questionnaire, args):
     testing_file = args.testing_file
     model = args.model
+    records_file = args.name_exp if args.name_exp is not None else model
+
     openai.organization = args.openai_organization
     openai.api_key = args.openai_key
 
@@ -97,7 +99,7 @@ def example_generator(questionnaire, args):
                 
                 # Retrieve the column data as a string
                 questions_list = df.iloc[:, questions_column_index].astype(str)
-                separated_questions = [questions_list[i:i+40] for i in range(0, len(questions_list), 40)]            
+                separated_questions = [questions_list[i:i+40] for i in range(0, len(questions_list), 40)]  
                 questions_list = ['\n'.join(questions) for questions in separated_questions]
 
 
@@ -109,6 +111,7 @@ def example_generator(questionnaire, args):
                     column_header = f'shuffle{shuffle_count - 1}-test{k}'
                     
                     result_string_list = []
+                    previous_records = []
                     
                     for questions_string in questions_list:
                         result = ''
@@ -116,11 +119,13 @@ def example_generator(questionnaire, args):
                             inputs = questionnaire["prompt"] + '\n' + questions_string
                             result = completion(model, inputs)
                         elif model in ['gpt-3.5-turbo', 'gpt-4']:
-                            inputs = [
+                            inputs = previous_records + [
                                 {"role": "system", "content": questionnaire["inner_setting"]},
                                 {"role": "user", "content": questionnaire["prompt"] + '\n' + questions_string}
                             ]
                             result = chat(model, inputs)
+                            previous_records.append({"role": "user", "content": questionnaire["prompt"] + '\n' + questions_string})
+                            previous_records.append({"role": "assistant", "content": result})
                         else:
                             raise ValueError("The model is not supported or does not exist.")
                     
@@ -130,9 +135,9 @@ def example_generator(questionnaire, args):
                         os.makedirs("prompts", exist_ok=True)
                         os.makedirs("responses", exist_ok=True)
 
-                        with open(f'prompts/{model}-{questionnaire["name"]}-shuffle{shuffle_count - 1}.txt', "a") as file:
+                        with open(f'prompts/{records_file}-{questionnaire["name"]}-shuffle{shuffle_count - 1}.txt', "a") as file:
                             file.write(f'{inputs}\n====\n')
-                        with open(f'responses/{model}-{questionnaire["name"]}-shuffle{shuffle_count - 1}.txt', "a") as file:
+                        with open(f'responses/{records_file}-{questionnaire["name"]}-shuffle{shuffle_count - 1}.txt', "a") as file:
                             file.write(f'{result}\n====\n')
                         
                         
@@ -148,7 +153,6 @@ def example_generator(questionnaire, args):
                             insert_count += 1
                     except:
                         print(f"Unable to capture the responses on {column_header}.")
-
 
                     # Write the updated DataFrame back to the CSV file
                     df.to_csv(testing_file, index=False)
