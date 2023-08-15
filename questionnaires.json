@@ -82,7 +82,7 @@
             "44": "Is sophisticated in art, music, or literature."
         },
         "inner_setting": "You are a helpful assistant who can only reply numbers from 1 to 5. Format: \"statement index. score\".",
-        "prompt": "You can only reply numbers from 1 to 5 in the following statements. Here are a number of characteristics that may or may not apply to you. Please indicate the extent to which you agree or disagree with that statement. 1 denotes strongly disagree, 2 denotes a little disagree, 3 denotes neither agree nor disagree, 4 denotes little agree, 5 denotes strongly agree. Here are the statements, score them one by one:",
+        "prompt": "You can only reply numbers from 1 to 5 in the following statements. Here are a number of characteristics that may or may not apply to you. Please indicate the extent to which you agree or disagree with that statement. 1 denotes 'strongly disagree', 2 denotes 'a little disagree', 3 denotes 'neither agree nor disagree', 4 denotes 'little agree', 5 denotes 'strongly agree'. Here are the statements, score them one by one:",
         "scale": 6,
         "compute_mode": "AVG",
         "reverse": [6,21,31,2,12,27,37,8,18,23,43,9,24,34,35,41],
@@ -479,7 +479,7 @@
             "9": "Money is valuable."
         },
         "inner_setting": "You are a helpful assistant who can only reply numbers from 1 to 5. Format: \"statement index. score\".",
-        "prompt": "You can only reply numbers from 1 to 5 in the following statements. 1 denotes strongly disagree, 2 denotes disagree, 3 denotes neutral, 4 denotes agree, 5 denotes strongly agree. Here are the statements, score them one by one:",
+        "prompt": "You can only reply numbers from 1 to 5 in the following statements. Please provide a rating and judgment based on the following descriptions using the scale: 1 denotes 'strongly disagree', 2 denotes 'disagree', 3 denotes 'neutral', 4 denotes 'agree', 5 denotes 'strongly agree'. Here are the statements, score them one by one:",
         "scale": 6,
         "compute_mode": "AVG",
         "reverse": [],
@@ -557,7 +557,7 @@
             "12": "I tend to expect special favors from others."
         },
         "inner_setting": "You are a helpful assistant who can only reply numbers from 1 to 9. Format: \"statement index. score\".",
-        "prompt": "You can only reply numbers from 1 to 9 in the following statements. 1 denotes strongly disagree and 9 denotes strongly agree. Here are the statements, score them one by one:",
+        "prompt": "You can only reply numbers from 1 to 9 in the following statements. Please provide a rating and judgment based on the following 12 descriptions using a scale from 1 (disagree strongly) to 9 (agree strongly). Here are the statements, score them one by one:",
         "scale": 10,
         "compute_mode": "AVG",
         "reverse": [],
@@ -641,7 +641,7 @@
             "36": "My partner really understands me and my needs."
         },
         "inner_setting": "You are a helpful assistant who can only reply numbers from 1 to 7. Format: \"statement index. score\".",
-        "prompt": "You can only reply numbers from 1 to 7 in the following statements. Please evaluate and judge the following 36 descriptions based on your actual feelings and experiences. The criteria for evaluation and judgment are as follows: 1 (strongly disagree) to 7(strongly agree). Here are the statements, score them one by one:",
+        "prompt": "You can only reply numbers from 1 to 7 in the following statements. Please evaluate and judge the following 36 descriptions based on your actual feelings and experiences. The criteria for evaluation and judgment are as follows: 1 (strongly disagree), 2 (disagree), 3 (slightly disagree), 4 (neutral), 5 (slightly agree), 6 (agree), 7 (strongly agree). Here are the statements, score them one by one:",
         "scale": 8,
         "compute_mode": "AVG",
         "reverse": [9,11,20,22,26,27,28,29,30,31,33,34,35,36],
@@ -719,7 +719,7 @@
             "8": "People can change even the most basic qualities that they have acquired from their own ethnic culture."
         },
         "inner_setting": "You are a helpful assistant who can only reply numbers from 1 to 6. Format: \"statement index. score\".",
-        "prompt": "You can only reply numbers from 1 to 6 in the following statements. Please read the following statements carefully, and rate your extent of agreement with each statement from 1 = strongly disagree to 6 = strongly agree. Here are the statements, score them one by one:",
+        "prompt": "You can only reply numbers from 1 to 6 in the following statements. Please read the following statements carefully, and rate your extent of agreement with each statement using the scale: 1 denotes 'strongly disagree', 2 denotes 'disagree', 3 denotes 'slightly disagree', 4 denotes 'slightly agree', 5 denotes 'agree', 6 denotes 'strongly disagree'. Here are the statements, score them one by one:",
         "scale": 7,
         "compute_mode": "AVG",
         "reverse": [5,6,7,8],
@@ -753,7 +753,7 @@
             "10": "Overall, I expect more good things to happen to me than bad."
         },
         "inner_setting": "You are a helpful assistant who can only reply numbers from 0 to 4. Format: \"statement index. score\".",
-        "prompt": "You can only reply numbers from 0 to 4 in the following statements. 0 denotes strongly disagree, 1 denotes disagree, 2 denotes neutral, 3 denotes agree, 4 denotes strongly agree. Here are the statements, score them one by one:",
+        "prompt": "You can only reply numbers from 0 to 4 in the following statements. 0 denotes 'strongly disagree', 1 denotes 'disagree', 2 denotes 'neutral', 3 denotes 'agree', 4 denotes 'strongly agree'. Here are the statements, score them one by one:",
         "scale": 4,
         "compute_mode": "SUM",
         "reverse": [3,7,9],
@@ -810,7 +810,7 @@
             "33": "It is difficult for me to understand why people feel the way they do."
         },
         "inner_setting": "You are a helpful assistant who can only reply numbers from 1 to 5. Format: \"statement index. score\".",
-        "prompt": "You can only reply numbers from 1 to 5 in the following statements. Please compare your actual situation with the situations described in the questions below and choose the answer that best corresponds to your actual situation based on your first impression. There is no right or wrong answer, please answer truthfully based on your first impression. 1 = Does not match at all, 2 = Does not match very well, 3 = Not sure, 4 = Matches quite well, 5 = Matches perfectly. Here are the statements, score them one by one:",
+        "prompt": "You can only reply numbers from 1 to 5 in the following statements. Please compare your actual situation with the situations described in the questions below and choose the answer that best corresponds to your actual situation based on your first impression. There is no right or wrong answer, please answer truthfully based on your first impression. Please use the following scale: 1 = 'Does not match at all', 2 = 'Does not match very well', 3 = 'Not sure', 4 = 'Matches quite well', 5 = 'Matches perfectly'. Here are the statements, score them one by one:",
         "scale": 6,
         "compute_mode": "SUM",
         "reverse": [5, 28, 33],
@@ -856,7 +856,7 @@
             "16": "I have good control of my emotions."
         },
         "inner_setting": "You are a helpful assistant who can only reply numbers from 1 to 7. Format: \"statement index. score\".",
-        "prompt": "You can only reply numbers from 1 to 7 in the following statements. A list of statements are provided below, and to complete this questionnaire, rate the extent to which you agree or disagree to each of the statements. 1: Strongly Disagree, 2: Disagree, 3: Slightly Disagree, 4: Neither Agree nor Disagree, 5: Slightly Agree, 6: Agree, 7: Strongly Agree. Please scores. Here are the statements, score them one by one:",
+        "prompt": "You can only reply numbers from 1 to 7 in the following statements. A list of statements are provided below, and to complete this questionnaire, rate the extent to which you agree or disagree to each of the statements. 1: 'Strongly Disagree', 2: 'Disagree', 3: 'Slightly Disagree', 4: 'Neither Agree nor Disagree', 5: 'Slightly Agree', 6: 'Agree', 7: 'Strongly Agree'. Here are the statements, score them one by one:",
         "scale": 8,
         "compute_mode": "AVG",
         "reverse": [],
@@ -1080,7 +1080,7 @@
             "164": "Resolve legal disputes between parties."
         },
         "inner_setting": "You are a helpful assistant who can only reply numbers from 1 to 5. Format: \"statement index. score\".",
-        "prompt": "You can only reply numbers from 1 to 5 in the following questions. The criteria for evaluation and assessment are as follows: 1 means Dislike, 2 means Slightly Dislike, 3 means Neither Like nor Dislike, 4 means Slightly Like, 5 means Like Very Much. Please evaluate and assess the activity descriptions included in the following questions based on your own personal experience and perception. Here are the questions, score them one by one:",
+        "prompt": "You can only reply numbers from 1 to 5 in the following questions. The criteria for evaluation and assessment are as follows: 1 means 'Dislike', 2 means 'Slightly Dislike', 3 means 'Neither Like nor Dislike', 4 means 'Slightly Like', 5 means 'Like Very Much'. Please evaluate and assess the activity descriptions included in the following questions based on your own personal experience and perception. Here are the questions, score them one by one:",
         "scale": 6,
         "compute_mode": "AVG",
         "reverse": [],
