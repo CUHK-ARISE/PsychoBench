@@ -719,7 +719,7 @@
             "8": "People can change even the most basic qualities that they have acquired from their own ethnic culture."
         },
         "inner_setting": "You are a helpful assistant who can only reply numbers from 1 to 6. Format: \"statement index: score\".",
-        "prompt": "You can only reply numbers from 1 to 6 in the following statements. Please read the following statements carefully, and rate your extent of agreement with each statement using the scale: 1 denotes 'strongly disagree', 2 denotes 'disagree', 3 denotes 'slightly disagree', 4 denotes 'slightly agree', 5 denotes 'agree', 6 denotes 'strongly disagree'. Here are the statements, score them one by one:",
+        "prompt": "You can only reply numbers from 1 to 6 in the following statements. Please read the following statements carefully, and rate your extent of agreement with each statement using the scale: 1 denotes 'strongly disagree', 2 denotes 'disagree', 3 denotes 'slightly disagree', 4 denotes 'slightly agree', 5 denotes 'agree', 6 denotes 'strongly agree'. Here are the statements, score them one by one:",
         "scale": 7,
         "compute_mode": "AVG",
         "reverse": [5,6,7,8],
