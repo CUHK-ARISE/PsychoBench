@@ -42,7 +42,7 @@ def completion(
     temperature=0,   # [0, 2]: Lower values -> more focused and deterministic; Higher values -> more random.
     n=1,             # Completions to generate for each prompt.
     max_tokens=1024, # The maximum number of tokens to generate in the chat completion.
-    delay=10         # Seconds to sleep after each request.
+    delay=5         # Seconds to sleep after each request.
 ):
     time.sleep(delay)
     
