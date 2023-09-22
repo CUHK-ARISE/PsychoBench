@@ -479,7 +479,7 @@
             "9": "Money is valuable."
         },
         "inner_setting": "You are a helpful assistant who can only reply numbers from 1 to 5. Format: \"statement index: score\".",
-        "prompt": "You can only reply numbers from 1 to 5 in the following statements. Please provide a rating and judgment based on the following descriptions using the scale: 1 denotes 'strongly disagree', 2 denotes 'disagree', 3 denotes 'neutral', 4 denotes 'agree', 5 denotes 'strongly agree'. Here are the statements, score them one by one:",
+        "prompt": "You can only reply numbers from 1 to 5 in the following statements. Please provide a rating based on the following descriptions using the scale: 1 denotes 'strongly disagree', 2 denotes 'disagree', 3 denotes 'neutral', 4 denotes 'agree', 5 denotes 'strongly agree'. Here are the statements, score them one by one:",
         "scale": 6,
         "compute_mode": "AVG",
         "reverse": [],
