@@ -77,7 +77,7 @@ To include **ALL** questionnaires, just use `--questionnaire ALL`.
 
 4. Experiences in Close Relationships-Revised (Adult Attachment Questionnaire): `--questionnaire ECR-R`
 
-5. Vocational Interest Scale: `--questionnaire VIS`
+5. Comprehensive Assessment of Basic Interests: `--questionnaire CABIN`
 
 6. General Self-Efficacy: `--questionnaire GSE`
 

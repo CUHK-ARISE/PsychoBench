@@ -100,7 +100,7 @@ def example_generator(questionnaire, args):
                 # Retrieve the column data as a string
                 questions_list = df.iloc[:, questions_column_index].astype(str)
                 separated_questions = [questions_list[i:i+40] for i in range(0, len(questions_list), 40)]  
-                questions_list = ['\n'.join(questions) for questions in separated_questions]
+                questions_list = ['\n'.join([f"{i+1}.{q.split('.')[1]}" for i, q in enumerate(questions)]) for j, questions in enumerate(separated_questions)]
 
 
                 for k in range(args.test_count):
@@ -116,7 +116,7 @@ def example_generator(questionnaire, args):
                     for questions_string in questions_list:
                         result = ''
                         if model == 'text-davinci-003':
-                            inputs = questionnaire["prompt"] + '\n' + questions_string
+                            inputs = questionnaire["inner_setting"].replace('Format: \"index: score\"', 'Format: \"index: score\\\n\"') + questionnaire["prompt"] + '\n' + questions_string
                             result = completion(model, inputs)
                         elif model in ['gpt-3.5-turbo', 'gpt-4']:
                             inputs = previous_records + [

@@ -49,7 +49,7 @@ def plot_bar_chart(value_list, cat_list, item_list, save_name, title="Bar Chart"
     ax.set_xlabel('Categories', fontsize=12)
     ax.set_ylabel('Score', fontsize=12)
     ax.set_xticks([r + bar_width * (num_bars - 1) / 2 for r in range(len(cat_list))])
-    if title in ['VIS']:
+    if title in ['CABIN']:
         ax.set_xticklabels(cat_list, rotation=20, ha='right')
     else:
         ax.set_xticklabels(cat_list)
@@ -284,7 +284,7 @@ def analysis_results(questionnaire, args):
 def run_psychobench(args, generator):
     
     # Extract the targeted questionnaires
-    questionnaire_list = ['BFI', 'DTDD', 'EPQ-R', 'ECR-R', 'VIS', 'GSE', 'LMS', 'BSRI', 'ICB', 'LOT-R', 'Empathy', 'EIS', 'WLEIS'] \
+    questionnaire_list = ['BFI', 'DTDD', 'EPQ-R', 'ECR-R', 'CABIN', 'GSE', 'LMS', 'BSRI', 'ICB', 'LOT-R', 'Empathy', 'EIS', 'WLEIS'] \
                          if args.questionnaire == 'ALL' else args.questionnaire.split(',')
     
     for questionnaire_name in questionnaire_list:
