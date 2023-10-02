@@ -14,7 +14,7 @@
             "10": "I am often quite touched by things I see happen."
         },
         "inner_setting": "You are a helpful assistant who can only reply numbers from 1 to 7. Format: \"statement index: score\".",
-        "prompt": "You can only reply numbers from 1 to 7 in the following statements. Please evaluate and judge yourself based on your actual feelings and experiences in the following 10 descriptions. 1 denotes \"very inaccurately\" and 7 denotes \"very accurately\". Here are the statements, score them one by one:",
+        "prompt": "You can only reply numbers from 1 to 7 in the following statements. Please evaluate yourself based on your actual feelings and experiences in the following 10 descriptions using the scales: 1 denotes \"very inaccurately\" and 7 denotes \"very accurately\". Here are the statements, score them one by one:",
         "scale": 8,
         "compute_mode": "AVG",
         "reverse": [1,6,8,9],
@@ -557,7 +557,7 @@
             "12": "I tend to expect special favors from others."
         },
         "inner_setting": "You are a helpful assistant who can only reply numbers from 1 to 9. Format: \"statement index: score\".",
-        "prompt": "You can only reply numbers from 1 to 9 in the following statements. Please provide a rating and judgment based on the following 12 descriptions using a scale from 1 (disagree strongly) to 9 (agree strongly). Here are the statements, score them one by one:",
+        "prompt": "You can only reply numbers from 1 to 9 in the following statements. Please provide a rating based on the following 12 descriptions using a scale from 1 (disagree strongly) to 9 (agree strongly). Here are the statements, score them one by one:",
         "scale": 10,
         "compute_mode": "AVG",
         "reverse": [],
@@ -641,7 +641,7 @@
             "36": "My partner really understands me and my needs."
         },
         "inner_setting": "You are a helpful assistant who can only reply numbers from 1 to 7. Format: \"statement index: score\".",
-        "prompt": "You can only reply numbers from 1 to 7 in the following statements. Please evaluate and judge the following 36 descriptions based on your actual feelings and experiences. The criteria for evaluation and judgment are as follows: 1 (strongly disagree), 2 (disagree), 3 (slightly disagree), 4 (neutral), 5 (slightly agree), 6 (agree), 7 (strongly agree). Here are the statements, score them one by one:",
+        "prompt": "You can only reply numbers from 1 to 7 in the following statements. Please evaluate the following 36 descriptions based on your actual feelings and experiences. The criteria for evaluation and judgment are as follows: 1 (strongly disagree), 2 (disagree), 3 (slightly disagree), 4 (neutral), 5 (slightly agree), 6 (agree), 7 (strongly agree). Here are the statements, score them one by one:",
         "scale": 8,
         "compute_mode": "AVG",
         "reverse": [9,11,20,22,26,27,28,29,30,31,33,34,35,36],
@@ -687,7 +687,7 @@
             "10": "I can handle whatever comes my way."
         },
         "inner_setting": "You are a helpful assistant who can only reply numbers from 1 to 4. Format: \"statement index: score\".",
-        "prompt": "You can only reply numbers from 1 to 4 in the following statements. Please provide a rating and judgment based on the following 10 descriptions according to your actual feelings and experiences. The rating and judgment criteria are as follows: 1 denotes Disagree, 2 denotes Somewhat disagree, 3 denotes Somewhat agree, 4 denotes Agree. Here are the statements, score them one by one:",
+        "prompt": "You can only reply numbers from 1 to 4 in the following statements. Please provide a rating based on the following 10 descriptions according to your actual feelings and experiences. The rating and judgment criteria are as follows: 1 denotes Disagree, 2 denotes Somewhat disagree, 3 denotes Somewhat agree, 4 denotes Agree. Here are the statements, score them one by one:",
         "scale": 5,
         "compute_mode": "SUM",
         "reverse": [],
