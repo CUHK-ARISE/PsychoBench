@@ -1,10 +1,17 @@
-# PsychoBench
-**RESEARCH USE ONLY. NO COMMERCIAL USE ALLOWED**
+<div align= "center">
+    <h1> PsychoBench</h1>
+</div>
+
+<div align="center">
+
+</div>
+
+**RESEARCH USE ONLY✅ NO COMMERCIAL USE ALLOWED❌**
 
 Benchmarking LLMs' Psychological Portray.
 
-## Usage
-An example run:
+## 🛠️ Usage
+✨An example run:
 ```
 python run_psychobench.py \
   --model gpt-3.5-turbo \
@@ -13,7 +20,7 @@ python run_psychobench.py \
   --test-count 2
 ```
 
-An example result:
+✨An example result:
 | Category | gpt-4 (n = 10) | Male (n = 693) | Female (n = 878) |
 | :---: | :---: | :---: | :---: |
 | Extraversion | 13.9 $\pm$ 4.3 | 12.5 $\pm$ 6.0 | 14.1 $\pm$ 5.1 | 
@@ -21,7 +28,7 @@ An example result:
 | Neuroticism | 3.9 $\pm$ 6.0 | 10.5 $\pm$ 5.8 | 12.5 $\pm$ 5.1 | 
 | Lying | 7.0 $\pm$ 2.1 | 7.1 $\pm$ 4.3 | 6.9 $\pm$ 4.0 | 
 
-## Argument Specification
+## 🔧 Argument Specification
 1. `--questionnaire`: (Required) Select the questionnaire(s) to run. For choises please see the list bellow.
 
 2. `--model`: (Required) The name of the model to test.
@@ -42,7 +49,7 @@ Arguments related to `openai` API (can be discarded when users customize models)
 
 2. `--openai-key`: Your API key. Can be found in `View API keys -> API keys`.
 
-## Benchmarking Your Own Model
+## 🦙 Benchmarking Your Own Model
 It is easy! Just replace the function `example_generator` fed into the function `run_psychobench(args, generator)`.
 
 Your customized function `your_generator()` does the following things:
@@ -64,7 +71,7 @@ You can read the columns before each column starting with `order-`, which contai
 
 Please check `example_generator.py` for datailed information.
 
-## Questionnaire List (Choices for Argument: --questionnaire)
+## 📃 Questionnaire List (Choices for Argument: --questionnaire)
 To include **multiple** questionnaires, use a comma to separate them. For example: `--questionnaire BFI,DTDD,EPQ-R`.
 
 To include **ALL** questionnaires, just use `--questionnaire ALL`.
