@@ -1,5 +1,5 @@
 <div align= "center">
-    <h1> PsychoBench</h1>
+    <h1> 🔍🤖PsychoBench</h1>
 </div>
 
 <div align="center">
