@@ -101,3 +101,24 @@ To include **ALL** questionnaires, just use `--questionnaire ALL`.
 12. Emotional Intelligence Scale: `--questionnaire EIS`
 
 13. Wong and Law Emotional Intelligence Scale: `--questionnaire WLEIS`
+
+## 👉 Paper and Citation
+For more details, please refer to our paper <a href="https://arxiv.org/abs/2310.01386">here</a>.
+
+If you find our paper&tool interesting and useful, please feel free to give us a star and cite us through:
+```
+@article{huang2023emotionally,
+  author    = {Jen{-}tse Huang and
+               Wenxuan Wang and
+               Eric John Li and
+               Man Ho Lam and
+               Shujie Ren and
+               Youliang Yuan and
+               Wenxiang Jiao and
+               Zhaopeng Tu and
+               Michael R. Lyu},
+  title     = {Who is ChatGPT? Benchmarking LLMs' Psychological Portrayal Using Psycho{B}ench},
+  journal   = {arXiv preprint arXiv:2310.01386},
+  year      = {2023}
+}
+```
