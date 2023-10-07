@@ -6,6 +6,12 @@
 
 </div>
 
+</div>
+
+<div align="center">
+<img src="framework.jpg" width="350px">
+</div>
+
 **RESEARCH USE ONLY✅ NO COMMERCIAL USE ALLOWED❌**
 
 Benchmarking LLMs' Psychological Portray.
