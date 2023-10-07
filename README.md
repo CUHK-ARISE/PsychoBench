@@ -9,7 +9,7 @@
 </div>
 
 <div align="center">
-<img src="framework.jpg" width="600px">
+<img src="framework.jpg" width="750px">
 </div>
 
 **RESEARCH USE ONLY✅ NO COMMERCIAL USE ALLOWED❌**
