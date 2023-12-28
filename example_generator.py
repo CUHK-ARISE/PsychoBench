@@ -11,13 +11,14 @@ from tqdm import tqdm
 
 
 @retry(wait=wait_random_exponential(min=1, max=60), stop=stop_after_attempt(6))
+
 def chat(
     model,           # gpt-4, gpt-4-0314, gpt-4-32k, gpt-4-32k-0314, gpt-3.5-turbo, gpt-3.5-turbo-0301
     messages,        # [{"role": "system"/"user"/"assistant", "content": "Hello!", "name": "example"}]
     temperature=0,   # [0, 2]: Lower values -> more focused and deterministic; Higher values -> more random.
     n=1,             # Chat completion choices to generate for each input message.
     max_tokens=1024, # The maximum number of tokens to generate in the chat completion.
-    delay=5          # Seconds to sleep after each request.
+    delay=1          # Seconds to sleep after each request.
 ):
     time.sleep(delay)
     
@@ -42,7 +43,7 @@ def completion(
     temperature=0,   # [0, 2]: Lower values -> more focused and deterministic; Higher values -> more random.
     n=1,             # Completions to generate for each prompt.
     max_tokens=1024, # The maximum number of tokens to generate in the chat completion.
-    delay=5         # Seconds to sleep after each request.
+    delay=1         # Seconds to sleep after each request.
 ):
     time.sleep(delay)
     
@@ -99,7 +100,7 @@ def example_generator(questionnaire, args):
                 
                 # Retrieve the column data as a string
                 questions_list = df.iloc[:, questions_column_index].astype(str)
-                separated_questions = [questions_list[i:i+40] for i in range(0, len(questions_list), 40)]  
+                separated_questions = [questions_list[i:i+30] for i in range(0, len(questions_list), 30)]  
                 questions_list = ['\n'.join([f"{i+1}.{q.split('.')[1]}" for i, q in enumerate(questions)]) for j, questions in enumerate(separated_questions)]
 
 
@@ -110,49 +111,50 @@ def example_generator(questionnaire, args):
                     # Insert the updated column into the DataFrame with a unique identifier in the header
                     column_header = f'shuffle{shuffle_count - 1}-test{k}'
                     
-                    result_string_list = []
-                    previous_records = []
-                    
-                    for questions_string in questions_list:
-                        result = ''
-                        if model == 'text-davinci-003':
-                            inputs = questionnaire["inner_setting"].replace('Format: \"index: score\"', 'Format: \"index: score\\\n\"') + questionnaire["prompt"] + '\n' + questions_string
-                            result = completion(model, inputs)
-                        elif model in ['gpt-3.5-turbo', 'gpt-4']:
-                            inputs = previous_records + [
-                                {"role": "system", "content": questionnaire["inner_setting"]},
-                                {"role": "user", "content": questionnaire["prompt"] + '\n' + questions_string}
-                            ]
-                            result = chat(model, inputs)
-                            previous_records.append({"role": "user", "content": questionnaire["prompt"] + '\n' + questions_string})
-                            previous_records.append({"role": "assistant", "content": result})
-                        else:
-                            raise ValueError("The model is not supported or does not exist.")
-                    
-                        result_string_list.append(result.strip())
-                    
-                        # Write the prompts and results to the file
-                        os.makedirs("prompts", exist_ok=True)
-                        os.makedirs("responses", exist_ok=True)
+                    while(True):
+                        result_string_list = []
+                        previous_records = []
+                        
+                        for questions_string in questions_list:
+                            result = ''
+                            if model == 'text-davinci-003':
+                                inputs = questionnaire["inner_setting"].replace('Format: \"index: score\"', 'Format: \"index: score\\\n\"') + questionnaire["prompt"] + '\n' + questions_string
+                                result = completion(model, inputs)
+                            elif model in ['gpt-3.5-turbo', 'gpt-4', 'gpt-3.5-turbo-0301', 'gpt-3.5-turbo-0613', 'gpt-3.5-turbo-1106']:
+                                inputs = previous_records + [
+                                    {"role": "system", "content": questionnaire["inner_setting"]},
+                                    {"role": "user", "content": questionnaire["prompt"] + '\n' + questions_string}
+                                ]
+                                result = chat(model, inputs)
+                                previous_records.append({"role": "user", "content": questionnaire["prompt"] + '\n' + questions_string})
+                                previous_records.append({"role": "assistant", "content": result})
+                            else:
+                                raise ValueError("The model is not supported or does not exist.")
+                        
+                            result_string_list.append(result.strip())
+                        
+                            # Write the prompts and results to the file
+                            os.makedirs("prompts", exist_ok=True)
+                            os.makedirs("responses", exist_ok=True)
 
-                        with open(f'prompts/{records_file}-{questionnaire["name"]}-shuffle{shuffle_count - 1}.txt', "a") as file:
-                            file.write(f'{inputs}\n====\n')
-                        with open(f'responses/{records_file}-{questionnaire["name"]}-shuffle{shuffle_count - 1}.txt', "a") as file:
-                            file.write(f'{result}\n====\n')
+                            with open(f'prompts/{records_file}-{questionnaire["name"]}-shuffle{shuffle_count - 1}.txt', "a") as file:
+                                file.write(f'{inputs}\n====\n')
+                            with open(f'responses/{records_file}-{questionnaire["name"]}-shuffle{shuffle_count - 1}.txt', "a") as file:
+                                file.write(f'{result}\n====\n')
+
+                        result_string = '\n'.join(result_string_list)
                         
+                        result_list = convert_results(result_string, column_header)
                         
-                    result_string = '\n'.join(result_string_list)
-                    
-                    result_list = convert_results(result_string, column_header)
-                    
-                    try:
-                        if column_header in df.columns:
-                            df[column_header] = result_list
-                        else:
-                            df.insert(i + insert_count + 1, column_header, result_list)
-                            insert_count += 1
-                    except:
-                        print(f"Unable to capture the responses on {column_header}.")
+                        try:
+                            if column_header in df.columns:
+                                df[column_header] = result_list
+                            else:
+                                df.insert(i + insert_count + 1, column_header, result_list)
+                                insert_count += 1
+                            break
+                        except:
+                            print(f"Unable to capture the responses on {column_header}.")
 
                     # Write the updated DataFrame back to the CSV file
                     df.to_csv(testing_file, index=False)
