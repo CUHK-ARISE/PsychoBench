@@ -17,6 +17,7 @@
 Benchmarking LLMs' Psychological Portray.
 
 **UPDATES**
+
 [Dec 28 2023]: Add support to 16personalities.com
 
 ## 🛠️ Usage
