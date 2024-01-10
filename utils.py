@@ -276,7 +276,7 @@ def analysis_results(questionnaire, args):
     output_list += f'\n\n![Bar Chart](figures/{args.figures_file} "Bar Chart of {model} on {questionnaire["name"]}")\n\n'
     
     # Writing the results into a text file
-    with open(result_file, "w") as f:
+    with open(result_file, "w", encoding="utf-8") as f:
         f.write(output_list + output_text)
 
 
