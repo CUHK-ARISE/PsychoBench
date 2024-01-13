@@ -404,21 +404,28 @@ def query_16personalities_api(scores):
 
 
 def analysis_personality(args, test_data):
+    all_data = []
     result_file = args.results_file
-    output_text = ''
     cat = ['Personality Type', 'Role', 'Extraverted', 'Intuitive', 'Thinking', 'Judging', 'Assertive']
     df = pd.DataFrame(columns=cat)
 
     for case in test_data:
         ordered_list = [case[key]-4 for key in sorted(case.keys())]
+        all_data.append(ordered_list)
         result = query_16personalities_api(ordered_list)
         result = result[:2] + tuple(result[2])
         df.loc[len(df)] = result
     
+    column_sums = [sum(col) for col in zip(*all_data)]
+    avg_data = [int(sum / len(all_data)) for sum in column_sums]
+    avg_result = query_16personalities_api(avg_data)
+    avg_result = avg_result[:2] + tuple(avg_result[2])
+    df.loc["Avg"] = avg_result
+    
     # Writing the results into a text file
     with open(result_file, "w", encoding="utf-8") as f:
         f.write("# 16 Personality Results\n\n")
-        f.write(df.to_markdown(index=False))
+        f.write(df.to_markdown())
 
 
 def analysis_results(questionnaire, args):
