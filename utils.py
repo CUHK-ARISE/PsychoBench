@@ -478,7 +478,7 @@ def analysis_results(questionnaire, args):
 def run_psychobench(args, generator):
     
     # Extract the targeted questionnaires
-    questionnaire_list = ['BFI', 'DTDD', 'EPQ-R', 'ECR-R', 'CABIN', 'GSE', 'LMS', 'BSRI', 'ICB', 'LOT-R', 'Empathy', 'EIS', 'WLEIS'] \
+    questionnaire_list = ['BFI', 'DTDD', 'EPQ-R', 'ECR-R', 'CABIN', 'GSE', 'LMS', 'BSRI', 'ICB', 'LOT-R', 'Empathy', 'EIS', 'WLEIS', '16P'] \
                          if args.questionnaire == 'ALL' else args.questionnaire.split(',')
     
     for questionnaire_name in questionnaire_list:
