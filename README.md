@@ -117,7 +117,7 @@ For more details, please refer to our paper <a href="https://arxiv.org/abs/2310.
 
 If you find our paper&tool interesting and useful, please feel free to give us a star and cite us through:
 ```
-@article{huang2023emotionally,
+@inproceedings{huang2023humanity,
   author    = {Jen{-}tse Huang and
                Wenxuan Wang and
                Eric John Li and
@@ -127,8 +127,8 @@ If you find our paper&tool interesting and useful, please feel free to give us a
                Wenxiang Jiao and
                Zhaopeng Tu and
                Michael R. Lyu},
-  title     = {Who is ChatGPT? Benchmarking LLMs' Psychological Portrayal Using Psycho{B}ench},
-  journal   = {arXiv preprint arXiv:2310.01386},
-  year      = {2023}
+  title     = {On the Humanity of Conversational AI: Evaluating the Psychological Portrayal of LLMs},
+  booktitle = {Proceedings of the Twelfth International Conference on Learning Representations (ICLR)},
+  year      = {2024}
 }
 ```
