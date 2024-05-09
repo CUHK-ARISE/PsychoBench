@@ -21,7 +21,6 @@ if __name__ == '__main__':
                         help='For debugging.')
 
     # Generator-specific parameters, can be discarded if users implement their own generators
-    parser.add_argument('--openai-organization', type=str, default='')
     parser.add_argument('--openai-key', type=str, default='')
     
     args = parser.parse_args()

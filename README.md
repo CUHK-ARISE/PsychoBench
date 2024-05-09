@@ -28,6 +28,7 @@ Benchmarking LLMs' Psychological Portray.
 python run_psychobench.py \
   --model gpt-3.5-turbo \
   --questionnaire EPQ-R \
+  --openai-key "<openai_api_key>"\
   --shuffle-count 1 \
   --test-count 2
 ```
@@ -57,9 +58,7 @@ python run_psychobench.py \
 
 Arguments related to `openai` API (can be discarded when users customize models):
 
-1. `--openai-organization`: Your organization ID. Can be found in `Manage account -> Settings -> Organization ID`.
-
-2. `--openai-key`: Your API key. Can be found in `View API keys -> API keys`.
+1. `--openai-key`: Your API key. Can be found in `View API keys -> API keys`.
 
 ## 🦙 Benchmarking Your Own Model
 It is easy! Just replace the function `example_generator` fed into the function `run_psychobench(args, generator)`.

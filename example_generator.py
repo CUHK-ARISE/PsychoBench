@@ -79,7 +79,6 @@ def example_generator(questionnaire, args):
     model = args.model
     records_file = args.name_exp if args.name_exp is not None else model
 
-    openai.organization = args.openai_organization
     openai.api_key = args.openai_key
 
     # Read the existing CSV file into a pandas DataFrame

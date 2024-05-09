@@ -124,7 +124,7 @@ def convert_data(questionnaire, testing_file):
                 for row in reader:
                     try: 
                         # Check whether the question is a reverse scale
-                        if row[start-1] in questionnaire["reverse"]:
+                        if int(row[start-1]) in questionnaire["reverse"]:
                             column_data[int(row[start-1])] = questionnaire["scale"] - int(row[column_index])
                         else:
                             column_data[int(row[start-1])] = int(row[column_index])
