@@ -118,7 +118,7 @@ For more details, please refer to our paper <a href="https://arxiv.org/abs/2310.
 
 If you find our paper&tool interesting and useful, please feel free to give us a star and cite us through:
 ```
-@inproceedings{huang2023humanity,
+@inproceedings{huang2024humanity,
   author    = {Jen{-}tse Huang and
                Wenxuan Wang and
                Eric John Li and
