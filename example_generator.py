@@ -11,8 +11,6 @@ from tqdm import tqdm
 
 
 @retry(wait=wait_random_exponential(min=1, max=60), stop=stop_after_attempt(6))
-
-@retry(wait=wait_random_exponential(min=1, max=60), stop=stop_after_attempt(6))
 def chat(
     model,                      # gpt-4, gpt-4-0314, gpt-4-32k, gpt-4-32k-0314, gpt-3.5-turbo, gpt-3.5-turbo-0301
     messages,                   # [{"role": "system"/"user"/"assistant", "content": "Hello!", "name": "example"}]
@@ -29,7 +27,10 @@ def chat(
         n=n,
         max_tokens=max_tokens
     )
-    return response.choices[0].message.content
+    if n == 1:
+        return response.choices[0].message.content
+    else:
+        return [i.message.content for i in response.choices]
 
 @retry(wait=wait_random_exponential(min=1, max=60), stop=stop_after_attempt(6))
 def completion(
@@ -115,7 +116,6 @@ def example_generator(questionnaire, args):
                                 inputs = questionnaire["inner_setting"].replace('Format: \"index: score\"', 'Format: \"index: score\\\n\"') + questionnaire["prompt"] + '\n' + questions_string
                                 result = completion(model, inputs)
                             elif model.startswith("gpt"):
-                                print("previous records:", previous_records)
                                 inputs = previous_records + [
                                     {"role": "system", "content": questionnaire["inner_setting"]},
                                     {"role": "user", "content": questionnaire["prompt"] + '\n' + questions_string}
