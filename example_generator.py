@@ -12,29 +12,24 @@ from tqdm import tqdm
 
 @retry(wait=wait_random_exponential(min=1, max=60), stop=stop_after_attempt(6))
 
+@retry(wait=wait_random_exponential(min=1, max=60), stop=stop_after_attempt(6))
 def chat(
-    model,           # gpt-4, gpt-4-0314, gpt-4-32k, gpt-4-32k-0314, gpt-3.5-turbo, gpt-3.5-turbo-0301
-    messages,        # [{"role": "system"/"user"/"assistant", "content": "Hello!", "name": "example"}]
-    temperature=0,   # [0, 2]: Lower values -> more focused and deterministic; Higher values -> more random.
-    n=1,             # Chat completion choices to generate for each input message.
-    max_tokens=1024, # The maximum number of tokens to generate in the chat completion.
-    delay=1          # Seconds to sleep after each request.
+    model,                      # gpt-4, gpt-4-0314, gpt-4-32k, gpt-4-32k-0314, gpt-3.5-turbo, gpt-3.5-turbo-0301
+    messages,                   # [{"role": "system"/"user"/"assistant", "content": "Hello!", "name": "example"}]
+    temperature=0,    # [0, 2]: Lower values -> more focused and deterministic; Higher values -> more random.
+    n=1,                        # Chat completion choices to generate for each input message.
+    max_tokens=1024,            # The maximum number of tokens to generate in the chat completion.
+    delay=1           # Seconds to sleep after each request.
 ):
     time.sleep(delay)
-    
-    response = openai.ChatCompletion.create(
+    response = openai.chat.completions.create(
         model=model,
         messages=messages,
         temperature=temperature,
         n=n,
         max_tokens=max_tokens
     )
-    
-    if n == 1:
-        return response['choices'][0]['message']['content']
-    else:
-        return [i['message']['content'] for i in response['choices']]
-
+    return response.choices[0].message.content
 
 @retry(wait=wait_random_exponential(min=1, max=60), stop=stop_after_attempt(6))
 def completion(
@@ -119,7 +114,8 @@ def example_generator(questionnaire, args):
                             if model == 'text-davinci-003':
                                 inputs = questionnaire["inner_setting"].replace('Format: \"index: score\"', 'Format: \"index: score\\\n\"') + questionnaire["prompt"] + '\n' + questions_string
                                 result = completion(model, inputs)
-                            elif model in ['gpt-3.5-turbo', 'gpt-4', 'gpt-3.5-turbo-0301', 'gpt-3.5-turbo-0613', 'gpt-3.5-turbo-1106']:
+                            elif model.startswith("gpt"):
+                                print("previous records:", previous_records)
                                 inputs = previous_records + [
                                     {"role": "system", "content": questionnaire["inner_setting"]},
                                     {"role": "user", "content": questionnaire["prompt"] + '\n' + questions_string}
