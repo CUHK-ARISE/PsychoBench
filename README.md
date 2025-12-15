@@ -119,17 +119,9 @@ For more details, please refer to our paper <a href="https://arxiv.org/abs/2310.
 If you find our paper&tool interesting and useful, please feel free to give us a star and cite us through:
 ```
 @inproceedings{huang2024humanity,
-  author    = {Jen{-}tse Huang and
-               Wenxuan Wang and
-               Eric John Li and
-               Man Ho Lam and
-               Shujie Ren and
-               Youliang Yuan and
-               Wenxiang Jiao and
-               Zhaopeng Tu and
-               Michael R. Lyu},
-  title     = {On the Humanity of Conversational AI: Evaluating the Psychological Portrayal of LLMs},
-  booktitle = {Proceedings of the Twelfth International Conference on Learning Representations (ICLR)},
-  year      = {2024}
+  title={On the humanity of conversational ai: Evaluating the psychological portrayal of llms},
+  author={Huang, Jen-tse and Wang, Wenxuan and Li, Eric John and Lam, Man Ho and Ren, Shujie and Yuan, Youliang and Jiao, Wenxiang and Tu, Zhaopeng and Lyu, Michael},
+  booktitle={The Twelfth International Conference on Learning Representations},
+  year={2024}
 }
 ```
