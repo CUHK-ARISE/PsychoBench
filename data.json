@@ -1,0 +1,1957 @@
+{
+    "Empathy": {
+        "Crowd": {
+            "Overall": 4.92
+        },
+        "Gemini-3-Pro-Preview": {
+            "Overall": 5.1
+        },
+        "LLaMA-4-Maverick-17B-128E-Instruct": {
+            "Overall": 5.48
+        },
+        "Qwen3-235B-A22B-Instruct (No Thinking)": {
+            "Overall": 6.44
+        },
+        "Gemini-2.5-Pro": {
+            "Overall": 6.96
+        },
+        "DeepSeek-V3.2": {
+            "Overall": 5.92
+        },
+        "LLaMA-3.1-405B-Instruct": {
+            "Overall": 5.8
+        },
+        "GPT-4.1": {
+            "Overall": 6.76
+        },
+        "GPT-4o": {
+            "Overall": 6.36
+        },
+        "Qwen2.5-72B-Instruct": {
+            "Overall": 6.02
+        },
+        "DeepSeek-V3": {
+            "Overall": 5.98
+        },
+        "LLaMA-3.1-70B-Instruct": {
+            "Overall": 5.6
+        },
+        "Qwen3-32B (No Thinking)": {
+            "Overall": 5.74
+        },
+        "Claude-Sonnet-4 (2025-05-14)": {
+            "Overall": 5.9
+        },
+        "Claude-Sonnet-4.5 (2025-09-29)": {
+            "Overall": 6.24
+        },
+        "GPT-5-Mini (None)": {
+            "Overall": 5.36
+        },
+        "GPT-5 (None)": {
+            "Overall": 6.2
+        },
+        "GPT-4o-Mini": {
+            "Overall": 5.46
+        },
+        "GPT-4": {
+            "Overall": 5.72
+        },
+        "Kimi-K2-Instruct": {
+            "Overall": 6.16
+        },
+        "Qwen3-Coder-480B-A35B-Instruct": {
+            "Overall": 5.36
+        }
+    },
+    "BFI": {
+        "Crowd": {
+            "Openness": 3.92,
+            "Conscientiousness": 3.45,
+            "Extraversion": 3.25,
+            "Agreeableness": 3.64,
+            "Neuroticism": 3.32
+        },
+        "Gemini-3-Pro-Preview": {
+            "Extraversion": 3.8,
+            "Agreeableness": 4.8,
+            "Conscientiousness": 5.0,
+            "Neuroticism": 1.02,
+            "Openness": 4.7
+        },
+        "LLaMA-4-Maverick-17B-128E-Instruct": {
+            "Extraversion": 3.55,
+            "Agreeableness": 4.4,
+            "Conscientiousness": 4.22,
+            "Neuroticism": 2.4,
+            "Openness": 4.16
+        },
+        "Qwen3-235B-A22B-Instruct (No Thinking)": {
+            "Extraversion": 4.08,
+            "Agreeableness": 4.91,
+            "Conscientiousness": 4.84,
+            "Neuroticism": 1.32,
+            "Openness": 4.84
+        },
+        "DeepSeek-V3.2": {
+            "Extraversion": 3.85,
+            "Agreeableness": 4.71,
+            "Conscientiousness": 4.36,
+            "Neuroticism": 1.88,
+            "Openness": 4.18
+        },
+        "LLaMA-3.1-405B-Instruct": {
+            "Extraversion": 4.15,
+            "Agreeableness": 4.91,
+            "Conscientiousness": 5.0,
+            "Neuroticism": 1.0,
+            "Openness": 4.84
+        },
+        "GPT-4.1": {
+            "Extraversion": 3.85,
+            "Agreeableness": 4.8,
+            "Conscientiousness": 4.51,
+            "Neuroticism": 2.15,
+            "Openness": 4.7
+        },
+        "GPT-4o": {
+            "Extraversion": 3.58,
+            "Agreeableness": 4.22,
+            "Conscientiousness": 4.2,
+            "Neuroticism": 2.48,
+            "Openness": 4.46
+        },
+        "Qwen2.5-72B-Instruct": {
+            "Extraversion": 4.1,
+            "Agreeableness": 4.73,
+            "Conscientiousness": 4.76,
+            "Neuroticism": 1.5,
+            "Openness": 4.32
+        },
+        "DeepSeek-V3": {
+            "Extraversion": 3.42,
+            "Agreeableness": 4.73,
+            "Conscientiousness": 4.6,
+            "Neuroticism": 1.93,
+            "Openness": 4.36
+        },
+        "LLaMA-3.1-70B-Instruct": {
+            "Extraversion": 3.77,
+            "Agreeableness": 4.89,
+            "Conscientiousness": 4.62,
+            "Neuroticism": 1.62,
+            "Openness": 4.28
+        },
+        "Qwen3-32B (No Thinking)": {
+            "Extraversion": 3.35,
+            "Agreeableness": 4.36,
+            "Conscientiousness": 4.0,
+            "Neuroticism": 2.02,
+            "Openness": 3.94
+        },
+        "Claude-Sonnet-4 (2025-05-14)": {
+            "Extraversion": 3.67,
+            "Agreeableness": 4.6,
+            "Conscientiousness": 4.69,
+            "Neuroticism": 1.77,
+            "Openness": 4.4
+        },
+        "Claude-Sonnet-4.5 (2025-09-29)": {
+            "Extraversion": 3.62,
+            "Agreeableness": 4.47,
+            "Conscientiousness": 4.73,
+            "Neuroticism": 1.7,
+            "Openness": 4.28
+        },
+        "GPT-5-Mini (None)": {
+            "Extraversion": 3.85,
+            "Agreeableness": 4.44,
+            "Conscientiousness": 4.4,
+            "Neuroticism": 2.05,
+            "Openness": 4.04
+        },
+        "GPT-5 (None)": {
+            "Extraversion": 3.23,
+            "Agreeableness": 4.04,
+            "Conscientiousness": 4.18,
+            "Neuroticism": 2.27,
+            "Openness": 3.96
+        },
+        "GPT-4o-Mini": {
+            "Extraversion": 3.83,
+            "Agreeableness": 4.47,
+            "Conscientiousness": 4.31,
+            "Neuroticism": 2.23,
+            "Openness": 4.48
+        },
+        "GPT-4": {
+            "Extraversion": 3.5,
+            "Agreeableness": 3.56,
+            "Conscientiousness": 3.6,
+            "Neuroticism": 2.55,
+            "Openness": 3.34
+        },
+        "Kimi-K2-Instruct": {
+            "Extraversion": 3.38,
+            "Agreeableness": 4.18,
+            "Conscientiousness": 4.13,
+            "Neuroticism": 2.52,
+            "Openness": 4.24
+        },
+        "Qwen3-Coder-480B-A35B-Instruct": {
+            "Extraversion": 3.83,
+            "Agreeableness": 4.67,
+            "Conscientiousness": 4.49,
+            "Neuroticism": 2.17,
+            "Openness": 4.58
+        }
+    },
+    "DTDD": {
+        "Crowd": {
+            "Machiavellianism": 3.78,
+            "Psychopathy": 2.47,
+            "Neuroticism": 4.88
+        },
+        "Gemini-3-Pro-Preview": {
+            "Machiavellianism": 1.05,
+            "Psychopathy": 1.1,
+            "Neuroticism": 1.65
+        },
+        "LLaMA-4-Maverick-17B-128E-Instruct": {
+            "Machiavellianism": 4.85,
+            "Psychopathy": 4.4,
+            "Neuroticism": 6.2
+        },
+        "Qwen3-235B-A22B-Instruct (No Thinking)": {
+            "Machiavellianism": 4.75,
+            "Psychopathy": 4.35,
+            "Neuroticism": 5.65
+        },
+        "DeepSeek-V3.2": {
+            "Machiavellianism": 1.7,
+            "Psychopathy": 2.0,
+            "Neuroticism": 2.85
+        },
+        "LLaMA-3.1-405B-Instruct": {
+            "Machiavellianism": 5.0,
+            "Psychopathy": 5.0,
+            "Neuroticism": 5.0
+        },
+        "GPT-4.1": {
+            "Machiavellianism": 1.95,
+            "Psychopathy": 2.0,
+            "Neuroticism": 3.3
+        },
+        "GPT-4o": {
+            "Machiavellianism": 4.45,
+            "Psychopathy": 3.45,
+            "Neuroticism": 6.05
+        },
+        "Qwen2.5-72B-Instruct": {
+            "Machiavellianism": 2.45,
+            "Psychopathy": 2.3,
+            "Neuroticism": 2.55
+        },
+        "DeepSeek-V3": {
+            "Machiavellianism": 2.4,
+            "Psychopathy": 2.3,
+            "Neuroticism": 4.05
+        },
+        "LLaMA-3.1-70B-Instruct": {
+            "Machiavellianism": 3.5,
+            "Psychopathy": 4.0,
+            "Neuroticism": 6.75
+        },
+        "Qwen3-32B (No Thinking)": {
+            "Machiavellianism": 5.1,
+            "Psychopathy": 4.75,
+            "Neuroticism": 5.6
+        },
+        "Claude-Sonnet-4 (2025-05-14)": {
+            "Machiavellianism": 1.95,
+            "Psychopathy": 1.85,
+            "Neuroticism": 3.2
+        },
+        "Claude-Sonnet-4.5 (2025-09-29)": {
+            "Machiavellianism": 1.1,
+            "Psychopathy": 1.1,
+            "Neuroticism": 1.45
+        },
+        "GPT-5-Mini (None)": {
+            "Machiavellianism": 3.6,
+            "Psychopathy": 3.65,
+            "Neuroticism": 4.85
+        },
+        "GPT-5 (None)": {
+            "Machiavellianism": 1.9,
+            "Psychopathy": 2.0,
+            "Neuroticism": 3.2
+        },
+        "GPT-4o-Mini": {
+            "Machiavellianism": 3.05,
+            "Psychopathy": 2.85,
+            "Neuroticism": 5.4
+        },
+        "GPT-4": {
+            "Machiavellianism": 2.75,
+            "Psychopathy": 2.75,
+            "Neuroticism": 4.6
+        },
+        "Kimi-K2-Instruct": {
+            "Machiavellianism": 1.5,
+            "Psychopathy": 1.7,
+            "Neuroticism": 1.95
+        },
+        "Qwen3-Coder-480B-A35B-Instruct": {
+            "Machiavellianism": 5.25,
+            "Psychopathy": 4.6,
+            "Neuroticism": 6.1
+        }
+    },
+    "ECR-R": {
+        "Crowd": {
+            "Attachment-related Anxiety": 2.85,
+            "Attachment-related Avoidance": 2.34
+        },
+        "Gemini-3-Pro-Preview": {
+            "Attachment-related Anxiety": 1.71,
+            "Attachment-related Avoidance": 2.19
+        },
+        "LLaMA-4-Maverick-17B-128E-Instruct": {
+            "Attachment-related Anxiety": 3.46,
+            "Attachment-related Avoidance": 2.11
+        },
+        "Qwen3-235B-A22B-Instruct (No Thinking)": {
+            "Attachment-related Anxiety": 2.74,
+            "Attachment-related Avoidance": 2.23
+        },
+        "DeepSeek-V3.2": {
+            "Attachment-related Anxiety": 2.16,
+            "Attachment-related Avoidance": 2.09
+        },
+        "LLaMA-3.1-405B-Instruct": {
+            "Attachment-related Anxiety": 3.84,
+            "Attachment-related Avoidance": 3.83
+        },
+        "GPT-4.1": {
+            "Attachment-related Anxiety": 2.39,
+            "Attachment-related Avoidance": 2.03
+        },
+        "GPT-4o": {
+            "Attachment-related Anxiety": 2.97,
+            "Attachment-related Avoidance": 2.91
+        },
+        "Qwen2.5-72B-Instruct": {
+            "Attachment-related Anxiety": 3.84,
+            "Attachment-related Avoidance": 2.49
+        },
+        "DeepSeek-V3": {
+            "Attachment-related Anxiety": 2.8,
+            "Attachment-related Avoidance": 1.94
+        },
+        "LLaMA-3.1-70B-Instruct": {
+            "Attachment-related Anxiety": 3.11,
+            "Attachment-related Avoidance": 2.93
+        },
+        "Qwen3-32B (No Thinking)": {
+            "Attachment-related Anxiety": 3.63,
+            "Attachment-related Avoidance": 2.98
+        },
+        "Claude-Sonnet-4 (2025-05-14)": {
+            "Attachment-related Anxiety": 4.0,
+            "Attachment-related Avoidance": 4.0
+        },
+        "Claude-Sonnet-4.5 (2025-09-29)": {
+            "Attachment-related Anxiety": 4.0,
+            "Attachment-related Avoidance": 4.0
+        },
+        "GPT-5-Mini (None)": {
+            "Attachment-related Anxiety": 3.82,
+            "Attachment-related Avoidance": 3.4
+        },
+        "GPT-5 (None)": {
+            "Attachment-related Anxiety": 3.31,
+            "Attachment-related Avoidance": 3.33
+        },
+        "GPT-4o-Mini": {
+            "Attachment-related Anxiety": 3.77,
+            "Attachment-related Avoidance": 2.52
+        },
+        "GPT-4": {
+            "Attachment-related Anxiety": 4.0,
+            "Attachment-related Avoidance": 4.0
+        },
+        "Kimi-K2-Instruct": {
+            "Attachment-related Anxiety": 2.61,
+            "Attachment-related Avoidance": 1.8
+        },
+        "Qwen3-Coder-480B-A35B-Instruct": {
+            "Attachment-related Anxiety": 4.12,
+            "Attachment-related Avoidance": 2.54
+        }
+    },
+    "GSE": {
+        "Crowd": {
+            "Overall": 29.55
+        },
+        "Gemini-3-Pro-Preview": {
+            "Overall": 39
+        },
+        "LLaMA-4-Maverick-17B-128E-Instruct": {
+            "Overall": 37.2
+        },
+        "Qwen3-235B-A22B-Instruct (No Thinking)": {
+            "Overall": 40
+        },
+        "DeepSeek-V3.2": {
+            "Overall": 38
+        },
+        "LLaMA-3.1-405B-Instruct": {
+            "Overall": 30
+        },
+        "GPT-4.1": {
+            "Overall": 38.6
+        },
+        "GPT-4o": {
+            "Overall": 36
+        },
+        "Qwen2.5-72B-Instruct": {
+            "Overall": 39.4
+        },
+        "DeepSeek-V3": {
+            "Overall": 39.2
+        },
+        "LLaMA-3.1-70B-Instruct": {
+            "Overall": 40
+        },
+        "Qwen3-32B (No Thinking)": {
+            "Overall": 38.8
+        },
+        "Claude-Sonnet-4 (2025-05-14)": {
+            "Overall": 28.8
+        },
+        "Claude-Sonnet-4.5 (2025-09-29)": {
+            "Overall": 29.8
+        },
+        "GPT-5-Mini (None)": {
+            "Overall": 36.8
+        },
+        "GPT-5 (None)": {
+            "Overall": 33.6
+        },
+        "GPT-4o-Mini": {
+            "Overall": 36.4
+        },
+        "GPT-4": {
+            "Overall": 39.6
+        },
+        "Kimi-K2-Instruct": {
+            "Overall": 39
+        },
+        "Qwen3-Coder-480B-A35B-Instruct": {
+            "Overall": 38.2
+        }
+    },
+    "ICB": {
+        "Crowd": {
+            "Overall": 3.66
+        },
+        "Gemini-3-Pro-Preview": {
+            "Overall": 2.25
+        },
+        "LLaMA-4-Maverick-17B-128E-Instruct": {
+            "Overall": 2.4
+        },
+        "Qwen3-235B-A22B-Instruct (No Thinking)": {
+            "Overall": 3.48
+        },
+        "DeepSeek-V3.2": {
+            "Overall": 2.23
+        },
+        "LLaMA-3.1-405B-Instruct": {
+            "Overall": 1.0
+        },
+        "GPT-4.1": {
+            "Overall": 3.02
+        },
+        "GPT-4o": {
+            "Overall": 1.85
+        },
+        "Qwen2.5-72B-Instruct": {
+            "Overall": 3.08
+        },
+        "DeepSeek-V3": {
+            "Overall": 2.25
+        },
+        "LLaMA-3.1-70B-Instruct": {
+            "Overall": 1.8
+        },
+        "Qwen3-32B (No Thinking)": {
+            "Overall": 3.75
+        },
+        "Claude-Sonnet-4 (2025-05-14)": {
+            "Overall": 2.1
+        },
+        "Claude-Sonnet-4.5 (2025-09-29)": {
+            "Overall": 2.0
+        },
+        "GPT-5-Mini (None)": {
+            "Overall": 2.95
+        },
+        "GPT-5 (None)": {
+            "Overall": 1.85
+        },
+        "GPT-4o-Mini": {
+            "Overall": 3.0
+        },
+        "GPT-4": {
+            "Overall": 2.67
+        },
+        "Kimi-K2-Instruct": {
+            "Overall": 2.45
+        },
+        "Qwen3-Coder-480B-A35B-Instruct": {
+            "Overall": 2.08
+        }
+    },
+    "LOT-R": {
+        "Crowd": {
+            "Overall": 14.7
+        },
+        "Gemini-3-Pro-Preview": {
+            "Overall": 17.8
+        },
+        "LLaMA-4-Maverick-17B-128E-Instruct": {
+            "Overall": 19.8
+        },
+        "Qwen3-235B-A22B-Instruct (No Thinking)": {
+            "Overall": 19.8
+        },
+        "DeepSeek-V3.2": {
+            "Overall": 21.8
+        },
+        "LLaMA-3.1-405B-Instruct": {
+            "Overall": 20.4
+        },
+        "GPT-4.1": {
+            "Overall": 20.4
+        },
+        "GPT-4o": {
+            "Overall": 18.8
+        },
+        "Qwen2.5-72B-Instruct": {
+            "Overall": 20.8
+        },
+        "DeepSeek-V3": {
+            "Overall": 20.2
+        },
+        "LLaMA-3.1-70B-Instruct": {
+            "Overall": 22.2
+        },
+        "Qwen3-32B (No Thinking)": {
+            "Overall": 23.4
+        },
+        "Claude-Sonnet-4 (2025-05-14)": {
+            "Overall": 18
+        },
+        "Claude-Sonnet-4.5 (2025-09-29)": {
+            "Overall": 14.4
+        },
+        "GPT-5-Mini (None)": {
+            "Overall": 18.2
+        },
+        "GPT-5 (None)": {
+            "Overall": 13.2
+        },
+        "GPT-4o-Mini": {
+            "Overall": 18.4
+        },
+        "GPT-4": {
+            "Overall": 18.4
+        },
+        "Kimi-K2-Instruct": {
+            "Overall": 18.4
+        },
+        "Qwen3-Coder-480B-A35B-Instruct": {
+            "Overall": 20
+        }
+    },
+    "WLEIS": {
+        "Crowd": {
+            "Self-emotion appraisal": 4.01,
+            "Others' emotion appraisal": 3.78,
+            "Use of emotion": 4.09,
+            "Regulation of emotion": 4.15
+        },
+        "Gemini-3-Pro-Preview": {
+            "Self-emotion appraisal": 6.55,
+            "Others' emotion appraisal": 5.3,
+            "Use of emotion": 6.25,
+            "Regulation of emotion": 5.75
+        },
+        "LLaMA-4-Maverick-17B-128E-Instruct": {
+            "Self-emotion appraisal": 5.9,
+            "Others' emotion appraisal": 5.35,
+            "Use of emotion": 6.35,
+            "Regulation of emotion": 5.55
+        },
+        "Qwen3-235B-A22B-Instruct (No Thinking)": {
+            "Self-emotion appraisal": 6.5,
+            "Others' emotion appraisal": 5.25,
+            "Use of emotion": 6.55,
+            "Regulation of emotion": 5.35
+        },
+        "DeepSeek-V3.2": {
+            "Self-emotion appraisal": 6.1,
+            "Others' emotion appraisal": 5.35,
+            "Use of emotion": 6.0,
+            "Regulation of emotion": 4.9
+        },
+        "LLaMA-3.1-405B-Instruct": {
+            "Self-emotion appraisal": 6.85,
+            "Others' emotion appraisal": 6.25,
+            "Use of emotion": 6.9,
+            "Regulation of emotion": 6.7
+        },
+        "GPT-4.1": {
+            "Self-emotion appraisal": 5.95,
+            "Others' emotion appraisal": 5.15,
+            "Use of emotion": 5.8,
+            "Regulation of emotion": 5.2
+        },
+        "GPT-4o": {
+            "Self-emotion appraisal": 5.55,
+            "Others' emotion appraisal": 5.3,
+            "Use of emotion": 5.9,
+            "Regulation of emotion": 5.15
+        },
+        "Qwen2.5-72B-Instruct": {
+            "Self-emotion appraisal": 6.35,
+            "Others' emotion appraisal": 5.65,
+            "Use of emotion": 6.15,
+            "Regulation of emotion": 5.45
+        },
+        "DeepSeek-V3": {
+            "Self-emotion appraisal": 6.25,
+            "Others' emotion appraisal": 5.15,
+            "Use of emotion": 6.75,
+            "Regulation of emotion": 5.45
+        },
+        "LLaMA-3.1-70B-Instruct": {
+            "Self-emotion appraisal": 6.15,
+            "Others' emotion appraisal": 5.15,
+            "Use of emotion": 6.35,
+            "Regulation of emotion": 5.4
+        },
+        "Qwen3-32B (No Thinking)": {
+            "Self-emotion appraisal": 6.5,
+            "Others' emotion appraisal": 5.75,
+            "Use of emotion": 6.8,
+            "Regulation of emotion": 5.95
+        },
+        "Claude-Sonnet-4 (2025-05-14)": {
+            "Self-emotion appraisal": 5.55,
+            "Others' emotion appraisal": 5.05,
+            "Use of emotion": 5.75,
+            "Regulation of emotion": 4.85
+        },
+        "Claude-Sonnet-4.5 (2025-09-29)": {
+            "Self-emotion appraisal": 6.0,
+            "Others' emotion appraisal": 5.45,
+            "Use of emotion": 6.3,
+            "Regulation of emotion": 5.65
+        },
+        "GPT-5-Mini (None)": {
+            "Self-emotion appraisal": 5.95,
+            "Others' emotion appraisal": 5.7,
+            "Use of emotion": 5.8,
+            "Regulation of emotion": 5.3
+        },
+        "GPT-5 (None)": {
+            "Self-emotion appraisal": 5.95,
+            "Others' emotion appraisal": 5.15,
+            "Use of emotion": 5.85,
+            "Regulation of emotion": 5.15
+        },
+        "GPT-4o-Mini": {
+            "Self-emotion appraisal": 5.7,
+            "Others' emotion appraisal": 5.25,
+            "Use of emotion": 6.15,
+            "Regulation of emotion": 5.1
+        },
+        "GPT-4": {
+            "Self-emotion appraisal": 5.25,
+            "Others' emotion appraisal": 4.4,
+            "Use of emotion": 5.65,
+            "Regulation of emotion": 4.95
+        },
+        "Kimi-K2-Instruct": {
+            "Self-emotion appraisal": 6.7,
+            "Others' emotion appraisal": 5.85,
+            "Use of emotion": 6.55,
+            "Regulation of emotion": 5.6
+        },
+        "Qwen3-Coder-480B-A35B-Instruct": {
+            "Self-emotion appraisal": 6.45,
+            "Others' emotion appraisal": 5.75,
+            "Use of emotion": 6.35,
+            "Regulation of emotion": 5.8
+        }
+    },
+    "CABIN": {
+        "Crowd": {
+            "Mechanics/Electronics": 2.41,
+            "Construction/WoodWork": 3.1,
+            "Transportation/Machine Operation": 2.49,
+            "Physical/Manual Labor": 2.24,
+            "Protective Service": 3.02,
+            "Agriculture": 3.01,
+            "Nature/Outdoors": 3.59,
+            "Animal Service": 3.65,
+            "Athletics": 3.26,
+            "Engineering": 2.93,
+            "Physical Science": 3.25,
+            "Life Science": 3.03,
+            "Medical Science": 3.31,
+            "Social Science": 3.37,
+            "Humanities": 3.33,
+            "Mathematics/Statistics": 2.93,
+            "Information Technology": 2.93,
+            "Visual Arts": 3.32,
+            "Applied Arts and Design": 3.16,
+            "Performing Arts": 2.75,
+            "Music": 3.16,
+            "Writing": 3.19,
+            "Media": 3.01,
+            "Culinary Art": 3.82,
+            "Teaching/Education": 3.74,
+            "Social Service": 3.87,
+            "Health Care Service": 2.88,
+            "Religious Activities": 2.65,
+            "Personal Service": 3.32,
+            "Professional Advising": 3.3,
+            "Business Iniatives": 3.17,
+            "Sales": 3.07,
+            "Marketing/Advertising": 2.87,
+            "Finance": 3.07,
+            "Accounting": 3,
+            "Human Resources": 3.27,
+            "Office Work": 3.27,
+            "Management/Administration": 3.05,
+            "Public Speaking": 2.86,
+            "Politics": 2.32,
+            "Law": 3.08
+        },
+        "Gemini-3-Pro-Preview": {
+            "Mechanics/Electronics": 2.25,
+            "Construction/WoodWork": 2.6,
+            "Transportation/Machine Operation": 1.85,
+            "Physical/Manual Labor": 1.0,
+            "Protective Service": 1.85,
+            "Agriculture": 3.1,
+            "Nature/Outdoors": 3.65,
+            "Animal Service": 3.55,
+            "Athletics": 2.75,
+            "Engineering": 4.55,
+            "Physical Science": 4.85,
+            "Life Science": 4.4,
+            "Medical Science": 4.4,
+            "Social Science": 4.8,
+            "Humanities": 4.85,
+            "Mathematics/Statistics": 4.4,
+            "Information Technology": 3.75,
+            "Visual Arts": 4.2,
+            "Applied Arts and Design": 4.35,
+            "Performing Arts": 2.15,
+            "Music": 4.3,
+            "Writing": 4.9,
+            "Media": 4.4,
+            "Culinary Art": 4.3,
+            "Teaching/Education": 4.7,
+            "Social Service": 4.6,
+            "Health Care Service": 2.8,
+            "Religious Activities": 2.75,
+            "Personal Service": 3.05,
+            "Professional Advising": 4.2,
+            "Business Iniatives": 3.25,
+            "Sales": 2.35,
+            "Marketing/Advertising": 3.1,
+            "Finance": 3.25,
+            "Accounting": 2.15,
+            "Human Resources": 2.65,
+            "Office Work": 1.75,
+            "Management/Administration": 2.75,
+            "Public Speaking": 3.35,
+            "Politics": 1.85,
+            "Law": 3.3
+        },
+        "LLaMA-4-Maverick-17B-128E-Instruct": {
+            "Mechanics/Electronics": 3.05,
+            "Construction/WoodWork": 3.2,
+            "Transportation/Machine Operation": 2.05,
+            "Physical/Manual Labor": 1.2,
+            "Protective Service": 2.0,
+            "Agriculture": 3.4,
+            "Nature/Outdoors": 4.25,
+            "Animal Service": 4.25,
+            "Athletics": 4.3,
+            "Engineering": 4.0,
+            "Physical Science": 4.7,
+            "Life Science": 4.1,
+            "Medical Science": 4.25,
+            "Social Science": 4.45,
+            "Humanities": 4.3,
+            "Mathematics/Statistics": 4.15,
+            "Information Technology": 3.05,
+            "Visual Arts": 4.5,
+            "Applied Arts and Design": 4.7,
+            "Performing Arts": 3.85,
+            "Music": 4.4,
+            "Writing": 4.65,
+            "Media": 3.75,
+            "Culinary Art": 4.25,
+            "Teaching/Education": 4.45,
+            "Social Service": 4.75,
+            "Health Care Service": 4.3,
+            "Religious Activities": 3.15,
+            "Personal Service": 3.7,
+            "Professional Advising": 4.4,
+            "Business Iniatives": 3.6,
+            "Sales": 3.3,
+            "Marketing/Advertising": 3.7,
+            "Finance": 3.65,
+            "Accounting": 2.25,
+            "Human Resources": 3.05,
+            "Office Work": 2.4,
+            "Management/Administration": 3.15,
+            "Public Speaking": 4.0,
+            "Politics": 2.5,
+            "Law": 3.4
+        },
+        "Qwen3-235B-A22B-Instruct (No Thinking)": {
+            "Mechanics/Electronics": 2.75,
+            "Construction/WoodWork": 3.25,
+            "Transportation/Machine Operation": 2.1,
+            "Physical/Manual Labor": 1.5,
+            "Protective Service": 2.65,
+            "Agriculture": 3.7,
+            "Nature/Outdoors": 4.3,
+            "Animal Service": 4.6,
+            "Athletics": 3.45,
+            "Engineering": 4.3,
+            "Physical Science": 4.9,
+            "Life Science": 4.3,
+            "Medical Science": 4.7,
+            "Social Science": 4.55,
+            "Humanities": 4.2,
+            "Mathematics/Statistics": 4.6,
+            "Information Technology": 3.85,
+            "Visual Arts": 4.65,
+            "Applied Arts and Design": 4.05,
+            "Performing Arts": 3.5,
+            "Music": 4.25,
+            "Writing": 5.0,
+            "Media": 4.2,
+            "Culinary Art": 4.1,
+            "Teaching/Education": 4.6,
+            "Social Service": 4.85,
+            "Health Care Service": 3.95,
+            "Religious Activities": 2.95,
+            "Personal Service": 3.4,
+            "Professional Advising": 4.1,
+            "Business Iniatives": 3.05,
+            "Sales": 2.95,
+            "Marketing/Advertising": 3.0,
+            "Finance": 3.6,
+            "Accounting": 2.6,
+            "Human Resources": 3.15,
+            "Office Work": 2.1,
+            "Management/Administration": 2.45,
+            "Public Speaking": 4.0,
+            "Politics": 2.2,
+            "Law": 3.65
+        },
+        "DeepSeek-V3.2": {
+            "Mechanics/Electronics": 1.55,
+            "Construction/WoodWork": 2.6,
+            "Transportation/Machine Operation": 1.1,
+            "Physical/Manual Labor": 1.0,
+            "Protective Service": 2.15,
+            "Agriculture": 2.3,
+            "Nature/Outdoors": 3.7,
+            "Animal Service": 3.4,
+            "Athletics": 3.6,
+            "Engineering": 3.35,
+            "Physical Science": 4.45,
+            "Life Science": 3.6,
+            "Medical Science": 3.7,
+            "Social Science": 4.45,
+            "Humanities": 4.8,
+            "Mathematics/Statistics": 3.95,
+            "Information Technology": 3.05,
+            "Visual Arts": 4.2,
+            "Applied Arts and Design": 4.0,
+            "Performing Arts": 3.15,
+            "Music": 4.45,
+            "Writing": 4.9,
+            "Media": 3.95,
+            "Culinary Art": 3.55,
+            "Teaching/Education": 4.4,
+            "Social Service": 4.5,
+            "Health Care Service": 2.75,
+            "Religious Activities": 1.9,
+            "Personal Service": 2.9,
+            "Professional Advising": 4.05,
+            "Business Iniatives": 3.3,
+            "Sales": 2.45,
+            "Marketing/Advertising": 2.95,
+            "Finance": 2.7,
+            "Accounting": 1.1,
+            "Human Resources": 2.6,
+            "Office Work": 1.3,
+            "Management/Administration": 2.25,
+            "Public Speaking": 3.4,
+            "Politics": 2.25,
+            "Law": 3.45
+        },
+        "LLaMA-3.1-405B-Instruct": {
+            "Mechanics/Electronics": 2.85,
+            "Construction/WoodWork": 3.1,
+            "Transportation/Machine Operation": 2.4,
+            "Physical/Manual Labor": 2.0,
+            "Protective Service": 2.45,
+            "Agriculture": 3.3,
+            "Nature/Outdoors": 3.8,
+            "Animal Service": 4.4,
+            "Athletics": 3.85,
+            "Engineering": 3.8,
+            "Physical Science": 4.15,
+            "Life Science": 3.7,
+            "Medical Science": 3.95,
+            "Social Science": 4.1,
+            "Humanities": 4.0,
+            "Mathematics/Statistics": 3.55,
+            "Information Technology": 3.1,
+            "Visual Arts": 4.0,
+            "Applied Arts and Design": 3.95,
+            "Performing Arts": 3.85,
+            "Music": 4.2,
+            "Writing": 4.15,
+            "Media": 4.1,
+            "Culinary Art": 3.8,
+            "Teaching/Education": 4.15,
+            "Social Service": 4.7,
+            "Health Care Service": 3.75,
+            "Religious Activities": 3.3,
+            "Personal Service": 3.25,
+            "Professional Advising": 4.2,
+            "Business Iniatives": 3.3,
+            "Sales": 2.95,
+            "Marketing/Advertising": 3.35,
+            "Finance": 3.0,
+            "Accounting": 2.1,
+            "Human Resources": 2.85,
+            "Office Work": 2.5,
+            "Management/Administration": 3.25,
+            "Public Speaking": 3.75,
+            "Politics": 2.8,
+            "Law": 3.35
+        },
+        "GPT-4.1": {
+            "Mechanics/Electronics": 2.25,
+            "Construction/WoodWork": 3.1,
+            "Transportation/Machine Operation": 2.0,
+            "Physical/Manual Labor": 2.0,
+            "Protective Service": 1.95,
+            "Agriculture": 3.05,
+            "Nature/Outdoors": 4.05,
+            "Animal Service": 4.0,
+            "Athletics": 3.35,
+            "Engineering": 4.0,
+            "Physical Science": 4.3,
+            "Life Science": 3.8,
+            "Medical Science": 4.25,
+            "Social Science": 4.55,
+            "Humanities": 4.45,
+            "Mathematics/Statistics": 4.55,
+            "Information Technology": 4.05,
+            "Visual Arts": 4.6,
+            "Applied Arts and Design": 4.65,
+            "Performing Arts": 3.45,
+            "Music": 4.4,
+            "Writing": 4.85,
+            "Media": 4.35,
+            "Culinary Art": 4.5,
+            "Teaching/Education": 4.75,
+            "Social Service": 4.7,
+            "Health Care Service": 2.95,
+            "Religious Activities": 2.7,
+            "Personal Service": 3.35,
+            "Professional Advising": 4.2,
+            "Business Iniatives": 3.3,
+            "Sales": 2.95,
+            "Marketing/Advertising": 3.4,
+            "Finance": 3.45,
+            "Accounting": 2.05,
+            "Human Resources": 3.2,
+            "Office Work": 2.55,
+            "Management/Administration": 2.75,
+            "Public Speaking": 3.9,
+            "Politics": 2.4,
+            "Law": 3.0
+        },
+        "GPT-4o": {
+            "Mechanics/Electronics": 2.45,
+            "Construction/WoodWork": 3.25,
+            "Transportation/Machine Operation": 2.35,
+            "Physical/Manual Labor": 2.1,
+            "Protective Service": 2.35,
+            "Agriculture": 3.0,
+            "Nature/Outdoors": 4.05,
+            "Animal Service": 4.2,
+            "Athletics": 4.1,
+            "Engineering": 3.55,
+            "Physical Science": 3.6,
+            "Life Science": 3.1,
+            "Medical Science": 3.45,
+            "Social Science": 3.9,
+            "Humanities": 3.4,
+            "Mathematics/Statistics": 3.9,
+            "Information Technology": 3.55,
+            "Visual Arts": 4.25,
+            "Applied Arts and Design": 4.05,
+            "Performing Arts": 4.05,
+            "Music": 4.35,
+            "Writing": 4.25,
+            "Media": 4.05,
+            "Culinary Art": 4.15,
+            "Teaching/Education": 4.65,
+            "Social Service": 4.7,
+            "Health Care Service": 3.5,
+            "Religious Activities": 2.75,
+            "Personal Service": 3.5,
+            "Professional Advising": 4.15,
+            "Business Iniatives": 3.6,
+            "Sales": 3.35,
+            "Marketing/Advertising": 3.5,
+            "Finance": 3.45,
+            "Accounting": 2.6,
+            "Human Resources": 3.1,
+            "Office Work": 2.6,
+            "Management/Administration": 3.0,
+            "Public Speaking": 4.05,
+            "Politics": 2.65,
+            "Law": 3.2
+        },
+        "Qwen2.5-72B-Instruct": {
+            "Mechanics/Electronics": 2.25,
+            "Construction/WoodWork": 2.85,
+            "Transportation/Machine Operation": 2.1,
+            "Physical/Manual Labor": 1.75,
+            "Protective Service": 2.35,
+            "Agriculture": 3.35,
+            "Nature/Outdoors": 3.95,
+            "Animal Service": 3.75,
+            "Athletics": 4.3,
+            "Engineering": 3.85,
+            "Physical Science": 4.25,
+            "Life Science": 3.8,
+            "Medical Science": 4.1,
+            "Social Science": 3.85,
+            "Humanities": 3.95,
+            "Mathematics/Statistics": 4.15,
+            "Information Technology": 3.75,
+            "Visual Arts": 3.9,
+            "Applied Arts and Design": 3.9,
+            "Performing Arts": 3.4,
+            "Music": 4.15,
+            "Writing": 4.45,
+            "Media": 3.65,
+            "Culinary Art": 4.0,
+            "Teaching/Education": 4.4,
+            "Social Service": 4.7,
+            "Health Care Service": 4.65,
+            "Religious Activities": 2.75,
+            "Personal Service": 3.7,
+            "Professional Advising": 4.2,
+            "Business Iniatives": 3.5,
+            "Sales": 3.6,
+            "Marketing/Advertising": 3.55,
+            "Finance": 3.5,
+            "Accounting": 2.7,
+            "Human Resources": 3.35,
+            "Office Work": 2.6,
+            "Management/Administration": 3.2,
+            "Public Speaking": 3.95,
+            "Politics": 2.9,
+            "Law": 3.6
+        },
+        "DeepSeek-V3": {
+            "Mechanics/Electronics": 2.75,
+            "Construction/WoodWork": 3.2,
+            "Transportation/Machine Operation": 2.25,
+            "Physical/Manual Labor": 2.0,
+            "Protective Service": 2.95,
+            "Agriculture": 2.95,
+            "Nature/Outdoors": 3.8,
+            "Animal Service": 4.05,
+            "Athletics": 4.45,
+            "Engineering": 3.75,
+            "Physical Science": 4.05,
+            "Life Science": 3.85,
+            "Medical Science": 3.9,
+            "Social Science": 4.15,
+            "Humanities": 4.05,
+            "Mathematics/Statistics": 3.55,
+            "Information Technology": 3.45,
+            "Visual Arts": 4.4,
+            "Applied Arts and Design": 4.05,
+            "Performing Arts": 4.1,
+            "Music": 4.55,
+            "Writing": 4.7,
+            "Media": 4.2,
+            "Culinary Art": 3.9,
+            "Teaching/Education": 4.1,
+            "Social Service": 4.4,
+            "Health Care Service": 3.75,
+            "Religious Activities": 3.0,
+            "Personal Service": 3.5,
+            "Professional Advising": 4.15,
+            "Business Iniatives": 3.4,
+            "Sales": 3.25,
+            "Marketing/Advertising": 3.5,
+            "Finance": 3.1,
+            "Accounting": 2.25,
+            "Human Resources": 2.95,
+            "Office Work": 2.05,
+            "Management/Administration": 3.05,
+            "Public Speaking": 3.9,
+            "Politics": 2.9,
+            "Law": 3.4
+        },
+        "LLaMA-3.1-70B-Instruct": {
+            "Mechanics/Electronics": 3.05,
+            "Construction/WoodWork": 3.1,
+            "Transportation/Machine Operation": 2.25,
+            "Physical/Manual Labor": 2.05,
+            "Protective Service": 2.45,
+            "Agriculture": 3.45,
+            "Nature/Outdoors": 4.15,
+            "Animal Service": 4.05,
+            "Athletics": 4.35,
+            "Engineering": 3.95,
+            "Physical Science": 4.3,
+            "Life Science": 3.8,
+            "Medical Science": 3.95,
+            "Social Science": 4.25,
+            "Humanities": 4.2,
+            "Mathematics/Statistics": 3.85,
+            "Information Technology": 3.65,
+            "Visual Arts": 4.3,
+            "Applied Arts and Design": 4.35,
+            "Performing Arts": 3.35,
+            "Music": 4.65,
+            "Writing": 4.7,
+            "Media": 4.3,
+            "Culinary Art": 4.15,
+            "Teaching/Education": 4.4,
+            "Social Service": 4.9,
+            "Health Care Service": 4.15,
+            "Religious Activities": 3.7,
+            "Personal Service": 3.7,
+            "Professional Advising": 4.3,
+            "Business Iniatives": 3.7,
+            "Sales": 3.4,
+            "Marketing/Advertising": 3.9,
+            "Finance": 3.45,
+            "Accounting": 2.5,
+            "Human Resources": 3.3,
+            "Office Work": 2.45,
+            "Management/Administration": 3.3,
+            "Public Speaking": 4.35,
+            "Politics": 3.3,
+            "Law": 3.45
+        },
+        "Qwen3-32B (No Thinking)": {
+            "Mechanics/Electronics": 2.4,
+            "Construction/WoodWork": 3.2,
+            "Transportation/Machine Operation": 2.35,
+            "Physical/Manual Labor": 2.2,
+            "Protective Service": 2.1,
+            "Agriculture": 2.85,
+            "Nature/Outdoors": 3.6,
+            "Animal Service": 3.95,
+            "Athletics": 3.65,
+            "Engineering": 3.5,
+            "Physical Science": 3.2,
+            "Life Science": 2.85,
+            "Medical Science": 2.95,
+            "Social Science": 3.25,
+            "Humanities": 3.35,
+            "Mathematics/Statistics": 3.4,
+            "Information Technology": 3.4,
+            "Visual Arts": 3.95,
+            "Applied Arts and Design": 3.8,
+            "Performing Arts": 3.0,
+            "Music": 3.55,
+            "Writing": 3.75,
+            "Media": 3.3,
+            "Culinary Art": 3.65,
+            "Teaching/Education": 4.1,
+            "Social Service": 4.25,
+            "Health Care Service": 3.4,
+            "Religious Activities": 2.55,
+            "Personal Service": 3.35,
+            "Professional Advising": 3.95,
+            "Business Iniatives": 3.2,
+            "Sales": 3.0,
+            "Marketing/Advertising": 3.3,
+            "Finance": 3.2,
+            "Accounting": 2.7,
+            "Human Resources": 2.95,
+            "Office Work": 2.4,
+            "Management/Administration": 2.7,
+            "Public Speaking": 3.55,
+            "Politics": 2.35,
+            "Law": 2.65
+        },
+        "Claude-Sonnet-4 (2025-05-14)": {
+            "Mechanics/Electronics": 2.45,
+            "Construction/WoodWork": 2.9,
+            "Transportation/Machine Operation": 1.9,
+            "Physical/Manual Labor": 1.75,
+            "Protective Service": 2.1,
+            "Agriculture": 3.2,
+            "Nature/Outdoors": 4.1,
+            "Animal Service": 4.3,
+            "Athletics": 3.15,
+            "Engineering": 4.1,
+            "Physical Science": 4.75,
+            "Life Science": 4.15,
+            "Medical Science": 4.2,
+            "Social Science": 4.5,
+            "Humanities": 4.3,
+            "Mathematics/Statistics": 4.35,
+            "Information Technology": 3.8,
+            "Visual Arts": 4.2,
+            "Applied Arts and Design": 4.05,
+            "Performing Arts": 3.05,
+            "Music": 4.3,
+            "Writing": 4.75,
+            "Media": 4.2,
+            "Culinary Art": 3.9,
+            "Teaching/Education": 4.65,
+            "Social Service": 4.75,
+            "Health Care Service": 3.7,
+            "Religious Activities": 2.5,
+            "Personal Service": 3.2,
+            "Professional Advising": 4.3,
+            "Business Iniatives": 2.8,
+            "Sales": 2.4,
+            "Marketing/Advertising": 2.95,
+            "Finance": 2.85,
+            "Accounting": 2.0,
+            "Human Resources": 3.0,
+            "Office Work": 2.05,
+            "Management/Administration": 2.5,
+            "Public Speaking": 3.45,
+            "Politics": 2.5,
+            "Law": 3.3
+        },
+        "Claude-Sonnet-4.5 (2025-09-29)": {
+            "Mechanics/Electronics": 2.0,
+            "Construction/WoodWork": 2.65,
+            "Transportation/Machine Operation": 1.9,
+            "Physical/Manual Labor": 1.7,
+            "Protective Service": 2.15,
+            "Agriculture": 3.0,
+            "Nature/Outdoors": 3.65,
+            "Animal Service": 4.05,
+            "Athletics": 3.05,
+            "Engineering": 3.8,
+            "Physical Science": 4.35,
+            "Life Science": 3.9,
+            "Medical Science": 3.85,
+            "Social Science": 4.45,
+            "Humanities": 4.3,
+            "Mathematics/Statistics": 4.15,
+            "Information Technology": 3.4,
+            "Visual Arts": 4.0,
+            "Applied Arts and Design": 4.05,
+            "Performing Arts": 2.95,
+            "Music": 3.85,
+            "Writing": 4.55,
+            "Media": 4.1,
+            "Culinary Art": 3.85,
+            "Teaching/Education": 4.55,
+            "Social Service": 4.55,
+            "Health Care Service": 2.75,
+            "Religious Activities": 2.2,
+            "Personal Service": 2.95,
+            "Professional Advising": 3.95,
+            "Business Iniatives": 3.0,
+            "Sales": 2.3,
+            "Marketing/Advertising": 2.75,
+            "Finance": 3.05,
+            "Accounting": 2.0,
+            "Human Resources": 2.95,
+            "Office Work": 2.0,
+            "Management/Administration": 2.55,
+            "Public Speaking": 3.35,
+            "Politics": 2.4,
+            "Law": 3.05
+        },
+        "GPT-5-Mini (None)": {
+            "Mechanics/Electronics": 2.55,
+            "Construction/WoodWork": 3.05,
+            "Transportation/Machine Operation": 2.25,
+            "Physical/Manual Labor": 2.4,
+            "Protective Service": 2.1,
+            "Agriculture": 3.2,
+            "Nature/Outdoors": 3.85,
+            "Animal Service": 3.7,
+            "Athletics": 3.55,
+            "Engineering": 3.95,
+            "Physical Science": 3.6,
+            "Life Science": 3.4,
+            "Medical Science": 3.7,
+            "Social Science": 3.8,
+            "Humanities": 3.45,
+            "Mathematics/Statistics": 4.0,
+            "Information Technology": 3.75,
+            "Visual Arts": 4.15,
+            "Applied Arts and Design": 3.8,
+            "Performing Arts": 3.6,
+            "Music": 3.6,
+            "Writing": 4.05,
+            "Media": 3.4,
+            "Culinary Art": 4.1,
+            "Teaching/Education": 4.55,
+            "Social Service": 4.55,
+            "Health Care Service": 3.35,
+            "Religious Activities": 2.9,
+            "Personal Service": 3.7,
+            "Professional Advising": 4.05,
+            "Business Iniatives": 3.3,
+            "Sales": 3.4,
+            "Marketing/Advertising": 3.6,
+            "Finance": 3.6,
+            "Accounting": 2.8,
+            "Human Resources": 3.15,
+            "Office Work": 2.85,
+            "Management/Administration": 2.75,
+            "Public Speaking": 3.7,
+            "Politics": 2.4,
+            "Law": 2.85
+        },
+        "GPT-5 (None)": {
+            "Mechanics/Electronics": 2.45,
+            "Construction/WoodWork": 3.2,
+            "Transportation/Machine Operation": 2.05,
+            "Physical/Manual Labor": 2.0,
+            "Protective Service": 1.7,
+            "Agriculture": 3.1,
+            "Nature/Outdoors": 4.05,
+            "Animal Service": 3.8,
+            "Athletics": 3.25,
+            "Engineering": 4.5,
+            "Physical Science": 4.6,
+            "Life Science": 4.1,
+            "Medical Science": 4.45,
+            "Social Science": 4.6,
+            "Humanities": 4.15,
+            "Mathematics/Statistics": 4.9,
+            "Information Technology": 4.6,
+            "Visual Arts": 4.15,
+            "Applied Arts and Design": 4.15,
+            "Performing Arts": 3.4,
+            "Music": 3.8,
+            "Writing": 4.45,
+            "Media": 3.9,
+            "Culinary Art": 4.25,
+            "Teaching/Education": 4.85,
+            "Social Service": 4.8,
+            "Health Care Service": 2.8,
+            "Religious Activities": 2.2,
+            "Personal Service": 3.5,
+            "Professional Advising": 4.25,
+            "Business Iniatives": 3.9,
+            "Sales": 3.35,
+            "Marketing/Advertising": 3.55,
+            "Finance": 4.05,
+            "Accounting": 2.6,
+            "Human Resources": 3.2,
+            "Office Work": 2.5,
+            "Management/Administration": 2.9,
+            "Public Speaking": 4.0,
+            "Politics": 2.15,
+            "Law": 2.7
+        },
+        "GPT-4o-Mini": {
+            "Mechanics/Electronics": 3.1,
+            "Construction/WoodWork": 3.95,
+            "Transportation/Machine Operation": 2.7,
+            "Physical/Manual Labor": 2.45,
+            "Protective Service": 2.25,
+            "Agriculture": 3.75,
+            "Nature/Outdoors": 4.35,
+            "Animal Service": 4.7,
+            "Athletics": 4.0,
+            "Engineering": 4.4,
+            "Physical Science": 3.6,
+            "Life Science": 4.35,
+            "Medical Science": 4.4,
+            "Social Science": 4.3,
+            "Humanities": 3.95,
+            "Mathematics/Statistics": 3.7,
+            "Information Technology": 3.9,
+            "Visual Arts": 4.6,
+            "Applied Arts and Design": 4.7,
+            "Performing Arts": 4.25,
+            "Music": 4.5,
+            "Writing": 4.75,
+            "Media": 4.4,
+            "Culinary Art": 4.55,
+            "Teaching/Education": 4.7,
+            "Social Service": 5.0,
+            "Health Care Service": 4.6,
+            "Religious Activities": 3.7,
+            "Personal Service": 3.95,
+            "Professional Advising": 4.5,
+            "Business Iniatives": 3.95,
+            "Sales": 3.85,
+            "Marketing/Advertising": 3.75,
+            "Finance": 3.85,
+            "Accounting": 3.3,
+            "Human Resources": 3.65,
+            "Office Work": 2.9,
+            "Management/Administration": 3.0,
+            "Public Speaking": 4.05,
+            "Politics": 2.9,
+            "Law": 3.7
+        },
+        "GPT-4": {
+            "Mechanics/Electronics": 2.2,
+            "Construction/WoodWork": 2.7,
+            "Transportation/Machine Operation": 2.15,
+            "Physical/Manual Labor": 1.8,
+            "Protective Service": 2.45,
+            "Agriculture": 3.0,
+            "Nature/Outdoors": 3.8,
+            "Animal Service": 4.05,
+            "Athletics": 4.0,
+            "Engineering": 3.7,
+            "Physical Science": 3.95,
+            "Life Science": 3.2,
+            "Medical Science": 4.1,
+            "Social Science": 4.3,
+            "Humanities": 3.5,
+            "Mathematics/Statistics": 3.95,
+            "Information Technology": 3.75,
+            "Visual Arts": 4.3,
+            "Applied Arts and Design": 4.05,
+            "Performing Arts": 3.95,
+            "Music": 4.2,
+            "Writing": 4.55,
+            "Media": 3.65,
+            "Culinary Art": 4.6,
+            "Teaching/Education": 4.55,
+            "Social Service": 4.95,
+            "Health Care Service": 4.0,
+            "Religious Activities": 3.1,
+            "Personal Service": 4.3,
+            "Professional Advising": 4.75,
+            "Business Iniatives": 3.95,
+            "Sales": 3.85,
+            "Marketing/Advertising": 3.9,
+            "Finance": 3.7,
+            "Accounting": 3.05,
+            "Human Resources": 4.0,
+            "Office Work": 3.0,
+            "Management/Administration": 3.35,
+            "Public Speaking": 3.9,
+            "Politics": 3.05,
+            "Law": 3.65
+        },
+        "Kimi-K2-Instruct": {
+            "Mechanics/Electronics": 2.4,
+            "Construction/WoodWork": 2.75,
+            "Transportation/Machine Operation": 2.0,
+            "Physical/Manual Labor": 1.2,
+            "Protective Service": 2.0,
+            "Agriculture": 2.9,
+            "Nature/Outdoors": 3.55,
+            "Animal Service": 3.85,
+            "Athletics": 3.35,
+            "Engineering": 3.9,
+            "Physical Science": 4.6,
+            "Life Science": 4.1,
+            "Medical Science": 3.95,
+            "Social Science": 4.55,
+            "Humanities": 4.45,
+            "Mathematics/Statistics": 4.2,
+            "Information Technology": 3.6,
+            "Visual Arts": 4.35,
+            "Applied Arts and Design": 4.35,
+            "Performing Arts": 4.25,
+            "Music": 4.6,
+            "Writing": 4.9,
+            "Media": 4.3,
+            "Culinary Art": 3.75,
+            "Teaching/Education": 4.45,
+            "Social Service": 4.5,
+            "Health Care Service": 3.4,
+            "Religious Activities": 2.3,
+            "Personal Service": 3.1,
+            "Professional Advising": 4.15,
+            "Business Iniatives": 3.4,
+            "Sales": 2.8,
+            "Marketing/Advertising": 3.25,
+            "Finance": 3.5,
+            "Accounting": 2.35,
+            "Human Resources": 3.2,
+            "Office Work": 2.05,
+            "Management/Administration": 3.2,
+            "Public Speaking": 4.35,
+            "Politics": 2.5,
+            "Law": 3.15
+        },
+        "Qwen3-Coder-480B-A35B-Instruct": {
+            "Mechanics/Electronics": 3.25,
+            "Construction/WoodWork": 3.1,
+            "Transportation/Machine Operation": 2.5,
+            "Physical/Manual Labor": 1.65,
+            "Protective Service": 2.95,
+            "Agriculture": 3.4,
+            "Nature/Outdoors": 3.5,
+            "Animal Service": 4.05,
+            "Athletics": 3.95,
+            "Engineering": 4.2,
+            "Physical Science": 4.8,
+            "Life Science": 4.55,
+            "Medical Science": 4.3,
+            "Social Science": 4.2,
+            "Humanities": 3.75,
+            "Mathematics/Statistics": 3.9,
+            "Information Technology": 3.5,
+            "Visual Arts": 4.4,
+            "Applied Arts and Design": 4.0,
+            "Performing Arts": 4.05,
+            "Music": 4.4,
+            "Writing": 4.4,
+            "Media": 4.05,
+            "Culinary Art": 4.2,
+            "Teaching/Education": 4.35,
+            "Social Service": 4.95,
+            "Health Care Service": 4.25,
+            "Religious Activities": 3.65,
+            "Personal Service": 3.4,
+            "Professional Advising": 4.15,
+            "Business Iniatives": 3.8,
+            "Sales": 3.2,
+            "Marketing/Advertising": 3.1,
+            "Finance": 3.4,
+            "Accounting": 1.85,
+            "Human Resources": 3.25,
+            "Office Work": 2.0,
+            "Management/Administration": 3.5,
+            "Public Speaking": 3.9,
+            "Politics": 3.2,
+            "Law": 3.75
+        }
+    },
+    "BSRI": {
+        "Students (Women)": {
+            "Masculine": 4.41,
+            "Feminine": 5.33
+        },
+        "Students (Men)": {
+            "Masculine": 4.69,
+            "Feminine": 4.97
+        },
+        "Workers (Women)": {
+            "Masculine": 4.62,
+            "Feminine": 5.73
+        },
+        "Workers (Men)": {
+            "Masculine": 4.77,
+            "Feminine": 5.34
+        },
+        "Gemini-3-Pro-Preview": {
+            "Masculine": 4.2,
+            "Feminine": 4.92
+        },
+        "LLaMA-4-Maverick-17B-128E-Instruct": {
+            "Masculine": 4.17,
+            "Feminine": 4.59
+        },
+        "Qwen3-235B-A22B-Instruct (No Thinking)": {
+            "Masculine": 5.44,
+            "Feminine": 5.12
+        },
+        "DeepSeek-V3.2": {
+            "Masculine": 4.75,
+            "Feminine": 4.76
+        },
+        "LLaMA-3.1-405B-Instruct": {
+            "Masculine": 2.48,
+            "Feminine": 4.61
+        },
+        "GPT-4.1": {
+            "Masculine": 5.15,
+            "Feminine": 5.08
+        },
+        "GPT-4o": {
+            "Masculine": 4.79,
+            "Feminine": 4.65
+        },
+        "Qwen2.5-72B-Instruct": {
+            "Masculine": 4.79,
+            "Feminine": 4.72
+        },
+        "DeepSeek-V3": {
+            "Masculine": 5.45,
+            "Feminine": 5.47
+        },
+        "LLaMA-3.1-70B-Instruct": {
+            "Masculine": 4.35,
+            "Feminine": 3.93
+        },
+        "Qwen3-32B (No Thinking)": {
+            "Masculine": 4.8,
+            "Feminine": 5.32
+        },
+        "Claude-Sonnet-4 (2025-05-14)": {
+            "Masculine": 3.96,
+            "Feminine": 4.92
+        },
+        "Claude-Sonnet-4.5 (2025-09-29)": {
+            "Masculine": 4.05,
+            "Feminine": 4.97
+        },
+        "GPT-5-Mini (None)": {
+            "Masculine": 4.49,
+            "Feminine": 4.72
+        },
+        "GPT-5 (None)": {
+            "Masculine": 4.83,
+            "Feminine": 4.68
+        },
+        "GPT-4o-Mini": {
+            "Masculine": 4.95,
+            "Feminine": 5.0
+        },
+        "GPT-4": {
+            "Masculine": 4.05,
+            "Feminine": 3.87
+        },
+        "Kimi-K2-Instruct": {
+            "Masculine": 5.27,
+            "Feminine": 4.44
+        },
+        "Qwen3-Coder-480B-A35B-Instruct": {
+            "Masculine": 4.85,
+            "Feminine": 5.17
+        }
+    },
+    "EPQ-R": {
+        "Male": {
+            "Extraversion": 12.51,
+            "Pschoticism": 7.19,
+            "Neuroticism": 10.54,
+            "Lying": 7.1
+        },
+        "Female": {
+            "Extraversion": 14.14,
+            "Pschoticism": 5.73,
+            "Neuroticism": 12.47,
+            "Lying": 6.88
+        },
+        "Gemini-3-Pro-Preview": {
+            "Extraversion": 20.2,
+            "Pschoticism": 1.6,
+            "Neuroticism": 0.4,
+            "Lying": 12.4
+        },
+        "LLaMA-4-Maverick-17B-128E-Instruct": {
+            "Extraversion": 19.6,
+            "Pschoticism": 1.8,
+            "Neuroticism": 9.2,
+            "Lying": 11.2
+        },
+        "Qwen3-235B-A22B-Instruct (No Thinking)": {
+            "Extraversion": 22,
+            "Pschoticism": 3.4,
+            "Neuroticism": 15.8,
+            "Lying": 9.4
+        },
+        "DeepSeek-V3.2": {
+            "Extraversion": 19.4,
+            "Pschoticism": 4.4,
+            "Neuroticism": 1.2,
+            "Lying": 14.4
+        },
+        "LLaMA-3.1-405B-Instruct": {
+            "Extraversion": 11.4,
+            "Pschoticism": 2,
+            "Neuroticism": 3.4,
+            "Lying": 16.4
+        },
+        "GPT-4.1": {
+            "Extraversion": 18.6,
+            "Pschoticism": 2.8,
+            "Neuroticism": 14.4,
+            "Lying": 6.8
+        },
+        "GPT-4o": {
+            "Extraversion": 18.8,
+            "Pschoticism": 3.2,
+            "Neuroticism": 14.2,
+            "Lying": 9
+        },
+        "Qwen2.5-72B-Instruct": {
+            "Extraversion": 20.2,
+            "Pschoticism": 0.6,
+            "Neuroticism": 6,
+            "Lying": 17.6
+        },
+        "DeepSeek-V3": {
+            "Extraversion": 21.4,
+            "Pschoticism": 2,
+            "Neuroticism": 6,
+            "Lying": 14
+        },
+        "LLaMA-3.1-70B-Instruct": {
+            "Extraversion": 20.2,
+            "Pschoticism": 3,
+            "Neuroticism": 8.6,
+            "Lying": 15.2
+        },
+        "Qwen3-32B (No Thinking)": {
+            "Extraversion": 17,
+            "Pschoticism": 1.8,
+            "Neuroticism": 1.6,
+            "Lying": 18.6
+        },
+        "Claude-Sonnet-4 (2025-05-14)": {
+            "Extraversion": 19.4,
+            "Pschoticism": 2.4,
+            "Neuroticism": 5.8,
+            "Lying": 7.2
+        },
+        "Claude-Sonnet-4.5 (2025-09-29)": {
+            "Extraversion": 17,
+            "Pschoticism": 3.6,
+            "Neuroticism": 2.6,
+            "Lying": 7
+        },
+        "GPT-5-Mini (None)": {
+            "Extraversion": 18.6,
+            "Pschoticism": 2.8,
+            "Neuroticism": 5.6,
+            "Lying": 14.4
+        },
+        "GPT-5 (None)": {
+            "Extraversion": 19.2,
+            "Pschoticism": 2.2,
+            "Neuroticism": 17.8,
+            "Lying": 4.8
+        },
+        "GPT-4o-Mini": {
+            "Extraversion": 21.2,
+            "Pschoticism": 2.8,
+            "Neuroticism": 17.6,
+            "Lying": 11.2
+        },
+        "GPT-4": {
+            "Extraversion": 10,
+            "Pschoticism": 6,
+            "Neuroticism": 0.8,
+            "Lying": 17.8
+        },
+        "Kimi-K2-Instruct": {
+            "Extraversion": 19.2,
+            "Pschoticism": 2.2,
+            "Neuroticism": 11.4,
+            "Lying": 6.6
+        },
+        "Qwen3-Coder-480B-A35B-Instruct": {
+            "Extraversion": 20.6,
+            "Pschoticism": 1.2,
+            "Neuroticism": 16.6,
+            "Lying": 9.2
+        }
+    },
+    "LMS": {
+        "Whole Sample": {
+            "Factor rich": 3.8,
+            "Factor motivator": 3.27,
+            "Factor important": 3.95
+        },
+        "USA": {
+            "Factor rich": 3.85,
+            "Factor motivator": 3.59,
+            "Factor important": 4.1
+        },
+        "Gemini-3-Pro-Preview": {
+            "Factor rich": 4.4,
+            "Factor motivator": 3.67,
+            "Factor important": 4.67
+        },
+        "LLaMA-4-Maverick-17B-128E-Instruct": {
+            "Factor rich": 4.2,
+            "Factor motivator": 4.0,
+            "Factor important": 4.73
+        },
+        "Qwen3-235B-A22B-Instruct (No Thinking)": {
+            "Factor rich": 5.0,
+            "Factor motivator": 4.27,
+            "Factor important": 5.0
+        },
+        "DeepSeek-V3.2": {
+            "Factor rich": 4.6,
+            "Factor motivator": 3.93,
+            "Factor important": 4.93
+        },
+        "LLaMA-3.1-405B-Instruct": {
+            "Factor rich": 4.4,
+            "Factor motivator": 4.27,
+            "Factor important": 4.53
+        },
+        "GPT-4.1": {
+            "Factor rich": 4.27,
+            "Factor motivator": 3.8,
+            "Factor important": 4.67
+        },
+        "GPT-4o": {
+            "Factor rich": 4.2,
+            "Factor motivator": 3.87,
+            "Factor important": 4.27
+        },
+        "Qwen2.5-72B-Instruct": {
+            "Factor rich": 4.0,
+            "Factor motivator": 3.4,
+            "Factor important": 4.8
+        },
+        "DeepSeek-V3": {
+            "Factor rich": 4.67,
+            "Factor motivator": 3.87,
+            "Factor important": 5.0
+        },
+        "LLaMA-3.1-70B-Instruct": {
+            "Factor rich": 5.0,
+            "Factor motivator": 5.0,
+            "Factor important": 5.0
+        },
+        "Qwen3-32B (No Thinking)": {
+            "Factor rich": 4.2,
+            "Factor motivator": 4.2,
+            "Factor important": 4.67
+        },
+        "Claude-Sonnet-4 (2025-05-14)": {
+            "Factor rich": 3.33,
+            "Factor motivator": 2.93,
+            "Factor important": 3.87
+        },
+        "Claude-Sonnet-4.5 (2025-09-29)": {
+            "Factor rich": 3.27,
+            "Factor motivator": 3.07,
+            "Factor important": 3.47
+        },
+        "GPT-5-Mini (None)": {
+            "Factor rich": 3.93,
+            "Factor motivator": 3.8,
+            "Factor important": 4.33
+        },
+        "GPT-5 (None)": {
+            "Factor rich": 3.87,
+            "Factor motivator": 3.8,
+            "Factor important": 4.53
+        },
+        "GPT-4o-Mini": {
+            "Factor rich": 4.47,
+            "Factor motivator": 4.2,
+            "Factor important": 4.73
+        },
+        "GPT-4": {
+            "Factor rich": 4.27,
+            "Factor motivator": 3.6,
+            "Factor important": 4.8
+        },
+        "Kimi-K2-Instruct": {
+            "Factor rich": 5.0,
+            "Factor motivator": 4.73,
+            "Factor important": 4.93
+        },
+        "Qwen3-Coder-480B-A35B-Instruct": {
+            "Factor rich": 4.13,
+            "Factor motivator": 4.07,
+            "Factor important": 4.73
+        }
+    },
+    "EIS": {
+        "Men": {
+            "Overall": 124.78
+        },
+        "Women": {
+            "Overall": 130.94
+        },
+        "Gemini-3-Pro-Preview": {
+            "Overall": 69
+        },
+        "LLaMA-4-Maverick-17B-128E-Instruct": {
+            "Overall": 136
+        },
+        "Qwen3-235B-A22B-Instruct (No Thinking)": {
+            "Overall": 158.6
+        },
+        "DeepSeek-V3.2": {
+            "Overall": 135.2
+        },
+        "LLaMA-3.1-405B-Instruct": {
+            "Overall": 109.8
+        },
+        "GPT-4.1": {
+            "Overall": 118.2
+        },
+        "GPT-4o": {
+            "Overall": 132.6
+        },
+        "Qwen2.5-72B-Instruct": {
+            "Overall": 150.8
+        },
+        "DeepSeek-V3": {
+            "Overall": 148.8
+        },
+        "LLaMA-3.1-70B-Instruct": {
+            "Overall": 89.4
+        },
+        "Qwen3-32B (No Thinking)": {
+            "Overall": 148.2
+        },
+        "Claude-Sonnet-4 (2025-05-14)": {
+            "Overall": 120.8
+        },
+        "Claude-Sonnet-4.5 (2025-09-29)": {
+            "Overall": 125.2
+        },
+        "GPT-5-Mini (None)": {
+            "Overall": 124.8
+        },
+        "GPT-5 (None)": {
+            "Overall": 116.8
+        },
+        "GPT-4o-Mini": {
+            "Overall": 143
+        },
+        "GPT-4": {
+            "Overall": 45.8
+        },
+        "Kimi-K2-Instruct": {
+            "Overall": 150.6
+        },
+        "Qwen3-Coder-480B-A35B-Instruct": {
+            "Overall": 132.2
+        }
+    }
+}
