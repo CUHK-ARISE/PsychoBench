@@ -611,9 +611,6 @@
         "GPT-5-Mini (Minimal Thinking Effort)": {
             "Overall": 2.95
         },
-        "LLaMA2-13B": {
-            "Overall": 0.0
-        },
         "GPT-5 (Minimal Thinking Effort)": {
             "Overall": 1.85
         },
@@ -1596,49 +1593,6 @@
             "Public Speaking": 3.7,
             "Politics": 2.4,
             "Law": 2.85
-        },
-        "LLaMA2-13B": {
-            "Mechanics/Electronics": 0.0,
-            "Construction/WoodWork": 0.0,
-            "Transportation/Machine Operation": 0.0,
-            "Physical/Manual Labor": 0.0,
-            "Protective Service": 0.0,
-            "Agriculture": 0.0,
-            "Nature/Outdoors": 0.0,
-            "Animal Service": 0.0,
-            "Athletics": 0.0,
-            "Engineering": 0.0,
-            "Physical Science": 0.0,
-            "Life Science": 0.0,
-            "Medical Science": 0.0,
-            "Social Science": 0.0,
-            "Humanities": 0.0,
-            "Mathematics/Statistics": 0.0,
-            "Information Technology": 0.0,
-            "Visual Arts": 0.0,
-            "Applied Arts and Design": 0.0,
-            "Performing Arts": 0.0,
-            "Music": 0.0,
-            "Writing": 0.0,
-            "Media": 0.0,
-            "Culinary Art": 0.0,
-            "Teaching/Education": 0.0,
-            "Social Service": 0.0,
-            "Health Care Service": 0.0,
-            "Religious Activities": 0.0,
-            "Personal Service": 0.0,
-            "Professional Advising": 0.0,
-            "Business Iniatives": 0.0,
-            "Sales": 0.0,
-            "Marketing/Advertising": 0.0,
-            "Finance": 0.0,
-            "Accounting": 0.0,
-            "Human Resources": 0.0,
-            "Office Work": 0.0,
-            "Management/Administration": 0.0,
-            "Public Speaking": 0.0,
-            "Politics": 0.0,
-            "Law": 0.0
         },
         "GPT-5 (Minimal Thinking Effort)": {
             "Mechanics/Electronics": 2.45,
