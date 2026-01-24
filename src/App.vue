@@ -26,6 +26,10 @@
       </div>
     </div>
 
+    <div class="text-sm text-gray-600 mb-8">
+      * Corresponding authors
+    </div>
+
     <!-- 🔥 Buttons / Badges 區 -->
     <div class="flex flex-wrap justify-center gap-3 mt-6 mb-12">
       <a
