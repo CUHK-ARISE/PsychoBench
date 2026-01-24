@@ -143,12 +143,12 @@
       </p>
       <ul class="list-disc list-inside leading-relaxed text-left">
         <li>
-          <a href="https://cuhk-arise.github.io/GAMABench/" target="_blank" class="text-blue-600 hover:underline">GAMA-Bench Leaderboard</a>
-          <span class="ml-2 px-2 py-0.5 text-xs font-semibold rounded bg-orange-100 text-orange-700 border border-orange-300">ICLR'25 Poster</span>
-        </li>
-        <li>
           <a href="https://cuhk-arise.github.io/EmotionBench/" target="_blank" class="text-blue-600 hover:underline">EmotionBench Leaderboard</a>
           <span class="ml-2 px-2 py-0.5 text-xs font-semibold rounded bg-green-100 text-green-700 border border-green-300">NeurIPS'24 Poster</span>
+        </li>
+        <li>
+          <a href="https://cuhk-arise.github.io/GAMABench/" target="_blank" class="text-blue-600 hover:underline">GAMA-Bench Leaderboard</a>
+          <span class="ml-2 px-2 py-0.5 text-xs font-semibold rounded bg-orange-100 text-orange-700 border border-orange-300">ICLR'25 Poster</span>
         </li>
         <li>
           <a href="https://cuhk-arise.github.io/CodeCrash/" target="_blank" class="text-blue-600 hover:underline">CodeCrash Leaderboard</a>
